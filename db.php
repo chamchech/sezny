@@ -1,10 +1,11 @@
 <?php
 //Database Connection
 function connect() {
-    $username = 'dbu1074334';
-    $password = 'MmMp1503!sezny!';
-    $mysqlhost = 'db5003530627.hosting-data.io';
-    $dbname = 'dbs2871453';
+    $username = 'root';
+    $password = 'root';
+   // $mysqlhost = 'db5003530627.hosting-data.io';
+    $mysqlhost = 'localhost';
+    $dbname = 'dbs454370';
     $pdo = new PDO('mysql:host='.$mysqlhost.';dbname='.$dbname.';charset=utf8', $username, $password);
     if($pdo){
         $pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
@@ -14,4 +15,4 @@ function connect() {
     }
 }
 
-$sql = connect(); 
+$sql = connect();

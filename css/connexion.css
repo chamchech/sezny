@@ -33,6 +33,7 @@ body{
 }
 
 .login-content{
+	margin: auto;
 	display: flex;
 	justify-content: flex-start;
 	align-items: center;
@@ -52,7 +53,7 @@ form{
 }
 
 .login-content h2{
-	margin: 15px 0;
+	margin: 25px 0;
 	color: #424242;
 	text-transform: uppercase;
 	font-size: 2.3rem;
@@ -69,6 +70,7 @@ form{
 
 .login-content .input-div.one{
 	margin-top: 0;
+
 }
 
 .i{
@@ -103,7 +105,7 @@ form{
 	bottom: -2px;
 	width: 0%;
 	height: 2px;
-	background-color: #424242;
+	background-color: #2E7685;
 	transition: .4s;
 }
 
@@ -125,7 +127,7 @@ form{
 }
 
 .input-div.focus > .i > i{
-	color: #424242;
+	color: #2E7685;
 }
 
 .input-div > div > input{
@@ -167,13 +169,13 @@ a:hover{
 	border-radius: 25px;
 	outline: none;
 	border: none;
-	background-image: linear-gradient(to right, #999999, #424242, #999999);
+	background-image: linear-gradient(to right, #69C080, #2E7685, #69C080);
 	background-size: 200%;
 	font-size: 1.2rem;
 	color: #fff;
 	font-family: 'Poppins', sans-serif;
 	text-transform: uppercase;
-	margin: 1rem 0;
+	margin: 4rem 0;
 	cursor: pointer;
 	transition: .5s;
 }

@@ -22,7 +22,7 @@ $result = $stmt1->fetchAll();
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="56x56" href="assets/img/favicon-96x96.png">
 
-    <title>Commercial - Abonnement Juridique MEPERY</title>
+    <title>Commercial - Sezny</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
 

@@ -31,13 +31,16 @@ if(isset($_POST['valider'])){
 <!DOCTYPE HTML>
 <html>
 <head>
-	<title>Connexion - Cabinet Juridique Mepery</title>
+	<title>Connexion - Sezny</title>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="robots" content="noindex">
 	<!--===============================================================================================-->
 	<link rel="icon" type="image/png" sizes="56x56" href="assets/img/favicon-96x96.png">
-	<!--===============================================================================================-->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/fav-icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/fav-icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/fav-icon/favicon-16x16.png">
+   <!-- <link rel="manifest" href="images/fav-icon/site.webmanifest">-->
 	<!--===============================================================================================-->
 	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/util.css">
@@ -48,15 +51,15 @@ if(isset($_POST['valider'])){
 </head>
 
 <body>
-	<img class="wave" src="images/wave.png">
 	<div class="container">
+        <img class="wave" src="images/back-sezny2.png">
 		<div class="img">
-			<img src="images/bg.svg">
+
 		</div>
 		<div class="login-content">
 			<form class="login100-form validate-form" method="post" action="">
-				<img src="images/avatar.svg">
-				<h2 class="title">Cabinet Juridique MEPERY</h2>
+				<img src="images/avatar_sezny2.png">
+				<h2 class="title">Sezny</h2>
            		<div class="input-div one">
            		   <div class="i">
            		   		<i class="fas fa-user"></i>

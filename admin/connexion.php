@@ -35,8 +35,13 @@ if(isset($_POST['submit'])){
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="56x56" href="assets/img/favicon-96x96.png">
-
-    <title>Connexion - Abonnement Juridique MEPERY</title>
+    <!--===============================================================================================-->
+    <link rel="icon" type="image/png" sizes="56x56" href="assets/img/favicon-96x96.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../images/fav-icon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../images/fav-icon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../images/fav-icon/favicon-16x16.png">
+    <!--<link rel="manifest" href="../images/fav-icon/site.webmanifest"> -->
+    <title>Connexion - Sezny</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
 
@@ -50,15 +55,15 @@ if(isset($_POST['submit'])){
 </head>
 
 <body>
-	<img class="wave" src="../images/wave.png">
-	<div class="container">
-		<div class="img">
-			<img src="../images/bg.svg">
-		</div>
+<div class="container">
+<img class="wave" src="../images/admin-sezny.png">
+<div class="img">
+
+</div>
 		<div class="login-content">
 			<form class="login100-form validate-form" method="post" action="">
-				<img src="../images/avatar.svg">
-				<h2 class="title">Cabinet Juridique MEPERY</h2>
+				<img src="../images/avatar-admin.png">
+				<h2 class="title">Espace admin</h2>
            		<div class="input-div one">
            		   <div class="i">
            		   		<i class="fas fa-user"></i>
