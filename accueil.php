@@ -40,7 +40,7 @@ $result = $stmt1->fetchAll();
     <main role="main">
         <section class="jumbotron text-center" style="padding:20px;background-color:#e9ecef;">
             <div class="container">
-                <h1 class="jumbotron-heading">Espace commercial<br>Abonnement Juridique MEPERY</h1>
+                <h1 class="jumbotron-heading">Espace commercial<br>Sezny</h1>
                 <h2 style="font-size:18px;">Bonjour <?php echo $result[0]['firstname'].' '.$result[0]['lastname'];?> !</h2>
             </div>
         </section>
@@ -75,15 +75,10 @@ $result = $stmt1->fetchAll();
                                Profil
                             </a>
                         </div>
-
-
                     </div>
-
-
                 </div>
             </div>
         </div>
-
     </main>
     <?php include 'footer.php'; ?>
 
