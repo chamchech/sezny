@@ -50,7 +50,7 @@ html, body {
 	bottom: 0;
 }
 .bottom-footer{
-  background: #424242;
+  background: #246874;
   color: white;
 }
 
@@ -72,8 +72,12 @@ html, body {
 
 .bouton-accueil{
   font-size:22px;
+  border-radius: 15px;
+  width: 350px;
 }
-
+.bouton-profil{
+margin-top:50px;
+}
 
 .modal {
   position: fixed;
@@ -273,4 +277,3 @@ html, body {
       opacity: 1;
     }
   }
-  

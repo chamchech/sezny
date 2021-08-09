@@ -25,8 +25,6 @@ if(isset($_POST['valider'])){
     //header('location:index.php?reg_success');
 }
 
-
-
 ?>
 <!DOCTYPE HTML>
 <html>

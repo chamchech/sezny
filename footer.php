@@ -5,7 +5,7 @@
         <div class="bottom-footer">
             <div class="row">
                 <div class="col-sm-12">
-                    <p class="footer-text" style="text-align:center;">© <a href="https://www.mepery.fr" style="color:white;"><u>MEPERY</u></a>
+                    <p class="footer-text" style="text-align:center;">© <a href="https://sezny.fr" style="color:white;"><u>SEZNY</u></a>
                         2021</p>
                 </div>
             </div>

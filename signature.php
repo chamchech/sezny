@@ -24,7 +24,7 @@
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="56x56" href="assets/img/favicon-96x96.png">
-    <title>Signer une vente - Abonnement Juridique MEPERY</title>
+    <title>Signer une vente - SEZNY</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/album.css" rel="stylesheet">
@@ -64,9 +64,7 @@
                                 </tr>
                             </thead>
                             <tbody>";
-                                
-                                    
-                                
+
                                 if(isset($_GET['signed'])){
                                     foreach($result1 as $key=>$row){
                                         echo "<tr>

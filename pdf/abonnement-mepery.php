@@ -25,7 +25,7 @@ $result = $stmt1->fetchAll();
 
       $obj_pdf = new TCPDF('P', PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);  
       $obj_pdf->SetCreator(PDF_CREATOR);  
-      $obj_pdf->SetTitle("Abonnement Juridique MEPERY");  
+      $obj_pdf->SetTitle("Souscription SEZNY");
       $obj_pdf->SetHeaderData('', '', PDF_HEADER_TITLE, PDF_HEADER_STRING);  
       $obj_pdf->setHeaderFont(Array(PDF_FONT_NAME_MAIN, '', PDF_FONT_SIZE_MAIN));  
       $obj_pdf->setFooterFont(Array(PDF_FONT_NAME_DATA, '', PDF_FONT_SIZE_DATA));  
@@ -343,7 +343,7 @@ $mail = new PHPMailer(true);
 
 try{
 	//Email envoyé à MEPERY
-    $message2 ="Vous avez recu une nouvelle souscription a l'abonnement juridique MEPERY<br>" ;
+    $message2 ="Vous avez recu une nouvelle souscription a l'offre SEZNY<br>" ;
     $message2.="-------------------------------------------------"."<br>";
     $message2.="<b><u>Commercial :</u></b> <br><br>";
     $message2.="<b>nomcommercial :</b> ".$result[0]['firstname']." ".$result[0]['lastname']."<br>";
@@ -363,13 +363,13 @@ try{
 	$message2.="-------------------------------------------------"."<br>";
 	
 	$mail->IsSMTP();                                //Use SMTP
-	// $mail->SMTPDebug   = 2;                         //2 to enable SMTP debug information
+	//$mail->SMTPDebug   = 2;                         //2 to enable SMTP debug information
 	$mail->Host        = "smtp.ionos.fr";   //Sets SMTP server
 	$mail->Port        = 587;                       //set the SMTP port
 	$mail->SMTPAuth    = TRUE;                      //enable SMTP authentication
 	$mail->SMTPSecure  = "tls";                     //Secure conection
-	$mail->Username    = 'abonnement@cabinet-mepery.fr';   //SMTP account username
-	$mail->Password    = 'MmMp1503!mepery';              //SMTP account password*/
+	$mail->Username    = 'souscription@sezny.fr';   //SMTP account username
+	$mail->Password    = 'VforVendetta31000!Sezny?';              //SMTP account password*/
 	$mail->SMTPOptions = array(
 		'ssl' => array(
 		'verify_peer' => false,
@@ -377,10 +377,10 @@ try{
 		'allow_self_signed' => true
 		)
 	);
-	$mail->From = 'abonnement@cabinet-mepery.fr';
+	$mail->From = 'souscription@sezny.fr';
 	$mail->IsHTML(true);
-	$mail->FromName    = 'Cabinet Juridique MEPERY'; //Your web name
-	$mail->Subject     = 'Abonnement Juridique'; //Your mail subject
+	$mail->FromName    = 'SEZNY'; //Your web name
+	$mail->Subject     = 'Souscription'; //Your mail subject
 	$mail->AddAttachment($_FILES['validerib']['tmp_name'],
 	$_FILES['validerib']['name']);
 	$mail->AddAttachment($_FILES['valideiban']['tmp_name'],
@@ -395,14 +395,12 @@ try{
 }catch (Exception $e){
 	echo "Le message n'a pas pu être envoyé. Erreur de l'expéditeur : {$mail->ErrorInfo}";
 }
-// $obj_pdf->Output(__DIR__ . '/../dossier/abonnement-juridique.pdf', 'FI');
+//$obj_pdf->Output(__DIR__ . '/../dossier/abonnement-juridique.pdf', 'FI');
 
 
-header("location:../signature.php");
+header("location: ../signature.php");
 }else{
 	echo "<h2 style='text-align:center'>{$resp2['title']} <br/>{$resp2['detail']}</h2>";
-} } else {
-	echo "<h2 style='text-align:center'>{$resp2['title']} <br/>{$resp2['detail']}</h2>";
+}// } else {
+	//echo "<h2 style='text-align:center'>{$resp2['title']} <br/>{$resp2['detail']}</h2>";
 }
-
-?>
