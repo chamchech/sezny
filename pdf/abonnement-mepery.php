@@ -110,11 +110,11 @@ $result = $stmt1->fetchAll();
 							<tr>
 								<td style="width:65%">
 									<span style="text-decoration:underline">Information entreprise :</span><br/>
-									<span style="font-size:10pt;">SAS CABINET MEPERY </span><br/>
+									<span style="font-size:10pt;">SAS SEZNY </span><br/>
 									<span style="font-size:10pt;">25 Route de Seilh –</span><br/>
 									<span style="font-size:10pt;">31700 CORNEBARRIEU</span><br/>
 									<span style="font-size:10pt;">RCS TOULOUSE 884422510 </span><br/>
-									<span style="font-size:10pt;"><a href="mailto:contact@cabinet-mepery.fr">contact@cabinet-mepery.fr</a> </span><br/>
+									<span style="font-size:10pt;"><a href="mailto:contact@cabinet-mepery.fr">contact@sezny.fr</a> </span><br/>
 									<span style="font-size:10pt;"><a href="tel:+33988392677">09 88 39 26 77</a></span><br/>
 								</td>
 
@@ -144,7 +144,7 @@ $result = $stmt1->fetchAll();
 			<br/>
 			<br/>	
 
-			<table class="first">
+		<table class="first">
 				<br/>
 		
 				<tr>
@@ -154,24 +154,20 @@ $result = $stmt1->fetchAll();
 						<br/>
 						Adresse email dédiée <a href="mailto:abonnement@cabinet-mepery.fr">abonnement@cabinet-mepery.fr</a>
 						<br/>
-						DATE DEBUT DE CONTRAT : '.$_POST['date'].'
+						DATE DE SOUSCRIPTION : '.$_POST['date'].'
 						<br/>
 					</td>
-					<td class="table_2" style="width:20%;text-align:center"><strong>Durée Abonnement</strong>
-						<br/><br/>'.$_POST['drop1'].' 
+					<td class="table_2" style="width:20%;text-align:center"><strong>Durée de contract</strong>
+				
+						<br/><br/> <!-- ici le .$_POST[drop1] -->
 					</td>
 					<td class="table_2" style="width:20%;text-align:center">
 					<strong>Prix HT</strong>
-						<br/><br/>'.$_POST['drop2'].' 
+						<br/><br/><!-- ici le .$_POST[drop2] -->
 					</td>
 					</tr>
 		
 			</table>
-
-
-
-		
-			
 			<table>
 				<tr>
 					<td style="width:2%;background-color:#dbd9d9"></td>
@@ -230,9 +226,9 @@ $result = $stmt1->fetchAll();
 
 						<strong style="font-size:10pt">Pays*:</strong> <span style="font-size:10pt"> FRANCE </span><br/>
 
-						<strong style="font-size:10pt">IBAN*:</strong> <span style="font-size:10pt">'.$_POST['iban'].'</span><br/>
+						<strong style="font-size:10pt">IBAN*:</strong> <span style="font-size:10pt"><!-- ici le .$_POST[iban] --></span><br/>
 
-						<strong style="font-size:10pt">BIC*:</strong> <span style="font-size:10pt">'.$_POST['bic'].'</span><br/>
+						<strong style="font-size:10pt">BIC*:</strong> <span style="font-size:10pt"><!-- ici le .$_POST[bic] --></span><br/>
 						<span style="font-size:10pt">Type de paiement : RECURRENT TOUS LES 5 DE CHAQUE MOIS</span>
 
 					</td>
@@ -317,23 +313,23 @@ $members = $resp2['members'][0]['id'];
 
 //SQL Query to save in DB
 $date = date('Y-m-d');
-$stmt = $sql->prepare("INSERT INTO ventes (vendeur_id, nomcontact, prenomcontact, raisonsocial, rcs, adresse, cp, ville, tel, email, iban, members,files,bic, drop1, drop2 ,Date_vente) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,?,?,?,?,'$date')");
+$stmt = $sql->prepare("INSERT INTO ventes (vendeur_id, nomcontact, prenomcontact , adresse, cp, ville, tel, email , members,files ,Date_vente) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?,'$date')");
 $stmt->bindParam(1, $_SESSION['vendeur_id'], PDO::PARAM_INT);
 $stmt->bindParam(2, $_POST['nomcontact'], PDO::PARAM_STR);
 $stmt->bindParam(3, $_POST['prenomcontact'], PDO::PARAM_STR);
-$stmt->bindParam(4, $_POST['raisonsocial'], PDO::PARAM_STR);
-$stmt->bindParam(5, $_POST['rcs'], PDO::PARAM_STR);
-$stmt->bindParam(6, $_POST['adresse'], PDO::PARAM_STR);
-$stmt->bindParam(7, $_POST['cp'], PDO::PARAM_STR);
-$stmt->bindParam(8, $_POST['ville'], PDO::PARAM_STR);
-$stmt->bindParam(9, $_POST['tel'], PDO::PARAM_STR);
-$stmt->bindParam(10, $_POST['email'], PDO::PARAM_STR);
-$stmt->bindParam(11, $_POST['iban'], PDO::PARAM_STR);
-$stmt->bindParam(12, $members, PDO::PARAM_STR);
-$stmt->bindParam(13, $resp1['id'], PDO::PARAM_STR);
-$stmt->bindParam(14, $_POST['bic'], PDO::PARAM_STR);
-$stmt->bindParam(15, $_POST['drop1'], PDO::PARAM_STR);
-$stmt->bindParam(16, $_POST['drop2'], PDO::PARAM_STR);
+//$stmt->bindParam(4, $_POST['raisonsocial'], PDO::PARAM_STR);
+//$stmt->bindParam(5, $_POST['rcs'], PDO::PARAM_STR);
+$stmt->bindParam(4, $_POST['adresse'], PDO::PARAM_STR);
+$stmt->bindParam(5, $_POST['cp'], PDO::PARAM_STR);
+$stmt->bindParam(6, $_POST['ville'], PDO::PARAM_STR);
+$stmt->bindParam(7, $_POST['tel'], PDO::PARAM_STR);
+$stmt->bindParam(8, $_POST['email'], PDO::PARAM_STR);
+//$stmt->bindParam(11, $_POST['iban'], PDO::PARAM_STR);
+$stmt->bindParam(9, $members, PDO::PARAM_STR);
+$stmt->bindParam(10, $resp1['id'], PDO::PARAM_STR);
+//$stmt->bindParam(14, $_POST['bic'], PDO::PARAM_STR);
+//$stmt->bindParam(15, $_POST['drop1'], PDO::PARAM_STR);
+//$stmt->bindParam(16, $_POST['drop2'], PDO::PARAM_STR);
 $stmt->execute();
 
 
@@ -342,7 +338,7 @@ $stmt->execute();
 $mail = new PHPMailer(true);
 
 try{
-	//Email envoyé à MEPERY
+	//Email envoyé à SEZNY
     $message2 ="Vous avez recu une nouvelle souscription a l'offre SEZNY<br>" ;
     $message2.="-------------------------------------------------"."<br>";
     $message2.="<b><u>Commercial :</u></b> <br><br>";
@@ -350,16 +346,16 @@ try{
     $message2.="<b>emailcommercial :</b> ".$result[0]['email']."<br><br><br>";
 
     $message2.="<b><u>Client :</u></b> <br><br>";
-    $message2.="<b>raisonsocial :</b> ".$_POST['raisonsocial']."<br>";
-    $message2.="<b>rcs :</b> ".$_POST['rcs']."<br>";
+    //$message2.="<b>raisonsocial :</b> ".$_POST['raisonsocial']."<br>";
+    //$message2.="<b>rcs :</b> ".$_POST['rcs']."<br>";
     $message2.="<b>adresse :</b> ".$_POST['adresse']."<br>";
     $message2.="<b>cp :</b> ".$_POST['cp']."<br>";
     $message2.="<b>ville :</b> ".$_POST['ville']."<br>";
     $message2.="<b>tel :</b> ".$_POST['tel']."<br>";
     $message2.="<b>email :</b> ".$_POST['email']."<br><br><br>";
     $message2.="<b><u>Paiement :</u></b> <br><br>";
-    $message2.="<b>bic :</b> ".$_POST['bic']."<br>";
-    $message2.="<b>iban :</b> ".$_POST['iban']."<br>";
+    //$message2.="<b>bic :</b> ".$_POST['bic']."<br>";
+    //$message2.="<b>iban :</b> ".$_POST['iban']."<br>";
 	$message2.="-------------------------------------------------"."<br>";
 	
 	$mail->IsSMTP();                                //Use SMTP

@@ -67,7 +67,7 @@ $result = $stmt1->fetchAll();
                         </div>
                         <div class="col" style="text-align: center">
                             <div class="form-group">
-                                <a href="ajout-vente.php" class="btn btn-primary bouton-accueil">
+                                <a href="ajout-vente-part.php" class="btn btn-primary bouton-accueil">
                                     Ajouter une vente particulier
                                 </a>
                             </div>
