@@ -589,7 +589,7 @@ input, textarea {
 
 
 .parallax-inscription { /*parallax inscription*/
-    background: url(../images/ventes.png) no-repeat center;
+    background: url(../images/acceuil-sezny.png) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 
@@ -603,7 +603,6 @@ input, textarea {
 .parallax-inscription .overlay h2 {
     color: #000000;
     font-size: 50px;
-    text-shadow: 0 0 4px #fff
 }
 
 .parallax-inscription .overlay .theme-button-one {

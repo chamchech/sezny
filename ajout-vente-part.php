@@ -52,7 +52,7 @@ $result = $stmt1->fetchAll();
                     <div class="col-lg-12 col-md-12 col-12">
                         <br><br>
                         <center>
-                            <h2>Vente Part</h2>
+                            <h2>Espace vente part</h2>
                         </center>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ $result = $stmt1->fetchAll();
             <form enctype="multipart/form-data" method="post" action="pdf/abonnement-mepery.php"
                   class="theme-form-one form-validation">
                 <input type="hidden" name="date" value="<?php echo date("d / m / Y"); ?>">
-                <div class='row'>
+                <div class='row infoSeller'>
                     <div class='col-lg-6 col-12 form-group'>
                         <label>Nom du Responsable réseau</label>
                         <h4> <?php echo $result[0]['firstname'] . ' ' . $result[0]['lastname']; ?> </h4>
@@ -128,33 +128,32 @@ padding: 10px;">
                                           required>
                                </div>
                            </div> -->
-                        <center>
                             <h2>Informations Contact</h2>
-                        </center>
                         <br>
+
 
                         <div class="row">
                             <div class="col-lg-6 col-12 form-group">
-                                <label>Prénom Contact</label>
-                                <input type="text" placeholder="Votre Prénom" name="prenomcontact"
-                                       class="call-back-form-one" required>
+                                <label>Nom</label>
+                                <input type="text" placeholder="" name="nomcontact" class="call-back-form-one"
+                                       required>
                             </div>
                             <div class="col-lg-6 col-12 form-group">
-                                <label>Nom Contact</label>
-                                <input type="text" placeholder="Votre Nom" name="nomcontact" class="call-back-form-one"
-                                       required>
+                                <label>Prénom</label>
+                                <input type="text" placeholder="" name="prenomcontact"
+                                       class="call-back-form-one" required>
                             </div>
                         </div>
                         <div class="row">
                             <div class="col-lg-6 col-12 form-group">
                                 <label>Numéro de téléphone</label>
-                                <input type="text" placeholder="0601020304" name="tel" class="call-back-form-one"
+                                <input type="text" placeholder="" name="tel" class="call-back-form-one"
                                        pattern="[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?"
                                        required>
                             </div>
                             <div class="col-lg-6 col-12 form-group">
                                 <label>Adresse Email</label>
-                                <input type="text" placeholder="votreadresse@email.com" id="mailverif" name="email"
+                                <input type="text" placeholder="" id="mailverif" name="email"
                                        class="call-back-form-one"
                                        pattern="[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([_\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})"
                                        required>
@@ -162,18 +161,18 @@ padding: 10px;">
                         </div>
 
                         <label>Adresse</label>
-                        <input type="text" placeholder="90 bis Chemin St Jean" class="call-back-form-one" name="adresse"
+                        <input type="text" placeholder="" class="call-back-form-one" name="adresse"
                                required>
                     </div>
                     <div class="row">
                         <div class="col-lg-4 col-12 form-group">
                             <label>Code Postal</label>
-                            <input type="text" placeholder="31770" name="cp" class="call-back-form-one"
+                            <input type="text" placeholder="" name="cp" class="call-back-form-one"
                                    pattern="[0-9]{2,3}[ \.\-]?[0-9]{3}" required>
                         </div>
                         <div class="col-lg-8 col-12 form-group">
                             <label>Ville</label>
-                            <input type="text" placeholder="Colomiers" class="call-back-form-one" name="ville" required>
+                            <input type="text" placeholder="" class="call-back-form-one" name="ville" required>
                         </div>
 
                     </div>
@@ -198,13 +197,13 @@ padding: 10px;">
                     <div class="row">
                         <div class="col-lg-12 col-12 form-group">
 
-                            <p style="color:#424242;">Veuillez joindre le Rib:
+                            <p class="pj">Veuillez joindre le <strong>RIB:</strong>
                                 <label><input type="hidden" name="MAX_FILE_SIZE" value="2000000000">
                                     <input id="input-validation" type="file" name="validerib" required></label></p>
-                            <p style="color:#424242;">Veuillez joindre votre CNI :
+                            <p class="pj">Veuillez joindre le <strong>CNI:</strong>
                                 <label><input type="hidden" name="MAX_FILE_SIZE" value="2000000000">
                                     <input id="input-validation" type="file" name="valideiban" required></label></p>
-                            <p style="color:#424242;">Veuillez joindre le justificatif de domicile :
+                            <p class="pj">Veuillez joindre le <strong>Justificatif de domicile:</strong>
                                 <label><input type="hidden" name="MAX_FILE_SIZE" value="2000000000">
                                     <input id="input-validation" type="file" name="validekbis" required></label></p>
 

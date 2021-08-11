@@ -152,7 +152,7 @@ $result = $stmt1->fetchAll();
 					<td class="table_2" style="width:60%;text-align:center;font-size:10pt">Abonnement d’Assistance Juridique, service en ligne,<br/>
 						Ligne dédiée <a href="tel:+33988392677">09 88 39 26 77</a>
 						<br/>
-						Adresse email dédiée <a href="mailto:abonnement@cabinet-mepery.fr">abonnement@cabinet-mepery.fr</a>
+						Adresse email dédiée <a href="mailto:souscription@sezny.fr">souscription@sezny.fr</a>
 						<br/>
 						DATE DE SOUSCRIPTION : '.$_POST['date'].'
 						<br/>
@@ -226,11 +226,10 @@ $result = $stmt1->fetchAll();
 
 						<strong style="font-size:10pt">Pays*:</strong> <span style="font-size:10pt"> FRANCE </span><br/>
 
-						<strong style="font-size:10pt">IBAN*:</strong> <span style="font-size:10pt"><!-- ici le .$_POST[iban] --></span><br/>
+						<!--<strong style="font-size:10pt">IBAN*:</strong> <span style="font-size:10pt">--><!-- ici le .$_POST[iban] --></span><br/>
 
-						<strong style="font-size:10pt">BIC*:</strong> <span style="font-size:10pt"><!-- ici le .$_POST[bic] --></span><br/>
-						<span style="font-size:10pt">Type de paiement : RECURRENT TOUS LES 5 DE CHAQUE MOIS</span>
-
+						<!--<strong style="font-size:10pt">BIC*:</strong> <span style="font-size:10pt">--><!-- ici le .$_POST[bic] --></span><br/>
+						<span style="font-size:10pt">Type de paiement : CREDIT EN X FOIS</span>
 					</td>
 				</tr>
 			</table>
@@ -254,8 +253,6 @@ $result = $stmt1->fetchAll();
 			<br/>
 			<br/>	
 			<h4 style="text-align:center">Signature du Client*</h4>';
-
-
 
 
 $obj_pdf->writeHtml($html);

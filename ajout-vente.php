@@ -52,7 +52,7 @@ $result = $stmt1->fetchAll();
                     <div class="col-lg-12 col-md-12 col-12">
                         <br><br>
                         <center>
-                            <h2>Vente Pro</h2>
+                            <h2>Espace vente pro</h2>
                         </center>
                     </div>
                 </div>
