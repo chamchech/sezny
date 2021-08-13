@@ -309,7 +309,9 @@ input, textarea {
         opacity: 1;
     }
 }
-
+a.lienSezny{
+    color: #FFFFFF;
+}
 .theme-menu-wrapper.fixed {
     position: fixed !important;
     width: 100%;
@@ -340,12 +342,11 @@ input, textarea {
 
 /*---------------------- Footer One ------------------------*/
 .theme-footer-one {
-    background: #222222;
+    background: #FFFFFF;
     padding-top: 80px;
 }
 
 .theme-footer-one .top-footer {
-    border-bottom: 1px solid #373737;
     position: relative;
     padding-bottom: 80px;
 }
@@ -498,7 +499,7 @@ input, textarea {
     right: 0;
     bottom: 0;
     border-radius: 0 10px 10px 0;
-    color: #fff;
+    color: #FFFFFF;
     font-size: 20px;
 }
 
@@ -527,15 +528,15 @@ input, textarea {
 }
 
 .theme-footer-one .bottom-footer {
-    background: #000000;
+    background: #246874;
     text-align: center;
-    padding: 7px 0;
+    padding: 17px 0;
+    color: #FFFFFF;
 }
 
 .footer-text {
-    color: #494949;
+    color: #FFFFFF;
 }
-
 .logofooter {
     width: 200px;
     margin-top: -60px;
@@ -596,9 +597,10 @@ input, textarea {
 }
 
 .parallax-inscription .overlay {
-    padding: 170px;
+    padding: 70px;
     margin-bottom: -100px;
 }
+
 
 .parallax-inscription .overlay h2 {
     color: #000000;
@@ -786,12 +788,9 @@ input, textarea {
     margin-top: 40px;
 }
 
-.inscription-us-page .theme-form-one button {
-    width: 180px;
-    margin: 0 auto;
+.buttons{
+    margin-top: 50px;
 }
-
-
 /* Page validation inscription */
 .col-paiement {
     width: 150%;
@@ -826,28 +825,11 @@ input, textarea {
 }
 
 /*----------------- Theme button ------------------*/
-.theme-form-one input {
-    height: 52px;
-    padding: 0 15px;
-}
 
-.theme-form-one input, .theme-form-one textarea {
-    width: 100%;
-    background: #f7f7f7;
-    border: 1px solid #e4e4e4;
-    margin-bottom: 20px;
-    font-size: 14px;
-    font-style: italic;
-}
-
-body .theme-button-one {
-    line-height: 52px;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #fff;
-    width: 180px;
-    text-align: center;
+.valid,.annul{
+    width: 150px;
+    height: 50px;
+    padding: 10px;
 }
 
 /*---------------------- Service Style Two ------------------*/

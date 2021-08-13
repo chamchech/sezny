@@ -121,7 +121,7 @@ $result = $stmt1->fetchAll();
                                 Informations Entreprise</h2>
                         </center>
                         <br>
-                        <div class="row">
+                        <div class="row formInscription">
                             <div class="col-lg-6 col-12 form-group">
                                 <label>Raison social</label>
                                 <input type="text" placeholder="Mepery" id="raisonsocialverif" name="raisonsocial"
@@ -134,11 +134,12 @@ $result = $stmt1->fetchAll();
                                        required>
                             </div>
                         </div>
+
+                    </div>
+                    <div class="row formInscription">
                         <label>Adresse</label>
                         <input type="text" placeholder="90 bis Chemin St Jean" class="call-back-form-one" name="adresse"
                                required>
-                    </div>
-                    <div class="row">
                         <div class="col-lg-4 col-12 form-group">
                             <label>Code Postal</label>
                             <input type="text" placeholder="31770" name="cp" class="call-back-form-one"
@@ -155,7 +156,7 @@ $result = $stmt1->fetchAll();
                     </center>
                     <br>
 
-                    <div class="row">
+                    <div class="row formInscription">
                         <div class="col-lg-6 col-12 form-group">
                             <label>Prénom Contact</label>
                             <input type="text" placeholder="Votre Prénom" name="prenomcontact"
@@ -167,7 +168,7 @@ $result = $stmt1->fetchAll();
                                    required>
                         </div>
                     </div>
-                    <div class="row">
+                    <div class="row formInscription">
                         <div class="col-lg-6 col-12 form-group">
                             <label>Numéro de téléphone</label>
                             <input type="text" placeholder="0601020304" name="tel" class="call-back-form-one"
@@ -188,7 +189,7 @@ $result = $stmt1->fetchAll();
                     </center>
                     <br>
 
-                    <div class="row">
+                    <div class="row formInscription">
                         <div class="col-lg-6 col-12 form-group">
                             <label>BIC</label>
                             <input type="text" placeholder="Votre BIC" name="bic" class="call-back-form-one" required>
@@ -199,17 +200,17 @@ $result = $stmt1->fetchAll();
                                    required>
                         </div>
                     </div>
-
-                    <div class="row">
+                    <br>
+                    <div class="row formInscription">
                         <div class="col-lg-12 col-12 form-group">
 
-                            <p style="color:#424242;">Veuillez joindre le Rib de votre societé :
+                            <p class="pj" style="color:#424242;">Veuillez joindre le <strong>RIB</strong> de votre societé :
                                 <label><input type="hidden" name="MAX_FILE_SIZE" value="2000000000">
                                     <input id="input-validation" type="file" name="validerib" required></label></p>
-                            <p style="color:#424242;">Veuillez joindre votre CNI :
+                            <p class="pj" style="color:#424242;">Veuillez joindre votre <strong>CNI</strong> :
                                 <label><input type="hidden" name="MAX_FILE_SIZE" value="2000000000">
                                     <input id="input-validation" type="file" name="valideiban" required></label></p>
-                            <p style="color:#424242;">Veuillez joindre le Kbis de votre societé :
+                            <p class="pj" style="color:#424242;">Veuillez joindre le <strong>KBIS</strong> de votre societé :
                                 <label><input type="hidden" name="MAX_FILE_SIZE" value="2000000000">
                                     <input id="input-validation" type="file" name="validekbis" required></label></p>
 
@@ -218,6 +219,7 @@ $result = $stmt1->fetchAll();
                                                                                         target="_blank"
                                                                                         style="color:#424242;">conditions
                                             générales de vente</b></a> :</label></p>
+                            <p><i>Tout les champs sont obligatoires</i></p>
                         </div>
                     </div>
 
@@ -230,29 +232,27 @@ $result = $stmt1->fetchAll();
                             color: green;
                         }
                     </style>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p><i>Tout les champs sont obligatoires</i></p>
-                            <br>
-                            <br>
-                            <center><input type="submit" name="valideinscription" id="valide" class="theme-button-one"
-                                           value="Continuer ->"></center>
+                    <div class="row justify-content-md-center buttons">
+                        <div class="col col-lg-2">
+                            <a href="index.php">
+
+                                <button type="button" class="btn btn-danger annul">Annuler</button>
+                            </a>
+                        </div>
+                        <div class="col-md-auto">
+
+                        </div>
+
+                        <div class="col col-lg-2">
+
+                            <input type="submit" name="valideinscription" id="valide" class="btn btn-success valid"
+                                   value="Continuer">
                         </div>
                     </div>
                 </div>
             </form>
         </div>
-        <br>
-        <div class="row">
-            <div class="col-lg-4"></div>
-            <div class="col-lg-4">
-                <center><a href="index.php">
-                        <button style="background-color:#801010" class="theme-button-one">Annuler</button>
-                    </a></center>
-            </div>
-        </div>
     </div>
-</div>
 </div>
 </body>
 
@@ -260,7 +260,7 @@ $result = $stmt1->fetchAll();
     <div class="container">
         <div class="top-footer">
             <div class="logo">
-                <a href="https://www.mepery.fr/"><img src="images/logo/logofooter.png" alt="logo"
+                <a href="https://www.mepery.fr/"><img src="images/seznyTrvector.png" alt="logo"
                                                       class="logofooter"></a>
             </div>
         </div> <!-- /.top-footer -->
@@ -282,7 +282,7 @@ $result = $stmt1->fetchAll();
                 <a class="footer-text" target="blank" href="https://www.mepery.fr/Mepery_CGV.pdf">CGV</a> |
                 <a class="footer-text" target="blank" href="https://www.mepery.fr/Mepery_RGPD.pdf">Charte des données
                     personnelles</a> |
-                <a class="footer-text" target="blank" href="https://www.mepery.fr/cvtheque.php">CVthèque</a>
+              <!--  <a class="footer-text" target="blank" href="https://www.mepery.fr/cvtheque.php">CVthèque</a>-->
             </div>
         </div>
     </div>

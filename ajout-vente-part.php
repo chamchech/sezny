@@ -128,11 +128,10 @@ padding: 10px;">
                                           required>
                                </div>
                            </div> -->
-                            <h2>Informations Contact</h2>
+                        <h2>Informations Contact</h2>
                         <br>
 
-
-                        <div class="row">
+                        <div class="row formInscription">
                             <div class="col-lg-6 col-12 form-group">
                                 <label>Nom</label>
                                 <input type="text" placeholder="" name="nomcontact" class="call-back-form-one"
@@ -144,7 +143,7 @@ padding: 10px;">
                                        class="call-back-form-one" required>
                             </div>
                         </div>
-                        <div class="row">
+                        <div class="row formInscription">
                             <div class="col-lg-6 col-12 form-group">
                                 <label>Numéro de téléphone</label>
                                 <input type="text" placeholder="" name="tel" class="call-back-form-one"
@@ -159,12 +158,14 @@ padding: 10px;">
                                        required>
                             </div>
                         </div>
+                    </div>
 
+                    <div class="row formInscription">
                         <label>Adresse</label>
                         <input type="text" placeholder="" class="call-back-form-one" name="adresse"
                                required>
                     </div>
-                    <div class="row">
+                    <div class="row formInscription">
                         <div class="col-lg-4 col-12 form-group">
                             <label>Code Postal</label>
                             <input type="text" placeholder="" name="cp" class="call-back-form-one"
@@ -194,7 +195,8 @@ padding: 10px;">
                            </div>
                        </div>
    -->
-                    <div class="row">
+                    <br>
+                    <div class="row formInscription">
                         <div class="col-lg-12 col-12 form-group">
 
                             <p class="pj">Veuillez joindre le <strong>RIB:</strong>
@@ -212,8 +214,10 @@ padding: 10px;">
                                                                                         target="_blank"
                                                                                         style="color:#424242;">conditions
                                             générales de vente</b></a> :</label></p>
+                            <p><i>Tout les champs sont obligatoires</i></p>
                         </div>
                     </div>
+
 
                     <style type="text/css">
                         input[type="checkbox"]:required:invalid + label {
@@ -224,38 +228,39 @@ padding: 10px;">
                             color: green;
                         }
                     </style>
-                    <div class="row">
-                        <div class="col-lg-12">
-                            <p><i>Tout les champs sont obligatoires</i></p>
-                            <br>
-                            <br>
-                            <center><input type="submit" name="valideinscription" id="valide" class="theme-button-one"
-                                           value="Continuer ->"></center>
+                    <div class="row justify-content-md-center buttons">
+
+                        <div class="col col-lg-2">
+                            <a href="index.php">
+
+                                <button type="button" class="btn btn-danger annul">Annuler</button>
+                            </a>
                         </div>
-                    </div>
-                </div>
+                        <div class="col-md-auto">
+
+                        </div>
+
+                        <div class="col col-lg-2">
+
+                            <input type="submit" name="valideinscription" id="valide" class="btn btn-success valid"
+                                   value="Continuer">
+                        </div>
             </form>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-lg-4"></div>
-            <div class="col-lg-4">
-                <center><a href="index.php">
-                        <button style="background-color:#801010" class="theme-button-one">Annuler</button>
-                    </a></center>
-            </div>
         </div>
     </div>
 </div>
+
+
 </div>
+
 </body>
 
 <footer class="theme-footer-one">
     <div class="container">
         <div class="top-footer">
             <div class="logo">
-                <a href="https://www.mepery.fr/"><img src="images/logo/logofooter.png" alt="logo"
-                                                      class="logofooter"></a>
+                <a href="https://www.sezny.fr/"><img src="images/seznyTrvector.png" alt="logo"
+                                                     class="logofooter"></a>
             </div>
         </div> <!-- /.top-footer -->
     </div> <!-- /.container -->
@@ -266,8 +271,8 @@ padding: 10px;">
                 <p>RCS : 831 892 443</p>
             </div>
             <div class="col-sm-2">
-                <p class="footer-text" style="text-align:center;">© <a href="https://www.mepery.fr/">Mepery</a>
-                    2019</p>
+                <p class="footer-text" style="text-align:center;">© <a class="lienSezny" href="https://www.sezny.fr/">Sezny</a>
+                    2021</p>
             </div>
             <div class="col-sm-7">
                 <a class="footer-text" target="blank" href="https://www.mepery.fr/mentions-legales.php">Mentions
@@ -276,7 +281,7 @@ padding: 10px;">
                 <a class="footer-text" target="blank" href="https://www.mepery.fr/Mepery_CGV.pdf">CGV</a> |
                 <a class="footer-text" target="blank" href="https://www.mepery.fr/Mepery_RGPD.pdf">Charte des données
                     personnelles</a> |
-                <a class="footer-text" target="blank" href="https://www.mepery.fr/cvtheque.php">CVthèque</a>
+                <!--  <a class="footer-text" target="blank" href="https://www.mepery.fr/cvtheque.php">CVthèque</a>-->
             </div>
         </div>
     </div>
