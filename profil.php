@@ -92,7 +92,7 @@ $result = $stmt1->fetchAll();
                                     <p><b>Identifiant : <?php echo $result[0]['username'] ?></p>
 
                                     <center>
-                                        <form method="POST"><input href="#modal1" class="btn btn-primary js-modal"
+                                        <form method="POST"><input href="#modal1" class="btn btn-danger js-modal"
                                                                    type="submit" name="download"
                                                                    value="Modifier son mot de passe">
                                         </form>
@@ -149,7 +149,7 @@ $result = $stmt1->fetchAll();
             <div class="row justify-content-center">
                 <div class="col-md-6">
                     <div class="form-group">
-                        <a href="tuto.php" class="btn btn-secondary btn-block bouton-accueil">
+                        <a href="tuto.php" class="btn btn-info btn-block bouton-accueil">
                             Tutoriel
                         </a>
                     </div>

@@ -102,17 +102,18 @@ body {
     font-size: 15px;
     position: relative;
 }
-div#page{
-    background: url(../images/acceuil-sezny2.jpg) no-repeat center;
-}
+
 .main-page-wrapper {
     overflow-x: hidden;
     overflow-y: hidden;
 }
+
 main{
     background: #FFFFFF;
 }
-
+.headerContainer{
+    background-color: transparent;
+}
 h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     padding: 0;
@@ -208,6 +209,9 @@ input, textarea {
 
 .section-spacing-inscription {
     margin: 135px;
+}
+.btn.btn-light.bouton-accueil{
+    margin: 20px;
 }
 .hello{
     color: #FFFFFF;
@@ -598,8 +602,8 @@ input, textarea {
 }
 
 .parallax-inscription .overlay {
-    padding: 170px;
-    margin-bottom: 100px;
+    padding: 100px;
+    margin-bottom: -100px;
 }
 
 .parallax-inscription .overlay h2 {

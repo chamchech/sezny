@@ -34,11 +34,11 @@ $result = $stmt1->fetchAll();
 </head>
 
 <body>
-<div id="page" style="background: url(../cial.sezny/images/acceuil-sezny2.jpg)">
+<div id="page">
     <div id="bloc-principal">
         <?php include 'nav.php'; ?>
         <main role="main">
-            <section class="jumbotron text-center">
+            <section class="jumbotron text-center headerContainer">
                 <div class="container">
                     <h1 class="jumbotron-heading">Espace commercial SEZNY</h1>
                     <h2 style="font-size:18px;">
@@ -79,18 +79,18 @@ $result = $stmt1->fetchAll();
                             </div>
                         </div>
                     </div>
-                    <div class="row justify-content-center bouton-profil">
+                    <div class="row justify-content-center">
                         <div class="col">
 
                         </div>
-                        <div class="col">
+                        <div class="col profil">
                             <div class="form-group">
-                                <a href="ventes.php" class="btn btn-dark bouton-accueil">
+                                <a href="ventes.php" class="btn btn-dark bouton-profil">
                                     Mes ventes
                                 </a>
                             </div>
                             <div class="form-group">
-                                <a href="profil.php" class="btn btn-dark bouton-accueil">
+                                <a href="profil.php" class="btn btn-dark bouton-profil">
                                     Mon profil
                                 </a>
                             </div>

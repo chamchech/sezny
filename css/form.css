@@ -23,7 +23,7 @@ input.call-back-form-one{
     width: 100%;
     padding: 8px;
     border-radius: 6px;
-    border: solid 1px white;
+    border: solid 2px #246874 ;
     -webkit-border-radius:6px;
     -moz-border-radius:6px;
     box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.33);
@@ -36,6 +36,7 @@ label{
     color: black;
     font-size: 17px;
 }
+
 .form label {
     position:absolute;
     bottom: -8px;
@@ -66,12 +67,12 @@ label{
 }
 
 .formInscription{
-    padding:30px;
-    margin: 0 auto;
+    padding:20px;
     -webkit-border-radius:10px;
     -moz-border-radius: 10px;
     background: #F8F8F8;
     border-radius: 6px;
+    margin: 10px;
 }
 
 .content-name{
@@ -96,10 +97,20 @@ input#valide.theme-button-one{
     border-radius: 5px;
     width: 200px;
     text-align: center;
+
 }
-button.theme-button-one{
-    background-color: red;
+.bouton-accueil{
+    margin:20px
+}
+button.theme-button-two{
     border-radius: 5px;
     width: 200px;
     text-align: center;
+    height: 52px;
+    padding: 0 15px;
+    text-transform: uppercase;
+    font-style: italic;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 52px;
 }

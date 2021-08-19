@@ -120,7 +120,7 @@ tbody tr:nth-child(even) {
         <?php include 'nav.php'; ?>
     <main role="main">
         <?php if(isset($msg)){ echo $msg; } ?>
-        <section class="jumbotron text-center" style="padding:20px">
+        <section class="jumbotron text-center headerContainer" style="padding:20px">
             <div class="container">
                 <h1 class="jumbotron-heading">Mes ventes</h1>
                 <a href="accueil.php"><svg class="bi bi-arrow-bar-left" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">

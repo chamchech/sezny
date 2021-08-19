@@ -6,7 +6,7 @@
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: transparent;
 }
 @media (min-width: 768px) {
   .jumbotron {
@@ -25,6 +25,7 @@
 
 .jumbotron .container {
   max-width: 40rem;
+  background-color: transparent;
 }
 
 html, body {
@@ -50,12 +51,15 @@ html, body {
 	bottom: 0;
 }
 .bottom-footer{
-  background: #424242;
-  color: white;
+  background: #FFFFFF;
+  color: #111111;
 }
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
 
+a.lienSezny{
+  color: #111111;
+}
 .alert{
     border-radius: 0;
     font-weight: bold;

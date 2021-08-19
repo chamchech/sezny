@@ -239,7 +239,7 @@ padding: 10px;">
             <div class="col-lg-4"></div>
             <div class="col-lg-4">
                 <center><a href="index.php">
-                        <button style="background-color:#801010" class="theme-button-one">Annuler</button>
+                        <button type="button" class="btn btn-danger theme-button-two">Annuler</button>
                     </a></center>
             </div>
         </div>

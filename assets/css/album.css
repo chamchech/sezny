@@ -6,7 +6,7 @@
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
   margin-bottom: 0;
-  background-color: #fff;
+  background-color: transparent;
 }
 @media (min-width: 768px) {
   .jumbotron {
@@ -14,16 +14,19 @@
     padding-bottom: calc(var(--jumbotron-padding-y) * 2);
   }
 }
-
+section.jumbotron.text-center.headerContainer{
+  background-color: transparent;
+}
 .jumbotron p:last-child {
   margin-bottom: 0;
 }
 
 .jumbotron-heading {
   font-weight: 300;
+
 }
 
-div.album,.py-5,.jumbotron,.text-center{
+div.album,.py-5,.jumbotron,.text-center,.headerContainer{
   background-color: transparent;
 }
 
@@ -39,6 +42,8 @@ html, body {
 #page {
   min-height: 100%;
   position: relative;
+  background: url(/images/acceuil-sezny2.jpg);
+  background-size: cover;
 }
 
 #bloc-principal {
@@ -54,6 +59,10 @@ html, body {
 .bottom-footer{
   background: #FFFFFF;
   color: #111111;
+  padding: 15px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.33);
 }
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
@@ -70,18 +79,21 @@ html, body {
   font-weight: bold;
 }
 
-.py-5{
-  background-color:#e9ecef;
+.bouton-accueil,.bouton-profil{
+  font-size:20px;
+  width: 360px;
+  margin: 5px;
+  text-transform: uppercase;
+  text-align: center;
+  height: 52px;
+  padding: 0 15px;
+  font-weight: 700;
+  line-height: 52px;
+}
+.profil{
+  margin-top: 50px;
 }
 
-.bouton-accueil{
-  font-size:22px;
-  border-radius: 15px;
-  width: 350px;
-}
-.bouton-profil{
-margin-top:50px;
-}
 
 .modal {
   position: fixed;
@@ -281,3 +293,4 @@ margin-top:50px;
       opacity: 1;
     }
   }
+
