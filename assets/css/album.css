@@ -23,6 +23,10 @@
   font-weight: 300;
 }
 
+div.album,.py-5,.jumbotron,.text-center{
+  background-color: transparent;
+}
+
 .jumbotron .container {
   max-width: 40rem;
 }
@@ -34,9 +38,7 @@ html, body {
 
 #page {
   min-height: 100%;
-  
-  background-color: #e9ecef;
-	position: relative;
+  position: relative;
 }
 
 #bloc-principal {
@@ -50,8 +52,8 @@ html, body {
 	bottom: 0;
 }
 .bottom-footer{
-  background: #246874;
-  color: white;
+  background: #FFFFFF;
+  color: #111111;
 }
 
 .box-shadow { box-shadow: 0 .25rem .75rem rgba(0, 0, 0, .05); }
@@ -64,6 +66,8 @@ html, body {
 
 .jumbotron-heading{
   margin:3%;
+  color: #111111;
+  font-weight: bold;
 }
 
 .py-5{

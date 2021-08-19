@@ -121,7 +121,7 @@ $result = $stmt1->fetchAll();
 								<td style="width:35%">
 									<br/>
 									<br/>
-									<img src="fav.png"/>
+									<img src="seznyTrvector.png"/>
 								</td>
 							</tr>
 						</table>
@@ -149,10 +149,10 @@ $result = $stmt1->fetchAll();
 		
 				<tr>
 		
-					<td class="table_2" style="width:60%;text-align:center;font-size:10pt">Abonnement d’Assistance Juridique, service en ligne,<br/>
+					<td class="table_2" style="width:60%;text-align:center;font-size:10pt">Souscription en ligne Sezny<br/>
 						Ligne dédiée <a href="tel:+33988392677">09 88 39 26 77</a>
 						<br/>
-						Adresse email dédiée <a href="mailto:souscription@sezny.fr">souscription@sezny.fr</a>
+						Adresse email dédiée <a href="mailto:contact@sezny.fr">contact@sezny.fr</a>
 						<br/>
 						DATE DE SOUSCRIPTION : '.$_POST['date'].'
 						<br/>
@@ -226,10 +226,11 @@ $result = $stmt1->fetchAll();
 
 						<strong style="font-size:10pt">Pays*:</strong> <span style="font-size:10pt"> FRANCE </span><br/>
 
-						<!--<strong style="font-size:10pt">IBAN*:</strong> <span style="font-size:10pt">--><!-- ici le .$_POST[iban] --></span><br/>
+						<strong style="font-size:10pt">IBAN*:</strong> <span style="font-size:10pt"><!-- ici le .$_POST[iban] --></span><br/>
 
-						<!--<strong style="font-size:10pt">BIC*:</strong> <span style="font-size:10pt">--><!-- ici le .$_POST[bic] --></span><br/>
-						<span style="font-size:10pt">Type de paiement : CREDIT EN X FOIS</span>
+						<strong style="font-size:10pt">BIC*:</strong> <span style="font-size:10pt"><!-- ici le .$_POST[bic] --></span><br/>
+						<span style="font-size:10pt">Type de paiement : RECURRENT TOUS LES 5 DE CHAQUE MOIS</span>
+
 					</td>
 				</tr>
 			</table>
@@ -255,6 +256,8 @@ $result = $stmt1->fetchAll();
 			<h4 style="text-align:center">Signature du Client*</h4>';
 
 
+
+
 $obj_pdf->writeHtml($html);
 
 //Saving it as Base64
@@ -271,6 +274,7 @@ function CurlSendPostRequest($url,$request,$headers){
 	curl_close($ch);
 	$decoded =  json_decode((string)$data,true);
 	return $decoded;
+
 	}
 
 // Globals
@@ -350,7 +354,7 @@ try{
     $message2.="<b>ville :</b> ".$_POST['ville']."<br>";
     $message2.="<b>tel :</b> ".$_POST['tel']."<br>";
     $message2.="<b>email :</b> ".$_POST['email']."<br><br><br>";
-    $message2.="<b><u>Paiement :</u></b> <br><br>";
+    //$message2.="<b><u>Paiement :</u></b> <br><br>";
     //$message2.="<b>bic :</b> ".$_POST['bic']."<br>";
     //$message2.="<b>iban :</b> ".$_POST['iban']."<br>";
 	$message2.="-------------------------------------------------"."<br>";

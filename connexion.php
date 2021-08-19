@@ -40,7 +40,7 @@ if(isset($_POST['valider'])){
     <link rel="icon" type="image/png" sizes="16x16" href="images/fav-icon/favicon-16x16.png">
    <!-- <link rel="manifest" href="images/fav-icon/site.webmanifest">-->
 	<!--===============================================================================================-->
-	<link rel="stylesheet" type="text/css" href="fonts/font-awesome/css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.7.0/css/font-awesome.min.css">
 	<link rel="stylesheet" type="text/css" href="css/util.css">
 	<link rel="stylesheet" type="text/css" href="css/connexion.css">
 	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
@@ -57,7 +57,7 @@ if(isset($_POST['valider'])){
 		<div class="login-content">
 			<form class="login100-form validate-form" method="post" action="">
 				<img src="images/avatar_sezny2.png">
-				<h2 class="title">S'identifier</h2>
+				<h2 class="title">Sezny</h2>
            		<div class="input-div one">
            		   <div class="i">
            		   		<i class="fas fa-user"></i>

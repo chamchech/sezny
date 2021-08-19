@@ -34,8 +34,8 @@ $resp=CurlSendGetRequest($api_url.$data['fileid']."/download",$headers);
     $resp=base64_decode($resp);
     // Email envoyé au client
     
-    $message ="Merci d'avoir souscrit à l'abonnement juridique de Mepery<br>" ;
-    $message ="Madame, Monsieur,<br>Merci d'avoir souscrit à l'abonnement juridique MEPERY.<br>Vous trouverez en Pièces Jointes de ce mail :<br> - Une copie de votre contrat<br> - Les Conditions Générales de Ventes<br> - La presentation de votre offre.<br>Vous pouvez des à présent nous contacter pour répondre a vos demandes Juridiques.<br>Bien Cordialement,<br>Cabinet MEPERY.<br><br><img src='https://cial.mepery.fr/images/logo/logo.png' width='200'>";
+    $message ="Merci d'avoir choisi Sezny<br>" ;
+    $message ="Madame, Monsieur,<br>Merci d'avoir souscrit à Sezny.<br>Vous trouverez en Pièces Jointes de ce mail :<br> - Une copie de votre contrat<br> - Les Conditions Générales de Ventes<br> - La presentation de votre offre.<br>Vous pouvez des à présent nous contacter pour répondre a vos demandes Juridiques.<br>Bien Cordialement,<br>Sezny.<br><br><img src='https://cial.mepery.fr/images/logo/logo.png' width='200'>";
   
     $mail = new PHPMailer(true);
     try {
@@ -46,8 +46,8 @@ $resp=CurlSendGetRequest($api_url.$data['fileid']."/download",$headers);
         $mail->Port        = 465;                       //set the SMTP port
         $mail->SMTPAuth    = TRUE;                      //enable SMTP authentication
         $mail->SMTPSecure  = "tls";                     //Secure conection
-        $mail->Username    = 'abonnement@cabinet-mepery.fr';   //SMTP account username
-        $mail->Password    = 'MmMp1503!mepery';              //SMTP account password*/
+        $mail->Username    = 'souscription@sezny.fr';   //SMTP account username
+        $mail->Password    = 'VforVendetta31000!Sezny?';              //SMTP account password*/
         $mail->SMTPOptions = array(
             'ssl' => array(
             'verify_peer' => false,
@@ -61,9 +61,9 @@ $resp=CurlSendGetRequest($api_url.$data['fileid']."/download",$headers);
     	$mail->addAttachment(__DIR__ . '/dossier/Mepery_CGV.pdf', '');
     	$mail->addAttachment(__DIR__ . '/dossier/Prestation_abonnement_mepery.pdf', '');
         $mail->IsHTML(true);
-        $mail->From = 'abonnement@cabinet-mepery.fr';
-        $mail->FromName    = 'Cabinet Juridique MEPERY'; //Your web name
-        $mail->Subject     = 'Abonnement Juridique'; //Your mail subject
+        $mail->From = 'souscription@sezny.fr';
+        $mail->FromName    = 'Sezny'; //Your web name
+        $mail->Subject     = 'Souscription Sezny'; //Your mail subject
         $mail->Body        = $message;
         $mail->AltBody     = 'This is the body in plain text for non-HTML mail clients';
         $mail->WordWrap    = 50; // set word wrap to 50 characters

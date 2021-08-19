@@ -73,7 +73,6 @@
 }
 
 #loader {
-    background: url(../images/1.gif);
     width: 64px;
     height: 40px;
     position: relative;
@@ -97,27 +96,31 @@
 }
 
 body {
-    font-family: 'Palatino Linotype', sans-serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: normal;
-    color: #777777;
     overflow-x: hidden !important;
     font-size: 15px;
     position: relative;
 }
-
+div#page{
+    background: url(../images/acceuil-sezny2.jpg) no-repeat center;
+}
 .main-page-wrapper {
     overflow-x: hidden;
     overflow-y: hidden;
+}
+main{
+    background: #FFFFFF;
 }
 
 h1, h2, h3, h4, h5, h6, p, ul {
     margin: 0;
     padding: 0;
-    font-family: "Palatino Linotype", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 h1, h2, h3, h4, h5, h6 {
-    font-family: 'Palatino Linotype', serif;
+    font-family: 'Roboto', serif;
     color: #181818;
 }
 
@@ -125,42 +128,43 @@ h1 {
     font-size: 70px;
     font-weight: 700;
     line-height: 75px;
-    font-family: "Palatino Linotype", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 h2 {
     font-size: 35px;
     font-weight: normal;
-    font-family: "Palatino Linotype", sans-serif;
+    font-family: "Roboto", sans-serif;
+    margin: 20px;
 }
 
 h3 {
     font-size: 30px;
     font-weight: 700;
-    font-family: "Palatino Linotype", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 h4 {
     font-size: 24px;
     font-weight: 700;
-    font-family: "Palatino Linotype", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 h5 {
     font-size: 25px;
     font-weight: normal;
-    font-family: "Palatino Linotype", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 h6 {
     font-size: 20px;
     font-weight: normal;
-    font-family: "Palatino Linotype", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 p {
     line-height: 25px;
-    font-family: "Palatino Linotype", sans-serif;
+    font-family: "Roboto", sans-serif;
 }
 
 ul {
@@ -205,7 +209,9 @@ input, textarea {
 .section-spacing-inscription {
     margin: 135px;
 }
-
+.hello{
+    color: #FFFFFF;
+}
 .m-top0 {
     margin-top: 0 !important;
 }
@@ -309,9 +315,7 @@ input, textarea {
         opacity: 1;
     }
 }
-a.lienSezny{
-    color: #FFFFFF;
-}
+
 .theme-menu-wrapper.fixed {
     position: fixed !important;
     width: 100%;
@@ -342,8 +346,8 @@ a.lienSezny{
 
 /*---------------------- Footer One ------------------------*/
 .theme-footer-one {
-    background: #FFFFFF;
     padding-top: 80px;
+    color: #FFFFFF;
 }
 
 .theme-footer-one .top-footer {
@@ -499,7 +503,7 @@ a.lienSezny{
     right: 0;
     bottom: 0;
     border-radius: 0 10px 10px 0;
-    color: #FFFFFF;
+    color: #fff;
     font-size: 20px;
 }
 
@@ -530,13 +534,13 @@ a.lienSezny{
 .theme-footer-one .bottom-footer {
     background: #246874;
     text-align: center;
-    padding: 17px 0;
-    color: #FFFFFF;
+    padding: 20px 0;
 }
 
 .footer-text {
     color: #FFFFFF;
 }
+
 .logofooter {
     width: 200px;
     margin-top: -60px;
@@ -544,7 +548,7 @@ a.lienSezny{
 
 /*--------------------- Banner -----------------*/
 .parallax-abonnement { /*parallax Abonnement*/
-    background: url(../images/ventes.png) no-repeat center;
+    background: url(../images/acceuil-sezny2.jpg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -567,7 +571,6 @@ a.lienSezny{
 
 
 .parallax-formules { /*parallax formule*/
-    background: url(../images/formule.jpeg) no-repeat center;
     background-size: cover;
     background-attachment: fixed;
 }
@@ -584,26 +587,23 @@ a.lienSezny{
 }
 
 .parallax-formules .overlay .theme-button-one {
-    float: center;
     margin-top: 15px;
 }
 
 
 .parallax-inscription { /*parallax inscription*/
-    background: url(../images/acceuil-sezny.png) no-repeat center;
+    background: url(../images/acceuil-sezny2.jpg) no-repeat center;
     background-size: cover;
-    background-attachment: fixed;
 
 }
 
 .parallax-inscription .overlay {
-    padding: 70px;
-    margin-bottom: -100px;
+    padding: 170px;
+    margin-bottom: 100px;
 }
 
-
 .parallax-inscription .overlay h2 {
-    color: #000000;
+    color: #FFFFFF;
     font-size: 50px;
 }
 
@@ -723,7 +723,6 @@ a.lienSezny{
 
 .text_formule {
     text-decoration: line-through;
-    line-height: none;
 }
 
 .pricing .btn {
@@ -760,7 +759,6 @@ a.lienSezny{
 .inscription-us-page .title h2 {
     margin-bottom: 22px;
 }
-
 .inscription-us-page .title p {
     width: 80%;
     margin: 0 auto;
@@ -788,9 +786,12 @@ a.lienSezny{
     margin-top: 40px;
 }
 
-.buttons{
-    margin-top: 50px;
+.inscription-us-page .theme-form-one button {
+    width: 180px;
+    margin: 0 auto;
 }
+
+
 /* Page validation inscription */
 .col-paiement {
     width: 150%;
@@ -825,11 +826,28 @@ a.lienSezny{
 }
 
 /*----------------- Theme button ------------------*/
+.theme-form-one input {
+    height: 52px;
+    padding: 0 15px;
+}
 
-.valid,.annul{
-    width: 150px;
-    height: 50px;
-    padding: 10px;
+.theme-form-one input, .theme-form-one textarea {
+    width: 100%;
+    background: #f7f7f7;
+    border: 1px solid #e4e4e4;
+    margin-bottom: 20px;
+    font-size: 14px;
+    font-style: italic;
+}
+
+body .theme-button-one {
+    line-height: 52px;
+    font-size: 14px;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: #fff;
+    width: 180px;
+    text-align: center;
 }
 
 /*---------------------- Service Style Two ------------------*/
@@ -1275,4 +1293,8 @@ input[type="checkbox"]:required:valid + label::before {
 
 #mega-menu-holder > ul > li > a {
     font-size: 35px;
+}
+
+.lienSezny{
+    color: #FFFFFF;
 }

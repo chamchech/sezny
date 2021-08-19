@@ -50,10 +50,7 @@ $result = $stmt1->fetchAll();
             <div class="container">
                 <div class="row">
                     <div class="col-lg-12 col-md-12 col-12">
-                        <br><br>
-                        <center>
-                            <h2>Espace vente pro</h2>
-                        </center>
+                            <h2>Espace vente Pro</h2>
                     </div>
                 </div>
             </div>
@@ -117,8 +114,7 @@ $result = $stmt1->fetchAll();
                             </div>
                         </div>
                         <center>
-                            <h2 style=" font-size: 35px; font-weight: normal; line-height: 40px; font-family: 'Palatino Linotype', sans-serif;">
-                                Informations Entreprise</h2>
+                            <h2> Informations Entreprise</h2>
                         </center>
                         <br>
                         <div class="row formInscription">
@@ -134,7 +130,6 @@ $result = $stmt1->fetchAll();
                                        required>
                             </div>
                         </div>
-
                     </div>
                     <div class="row formInscription">
                         <label>Adresse</label>
@@ -200,14 +195,14 @@ $result = $stmt1->fetchAll();
                                    required>
                         </div>
                     </div>
-                    <br>
+
                     <div class="row formInscription">
                         <div class="col-lg-12 col-12 form-group">
 
                             <p class="pj" style="color:#424242;">Veuillez joindre le <strong>RIB</strong> de votre societé :
                                 <label><input type="hidden" name="MAX_FILE_SIZE" value="2000000000">
                                     <input id="input-validation" type="file" name="validerib" required></label></p>
-                            <p class="pj" style="color:#424242;">Veuillez joindre votre <strong>CNI</strong> :
+                            <p class="pj" style="color:#424242;">Veuillez joindre votre <strong>CNI </strong> :
                                 <label><input type="hidden" name="MAX_FILE_SIZE" value="2000000000">
                                     <input id="input-validation" type="file" name="valideiban" required></label></p>
                             <p class="pj" style="color:#424242;">Veuillez joindre le <strong>KBIS</strong> de votre societé :
@@ -232,27 +227,29 @@ $result = $stmt1->fetchAll();
                             color: green;
                         }
                     </style>
-                    <div class="row justify-content-md-center buttons">
-                        <div class="col col-lg-2">
-                            <a href="index.php">
+                    <div class="row">
+                        <div class="col-lg-12">
 
-                                <button type="button" class="btn btn-danger annul">Annuler</button>
-                            </a>
-                        </div>
-                        <div class="col-md-auto">
-
-                        </div>
-
-                        <div class="col col-lg-2">
-
-                            <input type="submit" name="valideinscription" id="valide" class="btn btn-success valid"
-                                   value="Continuer">
+                            <br>
+                            <br>
+                            <center><input type="submit" name="valideinscription" id="valide" class="theme-button-one"
+                                           value="Continuer"></center>
                         </div>
                     </div>
                 </div>
             </form>
         </div>
+        <br>
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <center><a href="index.php">
+                        <button style="background-color:#801010" class="theme-button-one">Annuler</button>
+                    </a></center>
+            </div>
+        </div>
     </div>
+</div>
 </div>
 </body>
 
@@ -260,7 +257,7 @@ $result = $stmt1->fetchAll();
     <div class="container">
         <div class="top-footer">
             <div class="logo">
-                <a href="https://www.mepery.fr/"><img src="images/seznyTrvector.png" alt="logo"
+                <a href="https://sezny.fr/"><img src="images/seznyTrvector.png" alt="logo"
                                                       class="logofooter"></a>
             </div>
         </div> <!-- /.top-footer -->
@@ -272,8 +269,8 @@ $result = $stmt1->fetchAll();
                 <p>RCS : 831 892 443</p>
             </div>
             <div class="col-sm-2">
-                <p class="footer-text" style="text-align:center;">© <a href="https://www.mepery.fr/">Mepery</a>
-                    2019</p>
+                <p class="footer-text" style="text-align:center;">© <a class="lienSezny" href="https://Sezny.fr/">Sezny</a>
+                    2021</p>
             </div>
             <div class="col-sm-7">
                 <a class="footer-text" target="blank" href="https://www.mepery.fr/mentions-legales.php">Mentions
@@ -282,7 +279,7 @@ $result = $stmt1->fetchAll();
                 <a class="footer-text" target="blank" href="https://www.mepery.fr/Mepery_CGV.pdf">CGV</a> |
                 <a class="footer-text" target="blank" href="https://www.mepery.fr/Mepery_RGPD.pdf">Charte des données
                     personnelles</a> |
-              <!--  <a class="footer-text" target="blank" href="https://www.mepery.fr/cvtheque.php">CVthèque</a>-->
+                <a class="footer-text" target="blank" href="https://www.mepery.fr/cvtheque.php">CVthèque</a>
             </div>
         </div>
     </div>

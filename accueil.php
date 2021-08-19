@@ -30,14 +30,15 @@ $result = $stmt1->fetchAll();
 
     <!-- Custom styles for this template -->
     <link href="assets/css/album.css" rel="stylesheet">
+    <link href="css/style.css">
 </head>
 
 <body>
-<div id="page">
+<div id="page" style="background: url(../cial.sezny/images/acceuil-sezny2.jpg)">
     <div id="bloc-principal">
         <?php include 'nav.php'; ?>
         <main role="main">
-            <section class="jumbotron text-center" style="padding:20px;background-color:#e9ecef;">
+            <section class="jumbotron text-center">
                 <div class="container">
                     <h1 class="jumbotron-heading">Espace commercial SEZNY</h1>
                     <h2 style="font-size:18px;">
@@ -55,24 +56,24 @@ $result = $stmt1->fetchAll();
                     <div class="row justify-content-center">
                         <div class="col-md-6" style="text-align: center">
                             <div class="form-group">
-                                <a href="ajout-vente.php" class="btn btn-secondary bouton-accueil">
+                                <a href="ajout-vente.php" class="btn btn-light bouton-accueil">
                                     Ajouter une vente pro
                                 </a>
                             </div>
                             <div class="form-group">
-                                <a href="signature.php" class="btn btn-secondary bouton-accueil">
+                                <a href="signature.php" class="btn btn-light bouton-accueil">
                                     Signer une vente pro
                                 </a>
                             </div>
                         </div>
                         <div class="col" style="text-align: center">
                             <div class="form-group">
-                                <a href="ajout-vente-part.php" class="btn btn-primary bouton-accueil">
+                                <a href="ajout-vente-part.php" class="btn btn-light bouton-accueil">
                                     Ajouter une vente particulier
                                 </a>
                             </div>
                             <div class="form-group">
-                                <a href="signature.php" class="btn btn-primary bouton-accueil">
+                                <a href="signature.php" class="btn btn-light bouton-accueil">
                                     Signer une vente particulier
                                 </a>
                             </div>
@@ -84,7 +85,7 @@ $result = $stmt1->fetchAll();
                         </div>
                         <div class="col">
                             <div class="form-group">
-                                <a href="ventes.php" class="btn btn-success bouton-accueil">
+                                <a href="ventes.php" class="btn btn-dark bouton-accueil">
                                     Mes ventes
                                 </a>
                             </div>

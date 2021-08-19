@@ -1,6 +1,3 @@
-body,h2,h3,h4,h5,p{
-    font-family: 'Montserrat', sans-serif;
-}
 .form{
     width: 80%;
     position: relative;
@@ -15,50 +12,6 @@ body,h2,h3,h4,h5,p{
     padding-top: 20px;
     border:none;
     outline: none;
-}
-
-#input-validation{
-    margin-top: 20px;
-
-}
-.form label {
-    position:absolute;
-    bottom: -8px;
-    left:0%;
-    width:100%;
-    height: 100%;
-    pointer-events: none;
-    border-bottom: 1px solid black;
-
-}
-
-.form label:after{
-    content: "";
-    position: absolute;
-    left: 0px;
-    bottom: -1px;
-    height: 100%;
-    width: 100%;
-    border-bottom: 3px solid #640F24;
-    transform: translateX(-100%);
-    transition: transform 0.3s ease;
-}
-div.row.infoSeller{
-
-}
-
-h2{
-    margin: 50px;
-    text-align: center;
-}
-
-.formInscription{
-    padding:30px;
-    margin: 0 auto;
-    -webkit-border-radius:10px;
-    -moz-border-radius: 10px;
-    background: #F8F8F8;
-    border-radius: 6px;
 }
 
 input.call-back-form-one{
@@ -79,17 +32,48 @@ input.call-back-form-one{
 
 }
 
-
 label{
     color: black;
     font-size: 17px;
 }
+.form label {
+    position:absolute;
+    bottom: -8px;
+    left:0%;
+    width:100%;
+    height: 100%;
+    pointer-events: none;
+    border-bottom: 1px solid black;
+}
+
 .pj{
     width: 400px;
     padding: 10px;
     font-size: 17px;
     color: black;
 }
+
+.form label:after{
+    content: "";
+    position: absolute;
+    left: 0px;
+    bottom: -1px;
+    height: 100%;
+    width: 100%;
+    border-bottom: 3px solid #640F24;
+    transform: translateX(-100%);
+    transition: transform 0.3s ease;
+}
+
+.formInscription{
+    padding:30px;
+    margin: 0 auto;
+    -webkit-border-radius:10px;
+    -moz-border-radius: 10px;
+    background: #F8F8F8;
+    border-radius: 6px;
+}
+
 .content-name{
     position: absolute;
     bottom: 5px;
@@ -106,4 +90,16 @@ label{
 
 .form input:focus .label-name::after, .form input:valid +  .label-name::after{
     transform: translateX(0%);
+}
+input#valide.theme-button-one{
+    background-color: #246874;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+button.theme-button-one{
+    background-color: red;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
 }

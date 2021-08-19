@@ -16,6 +16,7 @@
     $result1 = $smt1->fetchAll();
    ?>
 
+
 <!doctype html>
 <html lang="fr">
 <head>
@@ -64,7 +65,9 @@
                                 </tr>
                             </thead>
                             <tbody>";
-
+                                
+                                    
+                                
                                 if(isset($_GET['signed'])){
                                     foreach($result1 as $key=>$row){
                                         echo "<tr>
