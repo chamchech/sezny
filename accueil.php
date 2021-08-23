@@ -61,7 +61,7 @@ $result = $stmt1->fetchAll();
                                 </a>
                             </div>
                             <div class="form-group">
-                                <a href="signature.php" class="btn btn-light bouton-accueil">
+                                <a href="signature-pro.php" class="btn btn-light bouton-accueil">
                                     Signer une vente pro
                                 </a>
                             </div>

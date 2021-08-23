@@ -139,7 +139,7 @@ $result = $stmt1->fetchAll();
 				</tr>
 			</table>
 
-			<h3 style="font-family: Calibri;font-size: 12pt;background-color:#dfdfdf;text-align:center;">Abonnement commandé </h3>
+			<h3 style="font-family: Calibri;font-size: 12pt;background-color:#dfdfdf;text-align:center;">Souscription effectuer </h3>
 
 			<br/>
 			<br/>	
@@ -173,7 +173,7 @@ $result = $stmt1->fetchAll();
 					<td style="width:2%;background-color:#dbd9d9"></td>
 					<td style="width:98%;background-color:#dbd9d9">
 
-					Informations<br/><strong style="font-family: Calibri;font-size: 12pt;">AUTORISATION</strong><br/><strong style="font-family: Calibri;font-size: 12pt;">PRELEVEMENT MANDAT SEPA</strong>
+					<!--Informations<br/><strong style="font-family: Calibri;font-size: 12pt;">AUTORISATION</strong><br/><strong style="font-family: Calibri;font-size: 12pt;">PRELEVEMENT MANDAT SEPA</strong> -->
 
 					</td>
 				</tr>
@@ -186,7 +186,7 @@ $result = $stmt1->fetchAll();
 					<td style="width:2%;"></td>
 					<td style="width:98%;font-size:10pt;">
 
-		En signant ce formulaire de mandat, vous autorisez (A) SAS CABINET MEPERY à envoyer des instructions à votre banque pour 
+		En signant ce formulaire de mandat, vous autorisez (A) SAS SEZNY à envoyer des instructions à votre banque pour 
 		débiter votre compte, et (B) votre banque à débiter votre compte conformément aux instructions de SAS CABINET MEPERY, Vous 
 		bénéficiez du droit d’être remboursé par votre banque selon les conditions décrites dans la convention que vous avez passée 
 		avec elle. Une demande de remboursement doit être présentée dans les 8 semaines suivant la date de débit de votre compte 
@@ -225,12 +225,6 @@ $result = $stmt1->fetchAll();
 						<strong style="font-size:10pt">CP/Ville*:</strong> <span style="font-size:10pt">'.$_POST['cp'].' '.$_POST['ville'].'</span><br/>
 
 						<strong style="font-size:10pt">Pays*:</strong> <span style="font-size:10pt"> FRANCE </span><br/>
-
-						<strong style="font-size:10pt">IBAN*:</strong> <span style="font-size:10pt"><!-- ici le .$_POST[iban] --></span><br/>
-
-						<strong style="font-size:10pt">BIC*:</strong> <span style="font-size:10pt"><!-- ici le .$_POST[bic] --></span><br/>
-						<span style="font-size:10pt">Type de paiement : RECURRENT TOUS LES 5 DE CHAQUE MOIS</span>
-
 					</td>
 				</tr>
 			</table>
@@ -395,7 +389,7 @@ try{
 //$obj_pdf->Output(__DIR__ . '/../dossier/abonnement-juridique.pdf', 'FI');
 
 
-header("location: ../signature.php");
+header("location: ../signature-pro.php");
 }else{
 	echo "<h2 style='text-align:center'>{$resp2['title']} <br/>{$resp2['detail']}</h2>";
 }// } else {
