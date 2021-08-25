@@ -143,7 +143,7 @@ padding: 10px;">
                         </div>
                         <div class="row formInscription">
                             <div class="col-lg-6 col-12 form-group">
-                                <label>Numéro de téléphone</label>
+                                <label>Numéro de téléphone (portable)</label>
                                 <input type="text" placeholder="0601020304" name="tel" class="call-back-form-one"
                                        pattern="[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?"
                                        required>

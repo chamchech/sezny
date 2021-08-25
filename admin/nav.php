@@ -1,8 +1,8 @@
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark">
+<nav class="navbar navbar-light bg-light persoNav">
     <!-- Brand -->
-    <img src="../images/logo/logofooter.png" alt="" style="width:10%">
+    <img src="../images/seznyTrvector.png" style="width: 5%" alt="sezny"></a>
     <!-- Links -->
     <ul class="navbar-nav navbar-nav ml-auto">
-        <li class="nav-item"><a href="logout.php" class="nav-link" style="font-size: 1.3rem;">Déconnexion</a></li>
+        <li class="nav-item"><a href="logout.php" class="nav-link btn btn-light" style="font-size: 1.3rem; color: #111111">Déconnexion</a></li>
     </ul>
 </nav>

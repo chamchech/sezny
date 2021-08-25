@@ -106,7 +106,7 @@ $html = '
 			<table class="first">
 				<tr>
 					<td style="width:2%"> </td>
-					<td style="width:38%">
+					<td style="width:48%">
 						<table class="first">
 							<tr>
 								<td style="width:65%">
@@ -115,11 +115,12 @@ $html = '
 									<span style="font-size:10pt;">25 Route de Seilh –</span><br/>
 									<span style="font-size:10pt;">31700 CORNEBARRIEU</span><br/>
 									<span style="font-size:10pt;">RCS TOULOUSE 884422510 </span><br/>
-									<span style="font-size:10pt;"><a href="contact@sezny.fr">contact@sezny.fr</a> </span><br/>
+									<span style="font-size:10pt;"><a href="mailto:contact@cabinet-mepery.fr">contact@sezny.fr</a> </span><br/>
 									<span style="font-size:10pt;"><a href="tel:+33988392677">09 88 39 26 77</a></span><br/>
 								</td>
-								<td style="width:35%;">
-									<br/>
+
+								<td style="width:35%">
+									<br/> 
 									<br/>
 									<img src="seznyTrvector.png"/>
 								</td>
@@ -127,7 +128,7 @@ $html = '
 						</table>
 					</td>
 
-					<td style="width:30%">
+					<td style="width:48%">
 						<span style="text-decoration:underline">Information du Souscripteur : </span><br/>
                         <strong style="font-size:10pt">Nom et Prénom :</strong><span style="font-size:10pt"> ' . $_POST['prenomcontact'] . ' ' . $_POST['nomcontact'] . '</span><br />
                         <strong style="font-size:10pt">Adresse :</strong><span style="font-size:10pt"> ' . $_POST['adresse'] . '</span><br />
@@ -136,23 +137,15 @@ $html = '
                         <strong style="font-size:10pt">Téléphone :</strong><span style="font-size:10pt"> ' . $_POST['tel'] . '</span><br />
                         <strong style="font-size:10pt">Email :</strong><span style="font-size:10pt"> ' . $_POST['email'] . '</span><br />
 					</td>
-					<td style="40%">
-					 <span style="text-decoration:underline">Deuxieme titulaire : </span><br/>
-                        <strong style="font-size:10pt">Nom et Prénom : </strong><span style="font-size: 10pt"> ' . $_POST['prenomtitulaire'] . ' ' . $_POST['nomtitulaire'] . '</span><br />
-                         <strong style="font-size:10pt">Adresse :</strong><span style="font-size:10pt"> ' . $_POST['adressetitulaire'] . '</span><br />
-                          <strong style="font-size:10pt">Code Postal :</strong><span style="font-size:10pt"> ' . $_POST['cptitulaire'] . '</span><br />
-                          <strong style="font-size:10pt">Ville :</strong><span style="font-size:10pt"> ' . $_POST['villetitulaire'] . '</span><br />
-                    </td>
 				</tr>
 			</table>
-			
 
-			<h3 style="font-family: Calibri;font-size: 12pt;background-color:#dfdfdf;text-align:center;">Souscription</h3>
+			<h3 style="font-family: Calibri;font-size: 12pt;background-color:#dfdfdf;text-align:center;">Sezny </h3>
 
 			<br/>
+			<br/>
 			<br/>	
- 
- 
+
 		<table class="first">
 				<br/>
 		
@@ -166,9 +159,9 @@ $html = '
 						DATE DE SOUSCRIPTION : ' . $_POST['date'] . '
 						<br/>
 					</td>
-					
+
 					</tr>
-				
+		
 			</table>
 			<table>
 				<tr>
@@ -198,14 +191,14 @@ $html = '
 			</table>
 
 
-			<h3 style="font-family: Calibri;font-size: 12pt;background-color:#dbd9d9;text-align:center;">NOUS</h3>
+			<h3 style="font-family: Calibri;font-size: 12pt;background-color:#dbd9d9;text-align:center;">A - Créancier</h3>
 
 			<table>
 				<tr>
 					<td style="width:2%;"></td>
 					<td style="width:98%;">
 					<strong style="font-size:10pt">Identifiant créancier SEPA (ICS) :</strong> <span style="font-size:10pt">FR19 ZZZ 86E 7B4</span><br/>
-					<strong style="font-size:10pt">Nom du créancier :</strong><span style="font-size:10pt"> SAS SEZNY</span> <br/>
+					<strong style="font-size:10pt">Nom du créancier :</strong><span style="font-size:10pt"> SEZNY</span> <br/>
 					<strong style="font-size:10pt">Adresse :</strong><span style="font-size:10pt"> 25 Route de Seilh</span><br/>
 					<strong style="font-size:10pt">CP/Ville : </strong><span style="font-size:10pt">31700 Cornebarrieu</span><br/>
 					<strong style="font-size:10pt">Pays :</strong> <span style="font-size:10pt">France</span>
@@ -213,7 +206,7 @@ $html = '
 				</tr>
 			</table>
 
-			<h3 style="font-family: Calibri;font-size: 12pt;background-color:#dbd9d9;text-align:center;">VOUS</h3>
+			<h3 style="font-family: Calibri;font-size: 12pt;background-color:#dbd9d9;text-align:center;">B - Débiteur</h3>
 			<br/>
 
 			<table>
@@ -221,7 +214,7 @@ $html = '
 					<td style="width:2%;"></td>
 					<td style="width:98%;">
 
-						<strong style="font-size:10pt">Nom du souscripteur*: </strong><span style="font-size:10pt"> ' . $_POST['prenomcontact'] . ' ' . $_POST['nomcontact'] . ' </span><br/>
+						<strong style="font-size:10pt">Nom du débiteur*: </strong><span style="font-size:10pt"> ' . $_POST['prenomcontact'] . ' ' . $_POST['nomcontact'] . ' </span><br/>
 						<strong style="font-size:10pt">Adresse*:</strong> <span style="font-size:10pt">' . $_POST['adresse'] . '</span><br/>
 
 						<strong style="font-size:10pt">CP/Ville*:</strong> <span style="font-size:10pt">' . $_POST['cp'] . ' ' . $_POST['ville'] . '</span><br/>
@@ -237,20 +230,18 @@ $html = '
 					<td style="width:98%;font-size:10pt;">
 				* Réponses obligatoires. Le client déclare être informé que le présent contrat comporte des conditions générales de vente.<br> Le client possède une copie des CGV dans sa boîte email. <br/>
 				 Elles sont également disponible en libre accès sur notre <a href="https://cabinet-mepery.fr/Mepery_CGV.pdf" target="_blank">site internet</a>
-					
-					<br/>
-					<br/>
-			        </td>
+					</td>
 				</tr>
 			</table>
-			<br/>
-			<br/>	
-			<br/>
+		
 			<br/>
 			<br/>
 			<br/>
 			<br/>	
 			<br/>
+			<br/>
+			<br/>
+			<br/>	
 			<h4 style="text-align:center">Signature du Client*</h4>';
 
 
@@ -311,25 +302,21 @@ if (isset($resp1['id'])) {
 
 //SQL Query to save in DB
         $date = date('Y-m-d');
-        $stmt = $sql->prepare("INSERT INTO ventes (vendeur_id, nomcontact, prenomcontact , adresse, cp, ville, nomtitulaire, prenomtitulaire, adressetitulaire, cptitulaire, villetitulaire, tel, email, members, files, Date_vente) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,'$date')");
+        $stmt = $sql->prepare("INSERT INTO ventes (vendeur_id, nomcontact, prenomcontact, adresse, cp, ville, tel, email,raisonsocial, rcs, members, files, Date_vente) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,'$date')");
         $stmt->bindParam(1, $_SESSION['vendeur_id'], PDO::PARAM_INT);
         $stmt->bindParam(2, $_POST['nomcontact'], PDO::PARAM_STR);
         $stmt->bindParam(3, $_POST['prenomcontact'], PDO::PARAM_STR);
-//$stmt->bindParam(4, $_POST['raisonsocial'], PDO::PARAM_STR);
-//$stmt->bindParam(5, $_POST['rcs'], PDO::PARAM_STR);
         $stmt->bindParam(4, $_POST['adresse'], PDO::PARAM_STR);
         $stmt->bindParam(5, $_POST['cp'], PDO::PARAM_STR);
         $stmt->bindParam(6, $_POST['ville'], PDO::PARAM_STR);
-        $stmt->bindParam(7, $_POST['nomtitulaire'], PDO::PARAM_STR);
-        $stmt->bindParam(8, $_POST['prenomtitulaire'], PDO::PARAM_STR);
-        $stmt->bindParam(9, $_POST['adressetitulaire'], PDO::PARAM_STR);
-        $stmt->bindParam(10, $_POST['cptitulaire'], PDO::PARAM_STR);
-        $stmt->bindParam(11, $_POST['villetitulaire'], PDO::PARAM_STR);
-        $stmt->bindParam(12, $_POST['tel'], PDO::PARAM_STR);
-        $stmt->bindParam(13, $_POST['email'], PDO::PARAM_STR);
+        $stmt->bindParam(7, $_POST['tel'], PDO::PARAM_STR);
+        $stmt->bindParam(8, $_POST['email'], PDO::PARAM_STR);
+        $stmt->bindParam(9, $_POST['raisonsocial'], PDO::PARAM_STR);
+        $stmt->bindParam(10, $_POST['rcs'], PDO::PARAM_STR);
+        $stmt->bindParam(11, $members, PDO::PARAM_STR);
+        $stmt->bindParam(12, $resp1['id'], PDO::PARAM_STR);
+
 //$stmt->bindParam(11, $_POST['iban'], PDO::PARAM_STR);
-        $stmt->bindParam(14, $members, PDO::PARAM_STR);
-        $stmt->bindParam(15, $resp1['id'], PDO::PARAM_STR);
 //$stmt->bindParam(14, $_POST['bic'], PDO::PARAM_STR);
 //$stmt->bindParam(15, $_POST['drop1'], PDO::PARAM_STR);
 //$stmt->bindParam(16, $_POST['drop2'], PDO::PARAM_STR);
@@ -347,8 +334,8 @@ if (isset($resp1['id'])) {
             $message2 .= "<b>Email :</b> " . $result[0]['email'] . "<br>";
             $message2 .= "--------------------------------------------------------------------------------------------------------" . "<br><br>";
             $message2 .= "<b><u>Client :</u></b> <br><br>";
-            //$message2.="<b>raisonsocial :</b> ".$_POST['raisonsocial']."<br>";
-            //$message2.="<b>rcs :</b> ".$_POST['rcs']."<br>";
+            $message2 .= "<b>raisonsocial :</b> " . $_POST['raisonsocial'] . "<br>";
+            $message2 .= "<b>rcs :</b> " . $_POST['rcs'] . "<br>";
             $message2 .= "<b>Prenom :</b> " . $_POST['prenomcontact'] . "<br>";
             $message2 .= "<b>Nom :</b> " . $_POST['nomcontact'] . "<br>";
             $message2 .= "<b>Adresse :</b> " . $_POST['adresse'] . "<br>";
@@ -357,15 +344,6 @@ if (isset($resp1['id'])) {
             $message2 .= "<b>Tel :</b> " . $_POST['tel'] . "<br>";
             $message2 .= "<b>Email :</b> " . $_POST['email'] . "<br>";
             $message2 .= "--------------------------------------------------------------------------------------------------------" . "<br><br>";
-            $message2 .= "<b><u>Informations sur le deuxieme titulaire :</u></b> <br><br>";
-            $message2 .= "<b>Prenom :</b> " . $_POST['prenomtitulaire'] . "<br>";
-            $message2 .= "<b>Nom :</b> " . $_POST['nomtitulaire'] . "<br>";
-            $message2 .= "<b>Adresse :</b> " . $_POST['adressetitulaire'] . "<br>";
-            $message2 .= "<b>CP :</b> " . $_POST['cptitulaire'] . "<br>";
-            $message2 .= "<b>Ville :</b> " . $_POST['villetitulaire'] . "<br>";
-            //$message2.="<b><u>Paiement :</u></b> <br><br>";
-            //$message2.="<b>bic :</b> ".$_POST['bic']."<br>";
-            //$message2.="<b>iban :</b> ".$_POST['iban']."<br>";
 
             $mail->IsSMTP();                                //Use SMTP
             //$mail->SMTPDebug   = 2;                         //2 to enable SMTP debug information
@@ -403,10 +381,9 @@ if (isset($resp1['id'])) {
 //$obj_pdf->Output(__DIR__ . '/../dossier/abonnement-juridique.pdf', 'FI');
 
 
-        header('Location: ../signature.php');
-
+        header("location: ../signature-pro.php");
     } else {
         echo "<h2 style='text-align:center'>{$resp2['title']} <br/>{$resp2['detail']}</h2>";
-    } //} else {
+    }// } else {
     //echo "<h2 style='text-align:center'>{$resp2['title']} <br/>{$resp2['detail']}</h2>";
 }
