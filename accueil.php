@@ -56,7 +56,7 @@ $result = $stmt1->fetchAll();
                     <div class="row justify-content-center">
                         <div class="col-md-6" style="text-align: center">
                             <div class="form-group">
-                                <a href="ajout-vente.php" class="btn btn-light bouton-accueil">
+                                <a href="ajout-vente-pro.php" class="btn btn-light bouton-accueil">
                                     Ajouter une vente pro
                                 </a>
                             </div>
@@ -85,8 +85,13 @@ $result = $stmt1->fetchAll();
                         </div>
                         <div class="col profil">
                             <div class="form-group">
+                                <a href="ventespro.php" class="btn btn-dark bouton-profil">
+                                    Mes ventes pro
+                                </a>
+                            </div>
+                            <div class="form-group">
                                 <a href="ventes.php" class="btn btn-dark bouton-profil">
-                                    Mes ventes
+                                    Mes ventes part
                                 </a>
                             </div>
                             <div class="form-group">
@@ -94,6 +99,7 @@ $result = $stmt1->fetchAll();
                                     Mon profil
                                 </a>
                             </div>
+
                         </div>
                         <div class="col">
 

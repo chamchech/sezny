@@ -74,13 +74,14 @@ function addedBy($id){
         <section class="jumbotron text-center" style="padding:20px">
             <div class="container">
                 <h1 class="jumbotron-heading">Clients</h1>
-                <a href="index.php"><svg class="bi bi-arrow-bar-left" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 00-.708 0l-3 3a.5.5 0 000 .708l3 3a.5.5 0 00.708-.708L3.207 8l2.647-2.646a.5.5 0 000-.708z" clip-rule="evenodd"/>
-  <path fill-rule="evenodd" d="M10 8a.5.5 0 00-.5-.5H3a.5.5 0 000 1h6.5A.5.5 0 0010 8zm2.5 6a.5.5 0 01-.5-.5v-11a.5.5 0 011 0v11a.5.5 0 01-.5.5z" clip-rule="evenodd"/>
-</svg> Retour</a>
+
             </div>
         </section>
         <div class="album py-5 bg-light">
+            <a class="retour" href="index.php"><svg class="bi bi-arrow-bar-left" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                    <path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 00-.708 0l-3 3a.5.5 0 000 .708l3 3a.5.5 0 00.708-.708L3.207 8l2.647-2.646a.5.5 0 000-.708z" clip-rule="evenodd"/>
+                    <path fill-rule="evenodd" d="M10 8a.5.5 0 00-.5-.5H3a.5.5 0 000 1h6.5A.5.5 0 0010 8zm2.5 6a.5.5 0 01-.5-.5v-11a.5.5 0 011 0v11a.5.5 0 01-.5.5z" clip-rule="evenodd"/>
+                </svg> Retour</a>
             <div class="container">
             <form class="form-inline" method="post">
                     <div class="form-group" style="margin: auto;text-align:right;margin-right: 0px;margin-bottom: 10px;">
@@ -112,13 +113,13 @@ function addedBy($id){
                 <div class="row justify-content-center" id="details">
                     <div class="col-md-12">
                         
-                        <table class="table table-striped" id="tb1">
+                        <table class="table table-striped" id="tb1" style="width: 1000px">
                             <thead>
                                 <tr>
                                     <th>Date</th>
                                     <th>Raison Sociale</th>
                                     <th>Nom Contact</th>
-                                    <th>Durée/Prix</th>
+                                   <!-- <th>Durée/Prix</th>-->
                                     <th>CP/Ville</th>
                                     <th>Ajouté par</th>
                                     <th></th>
@@ -152,13 +153,14 @@ function addedBy($id){
                                     <td><?php echo $row['Date_vente']; ?></td>
                                     <td><?php echo $row['raisonsocial']; ?></td>
                                     <td><?php echo $row['nomcontact']; ?></td>
-                                    <td><?php echo $row['drop1'].' - '.$row['drop2']; ?></td>
+                                  <!--  <td><?php //echo $row['drop1'].' - '.$row['drop2']; ?></td>-->
                                     <td><?php echo $row['cp'].' '.$row['ville']; ?></td>
                                     <td><?php echo addedBy($row['vendeur_id']); ?></td>
                                    <td>
-                                    <a href="details-client.php?id=<?php echo $row['id']; ?>" class="btn btn-primary btn-sm">Voir détails</a>
-                                    <a href="clients.php?download=<?php echo $row['id']; ?>" class="btn btn-success btn-sm">Télécharger</a>
-                                    <a onclick="return confirm('Voulez vous vraiment supprimer ce client ?')" href="clients.php?delete=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm">Supprimer</a></td>
+                                       <a href="details-client.php?id=<?php echo $row['id']; ?>" class="btn btn-dark btn-sm">Voir détails</a></td>
+                                    <td>
+                                        <a href="clients.php?download=<?php echo $row['id']; ?>" class="btn btn-success btn-sm">Télécharger</a></td>
+                                   <td> <a onclick="return confirm('Voulez vous vraiment supprimer ce client ?')" href="clients.php?delete=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm">Supprimer</a></td>
                                 </tr>
                                 <?php } ?>
                             </tbody>

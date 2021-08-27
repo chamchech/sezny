@@ -2,6 +2,9 @@
   --jumbotron-padding-y: 3rem;
 }
 
+.jumbotron.text-center{
+  background-color: transparent;
+}
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
@@ -20,7 +23,8 @@
 }
 
 .jumbotron-heading {
-  font-weight: 300;
+  font-weight: 400;
+  color: #FFFFFF;
 }
 
 .jumbotron .container {
@@ -35,9 +39,9 @@ html, body {
 
 #page {
   min-height: 100%;
-  
   background-color: #e9ecef;
-	position: relative;
+  position: relative;
+  background: url(../img/acceuil-admin.jpg);
 }
 
 #bloc-principal {
@@ -71,9 +75,84 @@ a.lienSezny{
 }
 
 .py-5{
-  background-color:#e9ecef;
+  display: block;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  max-width: 1100px;
+  margin: auto;
+  padding: 2px;
+  border-radius: 6px;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.33);
+  -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.33);
+  -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.33);
 }
 
 .bouton-accueil{
-  font-size:22px;
+  border-radius: 20px;
+  height: 52px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 52px;
+
+}
+
+.addCom{
+  width: 400px;
+  margin: auto;
+  background-color: #6d6d6d;
+  border: solid 1px white;
+}
+.com{
+  width: 300px;
+  margin: auto;
+  background-color: #494949;
+  border: solid 1px white;
+}
+.clients{
+  width: 225px;
+  margin: auto;
+  background-color: #252525;
+  border: solid 1px white;
+}
+.profil{
+  width: 150px;
+  margin: auto;
+  background-color:#111111;
+  border: solid 1px white;
+
+}
+.retour{
+  color: #FFFFFF;
+  background-color: #0d7bff;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 10px 10px;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 50px;
+}
+.retour:hover{
+  color: #FFFFFF;
+}
+
+.addAdmin{
+  border-radius: 5px;
+  width: 100px;
+  text-align: center;
+  height: 52px;
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 16px;
+  margin-top: 50px;
+}
+div.form-group{
+  padding: 5px;
 }

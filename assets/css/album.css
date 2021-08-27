@@ -2,6 +2,7 @@
   --jumbotron-padding-y: 3rem;
 }
 
+
 .jumbotron {
   padding-top: var(--jumbotron-padding-y);
   padding-bottom: var(--jumbotron-padding-y);
@@ -77,6 +78,28 @@ html, body {
   margin:3%;
   color: #111111;
   font-weight: bold;
+}
+
+.py-5{
+  display: block;
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  max-width: 1100px;
+  margin: auto;
+  padding: 2px;
+  border-radius: 6px;
+  -webkit-border-radius:6px;
+  -moz-border-radius:6px;
+}
+
+input.btn.btn-danger.js-modal{
+  margin-left: 30px;
+}
+
+.btn.btn-primary.lienRetour{
+  margin-right: 30px;
 }
 
 .bouton-accueil,.bouton-profil{

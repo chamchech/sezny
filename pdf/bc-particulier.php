@@ -91,7 +91,7 @@ $html = '
 
 		      </style>
 			
-			<table>
+			<table> 
 				<tr>
 					<td style="width:2%;background-color:#dbd9d9"></td>
 					<td style="width:98%;background-color:#dbd9d9">
