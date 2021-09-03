@@ -24,6 +24,25 @@ function getTotalSales($id){
      return $result['totalventes'];
 }
 
+function getTotalSalesPro($id){
+    global $sql;
+    $stmt = $sql->prepare("select COUNT(*) as totalventespro from ventespro where vendeur_id = ?");
+    $stmt->bindParam(1, $id, PDO::PARAM_INT);
+    $stmt->execute();
+    $result = $stmt->fetch();
+    return $result['totalventespro'];
+}
+
+function getTotalAllSales($id){
+    global $sql;
+    $stmt = $sql->prepare("SELECT COUNT(*) AS effectif FROM (SELECT ventes.vendeur_id AS totalventes FROM ventes UNION SELECT ventespro.vendeur_id AS totalventespro FROM ventespro) AS allventes");
+    $stmt->bindParam(1, $id, PDO::PARAM_INT);
+    $stmt->execute();
+    $result = $stmt->fetch();
+    return $result['effectif'];
+}
+
+
 
 ?>
 <!doctype html>
@@ -34,7 +53,7 @@ function getTotalSales($id){
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="56x56" href="assets/img/favicon-96x96.png">
-    <title>Commerciaux - Abonnement Juridique MEPERY</title>
+    <title>Commerciaux - Sezny</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/album.css" rel="stylesheet">
@@ -58,18 +77,19 @@ function getTotalSales($id){
                 </svg> Retour</a>
             <div class="container">
                 <div class="row justify-content-center">
-                    <div class="col-md-12">
+                    <div class="col-md-12 afficheInfos">
                         
                         <table class="table table-striped">
                             <thead>
                                 <tr>
                                     
-                                    <th>Nom</th>
+                                    <th>Nom/Prenom</th>
                                     <th>Identifiant</th>
                                     <th>Email</th>
                                     <th>CP/Ville</th>
-                                    <th>Ventes</th>
-                                    <th></th>
+                                    <th>Part</th>
+                                    <th>Pro</th>
+                                    <th>Total</th>
                                 </tr>
                             </thead>
                             <tbody>
@@ -84,12 +104,13 @@ function getTotalSales($id){
                                     <td><?php echo $row['username']; ?></td>
                                     <td><?php echo $row['email']; ?></td>
                                     <td><?php echo $row['postcode'].' '.$row['city']; ?></td>
-                                    <td><?php echo getTotalSales($row['id']); ?></td>
-                                   
-                                    <td>
-                                    <a href="clients.php?sid=<?php echo $row['id']; ?>" class="btn btn-success btn-sm">Les clients</a></td>
-                                    <td>
-                                    <a onclick="return confirm('Voulez vous vraiment le supprimer ?')" href="commerciaux.php?delete=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm">Supprimer</a></td>
+                                    <td style="text-align: center"><?php echo getTotalSales($row['id']); ?></td>
+                                    <td style="text-align: center"><?php echo getTotalSalesPro($row['id']); ?></td>
+                                    <td style="text-align: center"><?php //echo getTotalAllSales($row['id']); ?></td>
+
+                                    <td><a href="clients.php?sid=<?php echo $row['id']; ?>" class="btn btn-success btn-sm">Les clients part</a></td>
+                                    <td><a href="clients-pro.php?sid=<?php echo $row['id']; ?>" class="btn btn-dark btn-sm">Les clients pro</a></td>
+                                    <td><a onclick="return confirm('Voulez vous vraiment le supprimer ?')" href="commerciaux.php?delete=<?php echo $row['id']; ?>" class="btn btn-danger btn-sm">Supprimer</a></td>
                                 </tr>
                                 <?php } ?>
                             </tbody>

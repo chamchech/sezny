@@ -78,8 +78,8 @@ if(isset($_POST["download"])){
                                <!-- <p><b>Engagement : </b><?php //echo $data['drop1']; ?></p>
                                 <p><b>Tarif : </b><?php //echo $data['drop2']; ?></p>-->
                             </center>
-                                <p><b>Raison Social : </b><?php echo $data['raisonsocial']; ?></p>
-                                <p><b>RCS : </b><?php echo $data['rcs']; ?></p>
+                               <!-- <p><b>Raison Social : </b><?php //echo $data['raisonsocial']; ?></p>
+                                <p><b>RCS : </b><?php //echo $data['rcs']; ?></p>-->
                                 <p><b>Adresse : </b> <?php echo $data['adresse']; ?></p>
                                 <p><b>Code Postal : </b><?php echo $data['cp']; ?></p>
                                 <p><b>Ville : </b><?php echo $data['ville']; ?></p>

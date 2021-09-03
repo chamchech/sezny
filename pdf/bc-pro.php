@@ -302,7 +302,7 @@ if (isset($resp1['id'])) {
 
 //SQL Query to save in DB
         $date = date('Y-m-d');
-        $stmt = $sql->prepare("INSERT INTO ventes (vendeur_id, nomcontact, prenomcontact, adresse, cp, ville, tel, email,raisonsocial, rcs, members, files, Date_vente) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,'$date')");
+        $stmt = $sql->prepare("INSERT INTO ventespro (vendeur_id, nomcontact, prenomcontact, adresse, cp, ville, tel, email,raisonsocial, rcs, members, files, Date_vente) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,'$date')");
         $stmt->bindParam(1, $_SESSION['vendeur_id'], PDO::PARAM_INT);
         $stmt->bindParam(2, $_POST['nomcontact'], PDO::PARAM_STR);
         $stmt->bindParam(3, $_POST['prenomcontact'], PDO::PARAM_STR);
@@ -327,7 +327,7 @@ if (isset($resp1['id'])) {
 
         try {
             //Email envoyé à SEZNY
-            $message2 = "Vous avez recu une nouvelle souscription a l'offre SEZNY<br><br>";
+            $message2 = "Vous avez recu une nouvelle souscription pro a l'offre SEZNY<br><br>";
             $message2 .= "--------------------------------------------------------------------------------------------------------" . "<br><br>";
             $message2 .= "<b><u>Commercial :</u></b> <br><br>";
             $message2 .= "<b>Nom :</b> " . $result[0]['firstname'] . " " . $result[0]['lastname'] . "<br>";

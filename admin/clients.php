@@ -60,7 +60,7 @@ function addedBy($id){
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="56x56" href="assets/img/favicon-96x96.png">
-    <title>Clients - Abonnement Juridique MEPERY</title>
+    <title>Clients - SEZNY</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/album.css" rel="stylesheet">
@@ -117,7 +117,7 @@ function addedBy($id){
                             <thead>
                                 <tr>
                                     <th>Date</th>
-                                    <th>Raison Sociale</th>
+                                   <!-- <th>Raison Sociale</th>-->
                                     <th>Nom Contact</th>
                                    <!-- <th>Durée/Prix</th>-->
                                     <th>CP/Ville</th>
@@ -151,7 +151,7 @@ function addedBy($id){
                                 ?>
                                 <tr>
                                     <td><?php echo $row['Date_vente']; ?></td>
-                                    <td><?php echo $row['raisonsocial']; ?></td>
+                                    <!-- <td><?php //echo $row['raisonsocial']; ?></td>-->
                                     <td><?php echo $row['nomcontact']; ?></td>
                                   <!--  <td><?php //echo $row['drop1'].' - '.$row['drop2']; ?></td>-->
                                     <td><?php echo $row['cp'].' '.$row['ville']; ?></td>

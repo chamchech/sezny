@@ -71,8 +71,8 @@ function addedBy($id){
                             </center>
                                 <p><b>Nom contact : </b> <?php echo $data['nomcontact']; ?></p>
                                 <p><b>Prénom contact : </b><?php echo $data['prenomcontact']; ?></p>
-                                <p><b>Raison Social : </b><?php echo $data['raisonsocial']; ?></p>
-                                <p><b>RCS : </b><?php echo $data['rcs']; ?></p>
+                               <!-- <p><b>Raison Social : </b><?php //echo $data['raisonsocial']; ?></p>
+                                <p><b>RCS : </b><?php //echo $data['rcs']; ?></p>-->
                                 <p><b>Adresse : </b> <?php echo $data['adresse']; ?></p>
                                 <p><b>Code postal : </b><?php echo $data['cp']; ?></p>
                                 <p><b>Ville : </b><?php echo $data['ville']; ?></p>

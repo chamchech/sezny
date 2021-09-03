@@ -122,7 +122,7 @@ tbody tr:nth-child(even) {
         <?php if(isset($msg)){ echo $msg; } ?>
         <section class="jumbotron text-center headerContainer" style="padding:20px">
             <div class="container">
-                <h1 class="jumbotron-heading">Mes ventes</h1>
+                <h1 class="jumbotron-heading">Mes ventes pro</h1>
             </div>
         </section>
         <div class="album py-5 bg-light">
@@ -203,7 +203,7 @@ tbody tr:nth-child(even) {
                                     <td><?php echo $row['signed']; ?></td>
                                     
                                    <td>
-                                    <a href="form-details.php?id=<?php echo $row['id']; ?>" class="btn btn-primary btn-sm">Voir détails</a>
+                                    <a href="form-details-pro.php?id=<?php echo $row['id']; ?>" class="btn btn-primary btn-sm">Voir détails</a>
                                     </td>
                                 </tr>
                                 <?php } ?>

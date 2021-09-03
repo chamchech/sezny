@@ -52,6 +52,11 @@ if (!isset($_SESSION['admin'])) {
                                 </a>
                             </div>
                             <div class="form-group">
+                                <a href="clients-pro.php" class="btn btn-dark btn-block bouton-accueil clientspro">
+                                    Nos clients pro
+                                </a>
+                            </div>
+                            <div class="form-group">
                                 <a href="clients.php" class="btn btn-dark btn-block bouton-accueil clients">
                                     Nos clients
                                 </a>

@@ -4,11 +4,11 @@
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
     require_once './db.php';
-    $smt=$sql->prepare("SELECT nomcontact,prenomcontact,email,raisonsocial,signed FROM ventes WHERE vendeur_id = ? AND signed = 'non'");
+    $smt=$sql->prepare("SELECT nomcontact,prenomcontact,email,signed FROM ventes WHERE vendeur_id = ? AND signed = 'non'");
     $smt->bindParam(1, $_SESSION['vendeur_id'], PDO::PARAM_INT);
     $smt->execute();
 
-    $smt1=$sql->prepare("SELECT nomcontact,prenomcontact,email,raisonsocial,signed FROM ventes WHERE vendeur_id = ? AND signed = 'oui'");
+    $smt1=$sql->prepare("SELECT nomcontact,prenomcontact,email,signed FROM ventes WHERE vendeur_id = ? AND signed = 'oui'");
     $smt1->bindParam(1, $_SESSION['vendeur_id'], PDO::PARAM_INT);
     $smt1->execute();
 
@@ -38,7 +38,7 @@
         <?php if(isset($msg)){ echo $msg; } ?>
         <section class="jumbotron text-center" style="padding:20px">
             <div class="container">
-                <h1 class="jumbotron-heading">Signer une vente part</h1>
+                <h1 class="jumbotron-heading">Signer une vente</h1>
             </div>
         </section>
         <div style="text-align:center">

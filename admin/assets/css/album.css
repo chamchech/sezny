@@ -73,6 +73,9 @@ a.lienSezny{
 .jumbotron-heading{
   margin:3%;
 }
+.afficheInfos{
+  min-width: 1200px;
+}
 
 .py-5{
   display: block;
@@ -80,7 +83,7 @@ a.lienSezny{
   box-sizing: border-box;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  max-width: 1100px;
+  max-width: 1200px;
   margin: auto;
   padding: 2px;
   border-radius: 6px;
@@ -114,12 +117,22 @@ a.lienSezny{
   background-color: #494949;
   border: solid 1px white;
 }
-.clients{
-  width: 225px;
+
+.clientspro{
+  width: 250px;
   margin: auto;
   background-color: #252525;
   border: solid 1px white;
 }
+
+.clients{
+  width: 200px;
+  margin: auto;
+  background-color: #252525;
+  border: solid 1px white;
+}
+
+
 .profil{
   width: 150px;
   margin: auto;

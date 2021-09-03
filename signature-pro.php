@@ -4,11 +4,11 @@
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
     require_once './db.php';
-    $smt=$sql->prepare("SELECT nomcontact,prenomcontact,email,raisonsocial,signed FROM ventes WHERE vendeur_id = ? AND signed = 'non'");
+    $smt=$sql->prepare("SELECT nomcontact,prenomcontact,email,raisonsocial,signed FROM ventespro WHERE vendeur_id = ? AND signed = 'non'");
     $smt->bindParam(1, $_SESSION['vendeur_id'], PDO::PARAM_INT);
     $smt->execute();
 
-    $smt1=$sql->prepare("SELECT nomcontact,prenomcontact,email,raisonsocial,signed FROM ventes WHERE vendeur_id = ? AND signed = 'oui'");
+    $smt1=$sql->prepare("SELECT nomcontact,prenomcontact,email,raisonsocial,signed FROM ventespro WHERE vendeur_id = ? AND signed = 'oui'");
     $smt1->bindParam(1, $_SESSION['vendeur_id'], PDO::PARAM_INT);
     $smt1->execute();
 
@@ -61,9 +61,7 @@
                                 </tr>
                             </thead>
                             <tbody>";
-                                
-                                    
-                                
+
                                 if(isset($_GET['signed'])){
                                     foreach($result1 as $key=>$row){
                                         echo "<tr>
@@ -84,7 +82,7 @@
                                             <td>{$row['signed']}</td>
                                             <td>
 
-                                            <a class='btn btn-success btn-sm' name='sign' href='iframe.php?sign=";
+                                            <a class='btn btn-success btn-sm' name='sign' href='iframe-pro.php?sign=";
             echo $key . "'";
 
             echo ">Signer</a>
@@ -115,8 +113,8 @@
     ================================================== -->
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-    <script src="../assets/js/popper.min.js"></script>
-    <script src="../assets/js/bootstrap.min.js"></script>
-    <script src="../assets/js/vendor/holder.min.js"></script>
+    <script src="./assets/js/popper.min.js"></script>
+    <script src="./assets/js/bootstrap.min.js"></script>
+    <script src="./assets/js/holder.min.js"></script>
 </body>
 </html>

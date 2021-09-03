@@ -162,7 +162,7 @@ tbody tr:nth-child(even) {
                             <thead>
                                 <tr>
                                 <th>Date</th>
-                                <th>Raison Sociale</th>
+                               <!-- <th>Raison Sociale</th>-->
                                     <th>Nom Contact</th>
                                    <!-- <th>Durée/Prix</th>-->
                                     <th>CP/Ville</th>
@@ -196,7 +196,7 @@ tbody tr:nth-child(even) {
                                 ?>
                                 <tr>
                                 <td><?php echo $row['Date_vente']; ?></td>
-                                <td><?php echo $row['raisonsocial']; ?></td>
+                               <!-- <td><?php //echo $row['raisonsocial']; ?></td>-->
                                     <td><?php echo $row['nomcontact']; ?></td>
                                   <!--  <td><?php //echo $row['drop1'].' - '.$row['drop2']; ?></td>-->
                                     <td><?php echo $row['cp'].' '.$row['ville']; ?></td>
