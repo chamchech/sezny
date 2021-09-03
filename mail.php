@@ -36,7 +36,8 @@ $resp=CurlSendGetRequest($api_url.$data['fileid']."/download",$headers);
     // Email envoyé au client
     
     $message ="Merci d'avoir choisi Sezny<br>" ;
-    $message ="Madame, Monsieur,<br>Merci d'avoir souscrit à Sezny.<br>Vous trouverez en Pièces Jointes de ce mail :<br> - Une copie de votre contrat<br> - Les Conditions Générales de Ventes<br> - La presentation de votre offre.<br>Vous pouvez des à présent nous contacter pour répondre a vos demandes Juridiques.<br>Bien Cordialement,<br>Sezny.<br><br><img src='https://cial.sezny.fr/images/logo/logo.png' width='200'>";
+    $message ="Madame, Monsieur,<br>Vous venez d'effectuer une commande pour un gestionnaire d'Energie ! Nous vous remercions pour votre confiance.<br>Vous trouverez en Pièces Jointes de ce mail : :<br> - Une copie de votre  bon de commande<br> - Les Conditions Générales de Ventes<br> - La presentation de votre offre SEZNY.<br>Nous reviendrons vers vous quelques jours avant l'installation.<br>
+Pour toutes questions d'ici là n'hésitez pas à contacter votre conseiller.<br>Nous restons à votre entière disposition et sommes heureux de vous compter parmi nos clients.<br>Bien Cordialement,<br>L'equipe Sezny.<br><br><img src='https://cial.sezny.fr/images/logo/logo.png' width='200'>";
   
     $mail = new PHPMailer(true);
     try {
