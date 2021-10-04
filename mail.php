@@ -25,7 +25,6 @@ $headers = array(
 $x = stripslashes(html_entity_decode(file_get_contents('php://input')));
 $data=json_decode(trim($x),true);
 $smt=$sql->prepare("UPDATE ventes SET signed='oui' WHERE files = ?");
-$smt=$sql->prepare("UPDATE ventespro SET signed='oui' WHERE files = ?");
 $smt->bindParam(1, $data['fileid'], PDO::PARAM_STR);
 echo $data['fileid'];
 $smt->execute();

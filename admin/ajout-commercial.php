@@ -8,6 +8,7 @@ if(isset($_POST['submit'])){
     $address = $_POST['address'];
     $postcode = $_POST['postcode'];
     $email = $_POST['email'];
+    $telcom = $_POST['telcom'];
     $username = $_POST['username'];
     $password = $_POST['password'];
     $password = password_hash($password, PASSWORD_BCRYPT);
@@ -19,15 +20,16 @@ if(isset($_POST['submit'])){
     if($stmt->rowCount()>0){
         $msg = "<div class='alert alert-danger'>Cet identifiant existe déjà. Veuillez en essayer un autre.</div>";
     }else{
-        $stmt = $sql->prepare("INSERT INTO vendeurs (firstname, lastname, address, city, postcode, email, username, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?)"); 
+        $stmt = $sql->prepare("INSERT INTO vendeurs (firstname, lastname, address, city, postcode, email, telcom, username, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)");
         $stmt->bindParam(1, $firstname, PDO::PARAM_STR);
         $stmt->bindParam(2, $lastname, PDO::PARAM_STR);
         $stmt->bindParam(3, $address, PDO::PARAM_STR);
         $stmt->bindParam(4, $city, PDO::PARAM_STR);
         $stmt->bindParam(5, $postcode, PDO::PARAM_STR);
         $stmt->bindParam(6, $email, PDO::PARAM_STR);
-        $stmt->bindParam(7, $username, PDO::PARAM_STR);
-        $stmt->bindParam(8, $password, PDO::PARAM_STR);
+        $stmt->bindParam(7, $telcom, PDO::PARAM_STR);
+        $stmt->bindParam(8, $username, PDO::PARAM_STR);
+        $stmt->bindParam(9, $password, PDO::PARAM_STR);
         $stmt->execute();
         $msg = "<div class='alert alert-success'>Commercial ajouter avec succès.</div>";
     }
@@ -103,6 +105,10 @@ if(isset($_POST['submit'])){
                             <div class="form-group">
                                 <label>Adresse email</label>
                                 <input required class="form-control" name="email" type="email">
+                            </div>
+                            <div class="form-group">
+                                <label>Numéro de téléphone</label>
+                                <input required class="form-control" name="telcom" type="tel">
                             </div>
                             <div class="form-group">
                                 <label>Mot de passe</label>

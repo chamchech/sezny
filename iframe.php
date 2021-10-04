@@ -32,6 +32,14 @@ $x=$result[$_GET['sign']];
     
       <?php
       echo "<html>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
       <iframe height='100%' width = '100%' src='{$app_url}/procedure/sign?members={$members}'></iframe>
       </html>";
       ?>

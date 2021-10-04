@@ -23,6 +23,11 @@ $stmt1 = $sql->prepare("SELECT * FROM vendeurs where id = ?");
 $stmt1->bindParam(1, $_SESSION['vendeur_id'], PDO::PARAM_INT);
 $stmt1->execute();
 $result = $stmt1->fetchAll();
+// Méthode last_insert_id
+$stmt2 = $sql->prepare("SELECT id FROM ventes ORDER by id DESC");
+$stmt2->bindParam(1, $_SESSION['ventes_id'], PDO::PARAM_INT);
+$stmt2->execute();
+$result2 = $stmt2->fetchAll();
 
 $obj_pdf = new TCPDF('P', PDF_UNIT, PDF_PAGE_FORMAT, true, 'UTF-8', false);
 $obj_pdf->SetCreator(PDF_CREATOR);
@@ -95,7 +100,7 @@ $html = '
 				<tr>
 					<td style="width:2%;background-color:#dbd9d9"></td>
 					<td style="width:98%;background-color:#dbd9d9">
-					<h3 class="title">Responsable réseau : ' . $result[0]['firstname'] . " " . $result[0]['lastname'] . ' / ' . $result[0]['email'] . '</h3>
+					<h4 class="title">Commercial(e) : ' . $result[0]['firstname'] . " " . $result[0]['lastname'] . ' N° Bon de commande : ' . $result2['0']['id'] . '</h4>
 					</td>
 				</tr>
 			</table>
@@ -105,19 +110,35 @@ $html = '
 	
 			<table class="first">
 				<tr>
-					<td style="width:2%"> </td>
-					<td style="width:38%">
 						<table class="first">
 							<tr>
-								<td style="width:65%">
-									<span style="text-decoration:underline">Information entreprise :</span><br/>
-									<span style="font-size:10pt;">SAS SEZNY </span><br/>
-									<span style="font-size:10pt;">25 Route de Seilh –</span><br/>
-									<span style="font-size:10pt;">31700 CORNEBARRIEU</span><br/>
-									<span style="font-size:10pt;">RCS TOULOUSE 884422510 </span><br/>
-									<span style="font-size:10pt;"><a href="contact@sezny.fr">contact@sezny.fr</a> </span><br/>
-									<span style="font-size:10pt;"><a href="tel:+33988392677">09 88 39 26 77</a></span><br/>
-								</td>
+							 <td style="width:50%;border-right: solid 2px #0c7484 ">
+            <span style="text-decoration:underline">Intermédiaire : </span><br/>
+            <br/><strong style="font-size:11pt">Nom :</strong><span style="font-size:12pt"> Mti.co</span><br/>
+            <strong style="font-size:11pt">Tel :</strong><span
+                    style="font-size: 12pt"> 05 05 05 06 06</span><br/>
+            <strong style="font-size:11pt">Lieu de commande:</strong>
+            <span class="LieuCommande1 LieuClassActive CheckClassList">
+                            <input type="radio" name="LieuClassList" id="LieuClassList1" value="1" checked="checked">
+                            Domicile</span>
+            <span class="LieuCommande2 LieuClassInactive CheckClassList">
+                            <input type="radio" name="LieuClassList" id="LieuClassList2" value="2">
+                            Siège</span>
+            <span class="LieuCommande3 LieuClassInactive CheckClassList">
+                            <input type="radio" name="LieuClassList" id="LieuClassList3" value="3">
+                            Autre</span>
+            <br/>
+            <strong style="font-size:11pt">En réunion :</strong>
+            <span class="EnReunion ReunionClassActive ReunionClassList">
+                            <input type="radio" name="ReunionClassList" id="ReunionClassList1" value="1"
+                                   checked="checked">
+                            Oui</span>
+            <span class="EnReunion2 ReunionClassInactive ReunionClassList">
+                            <input type="radio" name="ReunionClassList" id="ReunionClassList2" value="2">
+                            Non</span>
+                            <label> Si oui nom de l\'hote ? <input type="text"></label>
+            <br/>
+        </td>
 								<td style="width:35%;">
 									<br/>
 									<br/>
@@ -127,131 +148,150 @@ $html = '
 						</table>
 					</td>
 
-					<td style="width:30%">
-						<span style="text-decoration:underline">Information du Souscripteur : </span><br/>
-                        <strong style="font-size:10pt">Nom et Prénom :</strong><span style="font-size:10pt"> ' . $_POST['prenomcontact'] . ' ' . $_POST['nomcontact'] . '</span><br />
-                        <strong style="font-size:10pt">Adresse :</strong><span style="font-size:10pt"> ' . $_POST['adresse'] . '</span><br />
-                        <strong style="font-size:10pt">Code Postal :</strong><span style="font-size:10pt"> ' . $_POST['cp'] . '</span><br />
-                        <strong style="font-size:10pt">Ville :</strong><span style="font-size:10pt"> ' . $_POST['ville'] . '</span><br />
-                        <strong style="font-size:10pt">Téléphone :</strong><span style="font-size:10pt"> ' . $_POST['tel'] . '</span><br />
-                        <strong style="font-size:10pt">Email :</strong><span style="font-size:10pt"> ' . $_POST['email'] . '</span><br />
-					</td>
-					<td style="40%">
-					 <span style="text-decoration:underline">Deuxieme titulaire : </span><br/>
-                        <strong style="font-size:10pt">Nom et Prénom : </strong><span style="font-size: 10pt"> ' . $_POST['prenomtitulaire'] . ' ' . $_POST['nomtitulaire'] . '</span><br />
-                         <strong style="font-size:10pt">Adresse :</strong><span style="font-size:10pt"> ' . $_POST['adressetitulaire'] . '</span><br />
-                          <strong style="font-size:10pt">Code Postal :</strong><span style="font-size:10pt"> ' . $_POST['cptitulaire'] . '</span><br />
-                          <strong style="font-size:10pt">Ville :</strong><span style="font-size:10pt"> ' . $_POST['villetitulaire'] . '</span><br />
-                    </td>
+				   <td style="width:30%;">
+            <br/>
+            <br/>
+            <img src="./images/seznyTrvector.png" style="width: 200px;margin-left: 200px"/>
+        </td>
+        <td style="width:50%;">
+            <span style="text-decoration:underline">Information entreprise :</span><br/>
+            <br/><span style="font-size:10pt;">SEZNY / Marque de la SAS PVEX </span><br/>
+            <span style="font-size:10pt;">23 PETIT CHEMIN DE LOUDET –</span><br/>
+            <span style="font-size:10pt;">31770 COLOMIERS</span><br/>
+            <span style="font-size:10pt;">RCS TOULOUSE 831892443 </span><br/>
+            <span style="font-size:10pt;"><a href="contact@sezny.fr">contact@sezny.fr</a> </span><br/>
+            <span style="font-size:10pt;"><a href="tel:+33561300606">05 61 30 06 06</a></span><br/>
+        </td>
 				</tr>
 			</table>
 			
 
-			<h3 style="font-family: Calibri;font-size: 12pt;background-color:#dfdfdf;text-align:center;">Souscription</h3>
+		<h3 style="font-family: Calibri;font-size: 12pt;background-color:#dfdfdf;text-align:center;">Informations du client</h3>
 
-			<br/>
-			<br/>	
- 
- 
-		<table class="first">
-				<br/>
-		
-				<tr>
-		
-					<td class="table_2" style="width:100%;text-align:center;font-size:10pt">Souscription en ligne Sezny<br/>
-						Ligne dédiée <a href="tel:+33988392677">09 88 39 26 77</a>
-						<br/>
-						Adresse email dédiée <a href="mailto:contact@sezny.fr">contact@sezny.fr</a>
-						<br/>
-						DATE DE SOUSCRIPTION : ' . $_POST['date'] . '
-						<br/>
-					</td>
-					
-					</tr>
-				
-			</table>
-			<table>
-				<tr>
-					<td style="width:2%;background-color:#dbd9d9"></td>
-					<td style="width:98%;background-color:#dbd9d9">
-
-					<!--Informations<br/><strong style="font-family: Calibri;font-size: 12pt;">AUTORISATION</strong><br/><strong style="font-family: Calibri;font-size: 12pt;">PRELEVEMENT MANDAT SEPA</strong> -->
-
-					</td>
-				</tr>
-			</table>
-
-			<br/>
-
-			<table>
-				<tr>
-					<td style="width:2%;"></td>
-					<td style="width:98%;font-size:10pt;">
-
-		En signant ce formulaire de mandat, vous autorisez (A) SAS SEZNY à envoyer des instructions à votre banque pour 
-		débiter votre compte, et (B) votre banque à débiter votre compte conformément aux instructions de SAS CABINET MEPERY, Vous 
-		bénéficiez du droit d’être remboursé par votre banque selon les conditions décrites dans la convention que vous avez passée 
-		avec elle. Une demande de remboursement doit être présentée dans les 8 semaines suivant la date de débit de votre compte 
-		pour un prélèvement autorisé.
-					</td>
-				</tr>
-			</table>
+<br/>
+<br/>
 
 
-			<h3 style="font-family: Calibri;font-size: 12pt;background-color:#dbd9d9;text-align:center;">NOUS</h3>
+<table class="first" style="border: solid 2px #0c7484;border-radius:5px;">
+    <tr>
+        <td style="width:50%">
+            <span style="text-decoration:underline">Information des Clients : </span><br/>
+            <br/><strong style="font-size:10pt">Nom et Prénom 1 :</strong><span style="font-size:10pt"> ' . $_POST['prenomcontact'] . ' ' . $_POST['nomcontact'] . '</span><br/>
+            <strong style="font-size:10pt">Nom et Prénom 2 : </strong><span style="font-size: 10pt"> ' . $_POST['prenomtitulaire'] . ' ' . $_POST['nomtitulaire'] . '</span><br/>
+            <strong style="font-size:10pt">Adresse :</strong><span
+                    style="font-size:10pt"> ' . $_POST['adresse'] . '</span><br/>
+            <strong style="font-size:10pt">Code Postal :</strong><span
+                    style="font-size:10pt"> ' . $_POST['cp'] . '</span><br/>
+            <strong style="font-size:10pt">Ville :</strong><span
+                    style="font-size:10pt"> ' . $_POST['ville'] . '</span><br/>
+            <strong style="font-size:10pt">Téléphone (mobile) :</strong><span style="font-size:10pt"> ' . $_POST['tel'] . '</span><br/>
+            <strong style="font-size:10pt">Email :</strong><span
+                    style="font-size:10pt"> ' . $_POST['email'] . '</span><br/>
+        </td>
 
-			<table>
-				<tr>
-					<td style="width:2%;"></td>
-					<td style="width:98%;">
-					<strong style="font-size:10pt">Identifiant créancier SEPA (ICS) :</strong> <span style="font-size:10pt">FR19 ZZZ 86E 7B4</span><br/>
-					<strong style="font-size:10pt">Nom du créancier :</strong><span style="font-size:10pt"> SAS SEZNY</span> <br/>
-					<strong style="font-size:10pt">Adresse :</strong><span style="font-size:10pt"> 25 Route de Seilh</span><br/>
-					<strong style="font-size:10pt">CP/Ville : </strong><span style="font-size:10pt">31700 Cornebarrieu</span><br/>
-					<strong style="font-size:10pt">Pays :</strong> <span style="font-size:10pt">France</span>
-					</td>
-				</tr>
-			</table>
+        <td style="width:50%;">
+            <span style="text-decoration: underline">Situation du client<br/></span><br/>
+            <span class="Situation1 SituationClassActive SituationClassList">
+                            <input type="radio" name="SituationClassList" id=SituationClassList1" value="1"
+                                   checked="checked">
+                            Célibataire</span>
+            <span class="Situation2 SituationClassInactive SituationClassList">
+                            <input type="radio" name="SituationClassList" id=SituationClassList2" value="2">
+                            Marié</span>
+            <span class="Situation3 SituationClassInactive SituationClassList">
+                            <input type="radio" name="SituationClassList" id=SituationClassList3" value="3">
+                            Pacsé</span>
+            <span class="Situation4 SituationClassInactive SituationClassList">
+                            <input type="radio" name="SituationClassList" id=SituationClassList4" value="4">
+                            Veuf</span>
+            <br/>
+            <br/>
+            <span style="text-decoration: underline;">Adresse de l\'installation si différente :<br/></span><br/>
+            <strong style="font-size:10pt">Adresse :</strong><span
+                    style="font-size:10pt"> POST Adresse<br/></span><br/>
+            <span style="text-decoration: underline">Information livraison : </span>
+            <p style="width: 670px;"> A compter de la date de signature du présent bon de commande et après la
+                réalisation de la dernière
+                condition suspensive (prêt bancaire) 30 jours maximum après la livraison du matériel et 7 jours pour
+                l\'exécution des travaux, sauf cas particuliers. </p>
 
-			<h3 style="font-family: Calibri;font-size: 12pt;background-color:#dbd9d9;text-align:center;">VOUS</h3>
-			<br/>
+        </td>
+    </tr>
+</table>
 
-			<table>
-				<tr>
-					<td style="width:2%;"></td>
-					<td style="width:98%;">
+<br/>
 
-						<strong style="font-size:10pt">Nom du souscripteur*: </strong><span style="font-size:10pt"> ' . $_POST['prenomcontact'] . ' ' . $_POST['nomcontact'] . ' </span><br/>
-						<strong style="font-size:10pt">Adresse*:</strong> <span style="font-size:10pt">' . $_POST['adresse'] . '</span><br/>
+<h3 style="font-family: Calibri;font-size: 12pt;background-color:#dbd9d9;text-align:center;">Vente Produit et
+    Prestation</h3>
 
-						<strong style="font-size:10pt">CP/Ville*:</strong> <span style="font-size:10pt">' . $_POST['cp'] . ' ' . $_POST['ville'] . '</span><br/>
+<table>
+    <tr>
+        <td style="width:70%;">
+            <strong style="font-size:12pt;text-decoration: underline">Désignation :</strong><br/>
+            <p>Vente d\'une offre SEZNY comprenant :</p>
+            <p> - Un gestionnaire d\'Energie pour résidence principale. Inclus le suivi et le controle de consommation à
+                distance (eau, gaz et éléctiricité)</p>
+            <span style="font-size:12pt"> - Autre : </span><br/>
 
-						<strong style="font-size:10pt">Pays*:</strong> <span style="font-size:10pt"> FRANCE </span><br/>
-					</td>
-				</tr>
-			</table>
+            <strong style="font-size:12pt">Prix HT :</strong><span style="font-size:12pt"> 2724,64€</span><br/>
+            <strong style="font-size:12pt">Prix TTC : </strong><span style="font-size:12pt">2890€</span><br/>
+            <strong style="font-size:12pt">Montant TVA :</strong> <span style="font-size:12pt">155.36€</span>
+        </td>
+
+        <td style="width:30%;padding-top: 100px;">
+            <p style="border: solid 2px #0c7484;border-radius: 5px;width: 300px;padding:15px;font-weight: bold">Montant
+                total de la commande : 2890€ TTC</p>
+        </td>
+    </tr>
+</table>
+
+<h3 style="font-family: Calibri;font-size: 12pt;background-color:#dbd9d9;text-align:center;">Mode de règlement :</h3>
+<br/>
+
+<table>
+    <tr>
+        <td style="width:2%;"></td>
+        <td style="width:98%;">
+
+            <strong style="font-size:12pt;">Comptant: 2890€</strong><span style="font-size:11pt;"> Condition de réglement : 40% à l\'expiration du délai de rétractation et 60% lors de la signature du PV d\'installation, soitle jour de la livraison, par chéque à ordre de Sezny</span><br/>
+           
+
+        </td>
+    </tr>
+</table>
 <br><br>
-			<table>
-				<tr>
-					<td style="width:2%;"></td>
-					<td style="width:98%;font-size:10pt;">
-				* Réponses obligatoires. Le client déclare être informé que le présent contrat comporte des conditions générales de vente.<br> Le client possède une copie des CGV dans sa boîte email. <br/>
-				 Elles sont également disponible en libre accès sur notre <a href="https://cabinet-mepery.fr/Mepery_CGV.pdf" target="_blank">site internet</a>
-					
-					<br/>
-					<br/>
-			        </td>
-				</tr>
-			</table>
-			<br/>
-			<br/>	
-			<br/>
-			<br/>
-			<br/>
-			<br/>
-			<br/>	
-			<br/>
-			<h4 style="text-align:center">Signature du Client*</h4>';
+<h3 style="font-family: Calibri;font-size: 12pt;background-color:#dbd9d9;text-align:center;">Acceptation du Client</h3>
+<br/>
+<table>
+    <tr>
+        <td style="width:2%;"></td>
+        <td style="width:98%;font-size:10pt;">
+           <span> Je reconnais avoir pris connaissance des conditions générales de vente figurant en annexes de ce bon de commande et le
+document d’informations précontractuelles, dont j’ai reçu un exemplaire</span><br/>
+            <span>Je reconnais accepter l’ensemble des dites conditions générales de vente </span><br/>
+            <span>Je reconnais être informé de mon droit de rétractation selon l’Art du code de la consommation. Je suis informé(e) que j’ai la
+possibilité d’annuler librement le présent bon de commande dans les 15 jours suivant la signature</span><br/>
+            <span>J’accepte le principe de signature à distance, je confirme mon consentement plein et entier à signer le présent contrat </span><br/>
+            <br/>
+            <strong><span>□ Je souhaite bénéficier d’une installation immédiate de ma commande, et accepte de fait à renoncer à mon délai de
+rétractation. En cochant cette case je ne pourrai plus faire valoir mes droits au renoncement une fois installé.</span></strong>
+            <br/>
+            <br/>
+        </td>
+    </tr>
+</table>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<br/>
+<span>DATE DE SOUSCRIPTION : ' . $_POST['date'] . '</span>
+<br/>
+<span>Lieu : </span>
+<h4 style="text-align:center">Signature du Client*</h4>';
 
 
 $obj_pdf->writeHtml($html);
@@ -309,9 +349,9 @@ if (isset($resp1['id'])) {
     if (isset($resp2['members'][0]['id'])) {
         $members = $resp2['members'][0]['id'];
 
-//SQL Query to save in DB
+//SQL Query to save in
         $date = date('Y-m-d');
-        $stmt = $sql->prepare("INSERT INTO ventes (vendeur_id, nomcontact, prenomcontact , adresse, cp, ville, nomtitulaire, prenomtitulaire, adressetitulaire, cptitulaire, villetitulaire, tel, email, members, files, Date_vente) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?,'$date')");
+        $stmt = $sql->prepare("INSERT INTO ventes (vendeur_id, nomcontact, prenomcontact , adresse, cp, ville, nomtitulaire, prenomtitulaire, adressetitulaire, cptitulaire, villetitulaire, tel, email, members, files, Date_vente) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, '$date')");
         $stmt->bindParam(1, $_SESSION['vendeur_id'], PDO::PARAM_INT);
         $stmt->bindParam(2, $_POST['nomcontact'], PDO::PARAM_STR);
         $stmt->bindParam(3, $_POST['prenomcontact'], PDO::PARAM_STR);
@@ -334,13 +374,11 @@ if (isset($resp1['id'])) {
 //$stmt->bindParam(15, $_POST['drop1'], PDO::PARAM_STR);
 //$stmt->bindParam(16, $_POST['drop2'], PDO::PARAM_STR);
         $stmt->execute();
-
-
         $mail = new PHPMailer(true);
 
         try {
             //Email envoyé à SEZNY
-            $message2 = "Vous avez recu une nouvelle souscription a l'offre SEZNY<br><br>";
+            $message2 = "Vous avez reçu une nouvelle souscription a l'offre SEZNY<br><br>";
             $message2 .= "--------------------------------------------------------------------------------------------------------" . "<br><br>";
             $message2 .= "<b><u>Commercial :</u></b> <br><br>";
             $message2 .= "<b>Nom :</b> " . $result[0]['firstname'] . " " . $result[0]['lastname'] . "<br>";
@@ -400,10 +438,11 @@ if (isset($resp1['id'])) {
         } catch (Exception $e) {
             echo "Le message n'a pas pu être envoyé. Erreur de l'expéditeur : {$mail->ErrorInfo}";
         }
-//$obj_pdf->Output(__DIR__ . '/../dossier/abonnement-juridique.pdf', 'FI');
+        $obj_pdf->Output(__DIR__ . '/../dossier/souscription-sezny.pdf', 'FI');
 
 
         header('Location: ../signature.php');
+
 
     } else {
         echo "<h2 style='text-align:center'>{$resp2['title']} <br/>{$resp2['detail']}</h2>";

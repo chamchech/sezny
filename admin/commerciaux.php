@@ -86,6 +86,7 @@ function getTotalAllSales($id){
                                     <th>Nom/Prenom</th>
                                     <th>Identifiant</th>
                                     <th>Email</th>
+                                    <th>Tel</th>
                                     <th>CP/Ville</th>
                                     <th>Part</th>
                                     <th>Pro</th>
@@ -103,6 +104,7 @@ function getTotalAllSales($id){
                                     <td><?php echo $row['firstname'].' '.$row['lastname']; ?></td>
                                     <td><?php echo $row['username']; ?></td>
                                     <td><?php echo $row['email']; ?></td>
+                                    <td><?php echo $row['telcom']; ?></td>
                                     <td><?php echo $row['postcode'].' '.$row['city']; ?></td>
                                     <td style="text-align: center"><?php echo getTotalSales($row['id']); ?></td>
                                     <td style="text-align: center"><?php echo getTotalSalesPro($row['id']); ?></td>
