@@ -46,61 +46,63 @@ $obj_pdf->AddPage();
 $html = '
 
 <style>
-.first{
-padding: 1%;
-border: solid #0c7484;
-}
 
-.first2{
-padding: 1%;
-border: solid #dfdfdf 2px;
+.first{
+border: 2px solid #dfdfdf;
+border-collapse: collapse;
+
 }
 .titre{
 font-size: 12px;
-background-color: #dfdfdf ;
-border-bottom: solid #0c7484;
+background-color: #0c7484;
 text-align: center;
+color: #FFFFFF;
+
 }
 
-.titre2{
-font-size: 12px;
-background-color: #dfdfdf ;
-border-bottom: solid #dfdfdf 2px ;
-text-align: center;
+.minititre{
+font-weight: bold;
+font-size: 11pt;
+}
+span,strong{
+font-size: 10pt;
 }
 
+.montantTotal{
+font-weight: bold;
+border: solid 2px #0c7484;
+}
 </style>
 		
-					<h3 class="titre">Commercial(e) : ' . $result[0]['firstname'] . " " . $result[0]['lastname'] . ' | Bon de commande N° ' . $result2['0']['id'] . '</h3>
+			<h3 class="titre">Commercial(e) : ' . $result[0]['firstname'] . " " . $result[0]['lastname'] . ' | Bon de commande N° ' . $result2['0']['id'] . '</h3>
 			<br/>
 			<br/>
 			<table class="first">
 				<tr>
-					<td style="width:50%;border-right: solid #0c7484">
-            <span style="text-decoration:underline">Intermédiaire : </span><br/>
-            <br/><strong style="font-size:10pt">Nom :</strong><span style="font-size:12pt"> Mti.co</span><br/>
-            <strong style="font-size:10pt">Tel :</strong><span
-                    style="font-size: 10pt"> 05 05 05 06 06</span><br/>
-            <strong style="font-size:10pt">Lieu de commande:</strong>
-            <span style="font-size: 10pt" class="LieuCommande1 LieuClassActive CheckClassList">
+					<td style="width:50%;border-right: 2px solid #dfdfdf ">
+            <span class="minititre">Intermédiaire : </span><br/>
+            <br/><span>Nom :</span><span> Mti.co</span><br/>
+            <span>Tel :</span><span> 05 05 05 06 06</span><br/>
+            <span>Lieu de commande:</span>
+            <span class="LieuCommande1 LieuClassActive CheckClassList">
                             <input type="radio" name="LieuClassList" id="LieuClassList1" value="1" checked="checked">
                             Domicile</span>
-            <span style="font-size: 10pt" class="LieuCommande2 LieuClassInactive CheckClassList">
+            <span class="LieuCommande2 LieuClassInactive CheckClassList">
                             <input type="radio" name="LieuClassList" id="LieuClassList2" value="2">
                             Siège</span>
-            <span style="font-size: 10pt" class="LieuCommande3 LieuClassInactive CheckClassList">
+            <span class="LieuCommande3 LieuClassInactive CheckClassList">
                             <input type="radio" name="LieuClassList" id="LieuClassList3" value="3">
                             Autre</span>
             <br/>
-            <strong style="font-size: 10pt" style="font-size:10pt">En réunion :</strong>
-            <span style="font-size: 10pt" class="EnReunion ReunionClassActive ReunionClassList">
+            <span>En réunion :</span>
+            <span class="EnReunion ReunionClassActive ReunionClassList">
                             <input type="radio" name="ReunionClassList" id="ReunionClassList1" value="1"
                                    checked="checked">
                             Oui</span>
-            <span style="font-size: 10pt" class="EnReunion2 ReunionClassInactive ReunionClassList">
+            <span class="EnReunion2 ReunionClassInactive ReunionClassList">
                             <input type="radio" name="ReunionClassList" id="ReunionClassList2" value="2">
                             Non</span><br/>
-                            <label style="font-size: 10pt"> Si oui nom de l\'hote ? POST nom de hote</label>
+                            <span> Si oui nom de l\'hote ? POST nom de hote</span>
         </td>
 								<td style="width:20%;">
 									<br/>
@@ -109,46 +111,38 @@ text-align: center;
 								</td>
 								
 			<td style="width:50%;">
-            <span style="text-decoration:underline">Information entreprise :</span><br/>
-            <br/><span style="font-size:10pt;">SEZNY / Marque de la SAS PVEX </span><br/>
-            <span style="font-size:10pt;">23 PETIT CHEMIN DE LOUDET –</span><br/>
-            <span style="font-size:10pt;">31770 COLOMIERS</span><br/>
-            <span style="font-size:10pt;">RCS TOULOUSE 831892443 </span><br/>
-            <span style="font-size:10pt;"><a href="contact@sezny.fr">contact@sezny.fr</a> </span><br/>
-            <span style="font-size:10pt;"><a href="tel:+33561300606">05 61 30 06 06</a></span><br/>
-        </td>
+            <span class="minititre">Information entreprise :</span><br/>
+            <br/><span>SEZNY / Marque de la SAS PVEX </span><br/>
+            <span>23 PETIT CHEMIN DE LOUDET –</span><br/>
+            <span>31770 COLOMIERS</span><br/>
+            <span>RCS TOULOUSE 831892443 </span><br/>
+            <span><a href="contact@sezny.fr">contact@sezny.fr</a> </span><br/>
+            <span><a href="tel:+33561300606">05 61 30 06 06</a></span><br/>
+                        </td>
 							</tr>
-							
-			
 						</table>
-
-			
-
-		<h3 class="titre2">Informations du client</h3>
+		<h3 class="titre">Informations du client</h3>
 
 <br/>
 <br/>
 
 
-<table class="first2">
+<table class="first">
     <tr>
-        <td style="width:40%">
-            <span style="text-decoration:underline">Information des Clients : </span><br/>
-            <br/><strong style="font-size:10pt">Nom et Prénom 1 :</strong><span style="font-size:10pt"> ' . $_POST['prenomcontact'] . ' ' . $_POST['nomcontact'] . '</span><br/>
-            <strong style="font-size:10pt">Nom et Prénom 2 : </strong><span style="font-size: 10pt"> ' . $_POST['prenomtitulaire'] . ' ' . $_POST['nomtitulaire'] . '</span><br/>
-            <strong style="font-size:10pt">Adresse :</strong><span
-                    style="font-size:10pt"> ' . $_POST['adresse'] . '</span><br/>
-            <strong style="font-size:10pt">Code Postal :</strong><span
-                    style="font-size:10pt"> ' . $_POST['cp'] . '</span><br/>
-            <strong style="font-size:10pt">Ville :</strong><span
-                    style="font-size:10pt"> ' . $_POST['ville'] . '</span><br/>
-            <strong style="font-size:10pt">Téléphone (mobile) :</strong><span style="font-size:10pt"> ' . $_POST['tel'] . '</span><br/>
-            <strong style="font-size:10pt">Email :</strong><span
-                    style="font-size:10pt"> ' . $_POST['email'] . '</span><br/>
+        <td style="width:40%;border: 2px solid #dfdfdf ">
+            <span class="minititre">Information des Clients : <br/></span><br>
+            <strong>Nom et Prénom 1 :</strong><span> ' . $_POST['prenomcontact'] . ' ' . $_POST['nomcontact'] . '</span><br>
+            <strong>Nom et Prénom 2 : </strong><span> ' . $_POST['prenomtitulaire'] . ' ' . $_POST['nomtitulaire'] . '</span><br>
+            <strong>Adresse :</strong><span> ' . $_POST['adresse'] . '</span><br>
+            <strong>Code Postal :</strong><span> ' . $_POST['cp'] . '</span><br>
+            <strong>Ville :</strong><span> ' . $_POST['ville'] . '</span><br>
+            <strong>Téléphone (mobile) :</strong><span> ' . $_POST['tel'] . '</span><br>
+            <strong>Email :</strong><span> ' . $_POST['email'] . '</span><br>
         </td>
 
-        <td style="width:60%">
-            <span style="text-decoration: underline">Situation du client<br/></span><br/>
+        <td style="width:60%;border:2px solid #dfdfdf ">
+            <span class="minititre">Situation du client :</span>
+            
             <span class="Situation1 SituationClassActive SituationClassList">
                             <input type="radio" name="SituationClassList" id=SituationClassList1" value="1"
                                    checked="checked">
@@ -162,65 +156,60 @@ text-align: center;
             <span class="Situation4 SituationClassInactive SituationClassList">
                             <input type="radio" name="SituationClassList" id=SituationClassList4" value="4">
                             Veuf</span>
-            <br/>
-            <br/>
-            <span style="text-decoration: underline;">Adresse de l\'installation si différente :<br/></span><br/>
-            <strong style="font-size:10pt">Adresse :</strong><span
-                    style="font-size:10pt"> POST Adresse<br/></span><br/>
-            <span style="text-decoration: underline">Information livraison : </span>
-            <p style="width: 670px;font-size: 10pt"> A compter de la date de signature du présent bon de commande et après la
-                réalisation de la dernière
+            <br>
+            <br>
+            <span class="minititre">Adresse de l\'installation si différente :</span><br>
+            <span>'. $_POST['adressetitulaire'] .' '. $_POST['cp'] .' '. $_POST['ville'] .'<br></span><br>
+            <span class="minititre">Information livraison :</span>
+            <span>A compter de la date de signature du présent bon de commande et après la réalisation de la dernière
                 condition suspensive (prêt bancaire) 30 jours maximum après la livraison du matériel et 7 jours pour
-                l\'exécution des travaux, sauf cas particuliers. </p>
+                l\'exécution des travaux, sauf cas particuliers.</span>
 
         </td>
     </tr>
 </table>
-
-<br/>
-
-<h3 class="titre2">Vente Produit et Prestation</h3>
-
-<table class="first2">
+<h3 class="titre">Vente Produit et Prestation</h3>
+ 
+<table class="first">
     <tr>
-        <td style="width:70%;">
-            <strong style="font-size:10pt;text-decoration: underline">Désignation :</strong><br/>
-            <p>Vente d\'une offre SEZNY comprenant :</p>
-            <p> - Un gestionnaire d\'Energie pour résidence principale. Inclus le suivi et le controle de consommation à
-                distance (eau, gaz et éléctiricité)</p>
-            <span style="font-size:10pt"> - Autre : </span><br/>
-
-            <strong style="font-size:10pt">Prix HT :</strong><span style="font-size:12pt"> 2724,64€</span><br/>
-            <strong style="font-size:10pt">Prix TTC : </strong><span style="font-size:12pt">2890€</span><br/>
-            <strong style="font-size:10pt">Montant TVA :</strong> <span style="font-size:12pt">155.36€</span>
+        <td style="width:60%">
+            <span class="minititre">Désignation :</span><br>
+            <span>Vente d\'une offre SEZNY comprenant :</span><br>
+            <span> - Un gestionnaire d\'Energie pour résidence principale. Inclus le suivi et le controle de consommation à
+                distance (eau, gaz et éléctiricité)</span><br>
+            <span> - Autre : $POST </span><br>
+          
         </td>
-
-        <td style="width:30%;padding-top: 100px;">
-            <p style="border: solid 2px #0c7484;border-radius: 5px;width: 300px;padding:15px;font-weight: bold">Montant
-                total de la commande : 2890€ TTC</p>
+        
+        <td style="width:40%">
+        <br>
+        <br>
+        <br>
+            <strong>Prix HT : </strong><span>2724,64€</span><br>
+            <strong>Prix TTC : </strong><span>2890€</span><br>
+            <strong>Montant TVA : </strong> <span>155.36€</span><br>
+            <span class="montantTotal">Montant total de la commande : 2890€ TTC</span>
         </td>
     </tr>
 </table>
-
-<h3 class="titre2">Mode de règlement :</h3>
+<h3 class="titre">Mode de règlement :</h3>
 <br/>
-
-<table class="first2">
+<table class="first">
     <tr>
-        <td style="width:98%;">
+        <td style="width:100%;">
 
-            <strong style="font-size:10pt;">Comptant: 2890€</strong><span style="font-size:10pt;"> Condition de réglement : 40% à l\'expiration du délai de rétractation et 60% lors de la signature du PV d\'installation, soitle jour de la livraison, par chéque à ordre de Sezny</span><br/>
-            <strong style="font-size:10pt;">Financement par notre partenaire : </strong><span style="font-size:10pt;"> Nom du préteur : Sofinco</span>
+            <strong>Comptant: 2890€</strong><span> Condition de réglement : 40% à l\'expiration du délai de rétractation et 60% lors de la signature du PV d\'installation, soitle jour de la livraison, par chéque à ordre de Sezny</span><br/>
+            <strong>Financement par notre partenaire : </strong><span> Nom du préteur : Sofinco</span>
         </td>
     </tr>
 </table>
 <br><br>
-<h3 class="titre2"> Acceptation du client </h3>
+<h3 class="titre"> Acceptation du client </h3>
 <br/>
-<table class="first2">
+<table class="first">
     <tr>
-        <td style="width:2%;"></td>
-        <td style="width:98%;font-size:10pt;">
+        <td style="width:2%"></td>
+        <td style="width:98%">
            <span>Je reconnais avoir pris connaissance des conditions générales de vente figurant en annexes de ce bon de commande et le
 document d’informations précontractuelles, dont j’ai reçu un exemplaire</span><br/>
             <span>Je reconnais accepter l’ensemble des dites conditions générales de vente </span><br/>
