@@ -1,4 +1,4 @@
-function Change() {
+/*function Change() {
 
     if ((document.getElementById('case_1').checked)) {
         document.getElementById('dynamicForm').style.display="block";
@@ -25,5 +25,5 @@ $('.SituationClassList').bind('click',function(){
     $(this).removeClass('SituationClassInactive').addClass('SituationClassActive');
     $(this).find('input:radio').prop('checked', true);
 });
-
+*/
 

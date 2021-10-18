@@ -50,6 +50,7 @@ $html = '
 .first{
 border: 2px solid #dfdfdf;
 border-collapse: collapse;
+padding: 2px;
 
 }
 .titre{
@@ -72,17 +73,20 @@ font-size: 10pt;
 font-weight: bold;
 border: solid 2px #0c7484;
 }
+/*.infoClient{
+font-weight: bold;
+}*/
 </style>
 		
-			<h3 class="titre">Commercial(e) : ' . $result[0]['firstname'] . " " . $result[0]['lastname'] . ' | Bon de commande N° ' . $result2['0']['id'] . '</h3>
+			<h3 style="padding: 15px;" class="titre">Commercial(e) : ' . $result[0]['firstname'] . " " . $result[0]['lastname'] . ' | Bon de commande N° ' . $result2['0']['id'] . '</h3>
 			<br/>
 			<br/>
 			<table class="first">
 				<tr>
 					<td style="width:50%;border-right: 2px solid #dfdfdf ">
-            <span class="minititre">Intermédiaire : </span><br/>
-            <br/><span>Nom :</span><span> Mti.co</span><br/>
-            <span>Tel :</span><span> 05 05 05 06 06</span><br/>
+            <span class="minititre">Intermédiaire : </span>
+            <span>Nom :</span><span> Mti.co</span><br>
+            <span>Tel :</span><span> 05 05 05 06 06</span><br>
             <span>Lieu de commande:</span>
             <span class="LieuCommande1 LieuClassActive CheckClassList">
                             <input type="radio" name="LieuClassList" id="LieuClassList1" value="1" checked="checked">
@@ -93,7 +97,7 @@ border: solid 2px #0c7484;
             <span class="LieuCommande3 LieuClassInactive CheckClassList">
                             <input type="radio" name="LieuClassList" id="LieuClassList3" value="3">
                             Autre</span>
-            <br/>
+            <br>
             <span>En réunion :</span>
             <span class="EnReunion ReunionClassActive ReunionClassList">
                             <input type="radio" name="ReunionClassList" id="ReunionClassList1" value="1"
@@ -101,23 +105,23 @@ border: solid 2px #0c7484;
                             Oui</span>
             <span class="EnReunion2 ReunionClassInactive ReunionClassList">
                             <input type="radio" name="ReunionClassList" id="ReunionClassList2" value="2">
-                            Non</span><br/>
-                            <span> Si oui nom de l\'hote ? POST nom de hote</span>
+                            Non</span><br>
+                            <span>Si oui nom de l\'hote ? POST nom de hote</span>
         </td>
 								<td style="width:20%;">
-									<br/>
-									<br/>
+									<br>
+									<br>
 									<img class="logo" src="seznyTrvector.png"/>
 								</td>
 								
 			<td style="width:50%;">
-            <span class="minititre">Information entreprise :</span><br/>
-            <br/><span>SEZNY / Marque de la SAS PVEX </span><br/>
-            <span>23 PETIT CHEMIN DE LOUDET –</span><br/>
-            <span>31770 COLOMIERS</span><br/>
-            <span>RCS TOULOUSE 831892443 </span><br/>
-            <span><a href="contact@sezny.fr">contact@sezny.fr</a> </span><br/>
-            <span><a href="tel:+33561300606">05 61 30 06 06</a></span><br/>
+            <span class="minititre">Information entreprise :</span><br>
+            <span>SEZNY / Marque de la SAS PVEX </span><br>
+            <span>23 PETIT CHEMIN DE LOUDET –</span><br>
+            <span>31770 COLOMIERS</span><br>
+            <span>RCS TOULOUSE 831892443 </span><br>
+            <span>contact@sezny.fr</span><br>
+            <span>05 61 30 06 06</span><br>
                         </td>
 							</tr>
 						</table>
@@ -130,17 +134,18 @@ border: solid 2px #0c7484;
 <table class="first">
     <tr>
         <td style="width:40%;border: 2px solid #dfdfdf ">
-            <span class="minititre">Information des Clients : <br/></span><br>
-            <strong>Nom et Prénom 1 :</strong><span> ' . $_POST['prenomcontact'] . ' ' . $_POST['nomcontact'] . '</span><br>
-            <strong>Nom et Prénom 2 : </strong><span> ' . $_POST['prenomtitulaire'] . ' ' . $_POST['nomtitulaire'] . '</span><br>
-            <strong>Adresse :</strong><span> ' . $_POST['adresse'] . '</span><br>
-            <strong>Code Postal :</strong><span> ' . $_POST['cp'] . '</span><br>
-            <strong>Ville :</strong><span> ' . $_POST['ville'] . '</span><br>
-            <strong>Téléphone (mobile) :</strong><span> ' . $_POST['tel'] . '</span><br>
-            <strong>Email :</strong><span> ' . $_POST['email'] . '</span><br>
+            <span class="minititre">Information des Clients :</span><br>
+            <span>Nom et Prénom 1 :</span><span class="infoClient"> ' . $_POST['prenomcontact'] . ' ' . $_POST['nomcontact'] . '</span><br>
+            <span>Nom et Prénom 2 : </span><span class="infoClient"> ' . $_POST['prenomtitulaire'] . ' ' . $_POST['nomtitulaire'] . '</span><br>
+            <span>Adresse :</span><span class="infoClient"> ' . $_POST['adresse'] . '</span><br>
+            <span>Code Postal :</span><span class="infoClient"> ' . $_POST['cp'] . '</span><br>
+            <span>Ville :</span><span class="infoClient"> ' . $_POST['ville'] . '</span><br>
+            <span>Téléphone (mobile) :</span><span class="infoClient"> ' . $_POST['tel'] . '</span><br>
+            <span>Email :</span><span class="infoClient"> ' . $_POST['email'] . '</span><br>
         </td>
 
         <td style="width:60%;border:2px solid #dfdfdf ">
+        
             <span class="minititre">Situation du client :</span>
             
             <span class="Situation1 SituationClassActive SituationClassList">
@@ -175,8 +180,9 @@ border: solid 2px #0c7484;
         <td style="width:60%">
             <span class="minititre">Désignation :</span><br>
             <span>Vente d\'une offre SEZNY comprenant :</span><br>
-            <span> - Un gestionnaire d\'Energie pour résidence principale. Inclus le suivi et le controle de consommation à
-                distance (eau, gaz et éléctiricité)</span><br>
+            <span> - Un gestionnaire d\'Energie pour résidence principale. 
+                    Inclus le suivi et le controle de consommation à
+                    distance (eau, gaz et éléctiricité)</span><br>
             <span> - Autre : $POST </span><br>
           
         </td>
@@ -184,10 +190,9 @@ border: solid 2px #0c7484;
         <td style="width:40%">
         <br>
         <br>
-        <br>
-            <strong>Prix HT : </strong><span>2724,64€</span><br>
-            <strong>Prix TTC : </strong><span>2890€</span><br>
-            <strong>Montant TVA : </strong> <span>155.36€</span><br>
+            <span>Prix HT : </span><span>2724,64€</span><br>
+            <span>Prix TTC : </span><span>2890€</span><br>
+            <span>Montant TVA : </span> <span>155.36€</span><br>
             <span class="montantTotal">Montant total de la commande : 2890€ TTC</span>
         </td>
     </tr>
@@ -196,45 +201,38 @@ border: solid 2px #0c7484;
 <br/>
 <table class="first">
     <tr>
-        <td style="width:100%;">
-
+    <td style="width:2%"></td>
+        <td style="width:98%;">
+<br/>
             <strong>Comptant: 2890€</strong><span> Condition de réglement : 40% à l\'expiration du délai de rétractation et 60% lors de la signature du PV d\'installation, soitle jour de la livraison, par chéque à ordre de Sezny</span><br/>
-            <strong>Financement par notre partenaire : </strong><span> Nom du préteur : Sofinco</span>
+            <strong>Financement par notre partenaire : </strong><span>Nom du préteur : SOFINCO</span> <span>Montant financé : 2890€</span> <span>Partie financée : 2890€</span><br/>
+            <span>Taux nominal : %</span> <span>Taux assurance TAEA : % </span> <span>Nombre de mesnualités : ...</span><br/>
+            <span>Montant des mesnualités : ...</span> <span>Prémière échéance ... jours après l\'installation</span>
         </td>
     </tr>
 </table>
-<br><br>
 <h3 class="titre"> Acceptation du client </h3>
 <br/>
 <table class="first">
     <tr>
         <td style="width:2%"></td>
         <td style="width:98%">
+        <br/>
            <span>Je reconnais avoir pris connaissance des conditions générales de vente figurant en annexes de ce bon de commande et le
-document d’informations précontractuelles, dont j’ai reçu un exemplaire</span><br/>
-            <span>Je reconnais accepter l’ensemble des dites conditions générales de vente </span><br/>
+document d’informations précontractuelles, dont j’ai reçu un exemplaire.</span><br/>
+            <span>Je reconnais accepter l’ensemble des dites conditions générales de vente.</span><br/>
             <span>Je reconnais être informé de mon droit de rétractation selon l’Art du code de la consommation. Je suis informé(e) que j’ai la
-possibilité d’annuler librement le présent bon de commande dans les 15 jours suivant la signature</span><br/>
-            <span>J’accepte le principe de signature à distance, je confirme mon consentement plein et entier à signer le présent contrat </span><br/>
+possibilité d’annuler librement le présent bon de commande dans les 15 jours suivant la signature.</span><br/>
+            <span>J’accepte le principe de signature à distance, je confirme mon consentement plein et entier à signer le présent contrat.</span><br/>
             <br/>
-            <strong><span>Je souhaite bénéficier d’une installation immédiate de ma commande, et accepte de fait à renoncer à mon délai de
-rétractation. En cochant cette case je ne pourrai plus faire valoir mes droits au renoncement une fois installé.</span></strong>
-            <br/>
-            <br/>
+            <strong><span>Je souhaite bénéficier d’une installation immédiate de ma commande et accepte de fait à renoncer à mon délai de
+rétractation. En cochant cette case je ne pourrai plus faire valoir mes droits au renoncement une fois installé.</span></strong><br>
         </td>
     </tr>
 </table>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<span>DATE DE SOUSCRIPTION : ' . $_POST['date'] . '</span>
-<br/>
-<span>Lieu : </span>
+<br>
+<span class="minititre">DATE DE SOUSCRIPTION : ' . $_POST['date'] . '</span><br>
+<span class="minititre">Lieu : </span>
 <h4 style="text-align:center">Signature du Client*</h4>';
 
 

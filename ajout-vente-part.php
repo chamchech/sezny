@@ -28,7 +28,7 @@ $result = $stmt1->fetchAll();
     <meta name="apple-mobile-web-app-status-bar-style" content="#151515">
     <!-- Meta Description -->
     <meta name="robots" content="noindex">
-    <title>Vente - SEZNY</title>
+    <h1>Vente - SEZNY</h1>
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="56x56" href="assets/img/favicon-96x96.png">
     <!-- Main style sheet -->
