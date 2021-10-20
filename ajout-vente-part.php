@@ -28,7 +28,7 @@ $result = $stmt1->fetchAll();
     <meta name="apple-mobile-web-app-status-bar-style" content="#151515">
     <!-- Meta Description -->
     <meta name="robots" content="noindex">
-    <h1>Vente - SEZNY</h1>
+    <title>Vente - SEZNY</title>
     <!-- Favicon -->
     <link rel="icon" type="image/png" sizes="56x56" href="assets/img/favicon-96x96.png">
     <!-- Main style sheet -->
@@ -40,6 +40,11 @@ $result = $stmt1->fetchAll();
     <link rel="stylesheet" id="jssDefault" href="css/color.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css"
           integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
 </header>
 
 <body>
@@ -59,8 +64,8 @@ $result = $stmt1->fetchAll();
     <!-- -------------------------------------------------------------------------- Formulaire d'inscription -->
     <div class="inscription-us-page section-spacing-inscription">
         <div class="container">
-            <form enctype="multipart/form-data" method="post" action="pdf/bc-particulier.php"
-                  class="theme-form-one form-validation">
+            <div enctype="multipart/form-data" method="post" action="pdf/bc-particulier.php"
+                 class="theme-form-one form-validation">
                 <input type="hidden" name="date" value="<?php echo date("d / m / Y"); ?>">
                 <div class='row'>
                     <div class='col-lg-6 col-12 form-group'>
@@ -73,7 +78,50 @@ $result = $stmt1->fetchAll();
                     </div> <!-- BLABLABLA FIVERR -->
                 </div>
                 <br/>
-                <div class="col-sm-12 col-12">
+                <center><h3>Lieu de commande</h3></center>
+                <div class="row commandeInfo">
+                    <div class="col-sm">
+                        <div class="form-info">
+                            <label class="form-check-info" for="case_info1">Domicile</label>
+                            <input value="Domicile" class="call-back-form-one" type="radio" name="lieucommande"
+                                   id="case_info1">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-info">
+                            <label class="form-check-info" for="case_info2">Siège</label>
+                            <input value="Siège" class="call-back-form-one" type="radio" name="lieucommande"
+                                   id="case_info2">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-info">
+                            <label class="form-check-info" for="case_info3">Autre</label>
+                            <input value="Autre" class="call-back-form-one" type="radio" name="lieucommande"
+                                   id="case_info3">
+                        </div>
+                    </div>
+                </div>
+                <center><h3>En réunion </h3></center>
+                <div class="row reunion">
+                    <div class="col-sm">
+                        <div class="form-info">
+                            <label class="form-check-reunion" for="case_info3">Oui</label>
+                            <input value="Oui" class="call-back-form-one" type="radio" name="enreunion"
+                                   id="case_reunion1">
+                            <label class="form-check-reunion" for="case_info3">Si oui nom de l'hote</label>
+                            <input class="call-back-form-one" placeholder="Nom de l'hote" type="text" name="nomdehote">
+                        </div>
+                    </div>
+                    <div class="col-sm">
+                        <div class="form-info" style="width: 500px">
+                            <label class="form-check-reunion" for="case_info3">Non</label>
+                            <input value="Non" class="call-back-form-one" type="radio" name="enreunion"
+                                   id="case_reunion2">
+                        </div>
+                    </div>
+                </div>
+                <f class="col-sm-12 col-12">
                     <div class="form-group">
                         <!--
                        <div class="row">
@@ -126,7 +174,7 @@ padding: 10px;">
                                </div>
                            </div> -->
                         <center>
-                            <h2>Informations Contact</h2>
+                            <h3>Informations Contact</h3>
                         </center>
                         <br>
                         <div class="row formInscription">
@@ -172,49 +220,40 @@ padding: 10px;">
                         </div>
                     </div>
 
-                    <center><h2>Situation familiale</h2></center>
+                    <center><h3>Situation familiale</h3></center>
                     <div class="row row-cols-4 formInscription">
                         <div class="col">
                             <div class="form-check">
-                                <input  value="marie_1" class="form-check-input" type="radio" name="situation"
+                                <label class="form-check-label" for="case_1">Marié</label>
+                                <input value="Marié" class="call-back-form-one" type="radio" name="situation"
                                        id="case_1" onclick="Change()">
-                                <label class="form-check-label" for="case_1">
-                                    Marié
-                                </label>
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="situation"
+                                <label class="form-check-label" for="case_2">Celibataire</label>
+                                <input value="Célibataire" class="call-back-form-one" type="radio" name="situation"
                                        id="case_2">
-                                <label class="form-check-label" for="case_2">
-                                    Divorcé
-                                </label>
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="situation"
+                                <label class="form-check-label" for="case_3">Pacsé</label>
+                                <input value="Pacsé" class="call-back-form-one" type="radio" name="situation"
                                        id="case_3">
-                                <label class="form-check-label" for="case_3">
-                                    Séparé
-                                </label>
                             </div>
                         </div>
                         <div class="col">
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="situation"
+                                <label class="form-check-label" for="case_4">Veuf</label>
+                                <input value="Veuf" class="call-back-form-one" type="radio" name="situation"
                                        id="case_4">
-                                <label class="form-check-label" for="case_4">
-                                    Célibataire
-                                </label>
                             </div>
                         </div>
-
                     </div>
 
                     <div id="dynamicForm">
-                        <center><h4>Deuxieme titulaire de contract</h4></center>
+                        <center><h3>Deuxieme titulaire de contract</h3></center>
                         <br>
                         <div class="row formInscription">
                             <div class="col-lg-6 col-12 form-group  ">
@@ -224,14 +263,16 @@ padding: 10px;">
                             </div>
                             <div class="col-lg-6 col-12 form-group">
                                 <label>Nom</label>
-                                <input type="text" placeholder="Votre Nom" name="nomtitulaire" class="call-back-form-one"
-                                       >
+                                <input type="text" placeholder="Votre Nom" name="nomtitulaire"
+                                       class="call-back-form-one">
                             </div>
                         </div>
+                    </div>
+                    <center><h3>Adresse de l'installation si différente</h3></center>
                     <div class="row formInscription">
-
                         <label>Adresse</label>
-                        <input type="text" placeholder="90 bis Chemin St Jean" class="call-back-form-one" name="adressetitulaire">
+                        <input type="text" placeholder="90 bis Chemin St Jean" class="call-back-form-one"
+                               name="adressetitulaire">
                         <div class="col-lg-4 col-12 form-group">
                             <label>Code Postal</label>
                             <input type="text" placeholder="31770" name="cptitulaire" class="call-back-form-one"
@@ -239,85 +280,109 @@ padding: 10px;">
                         </div>
                         <div class="col-lg-8 col-12 form-group">
                             <label>Ville</label>
-                            <input type="text" placeholder="Colomiers" class="call-back-form-one" name="villetitulaire">
+                            <input type="text" placeholder="Colomiers" class="call-back-form-one"
+                                   name="villetitulaire">
                         </div>
                     </div>
 
-                </div>
+                    <center><h3>Vente Produit et Prestation</h3></center>
+                    <br>
+                    <br>
 
-                <!--   <center>
-                       <h2>Informations de paiement</h2>
-                   </center>
-                   <br>
-
-                   <div class="row">
-                       <div class="col-lg-6 col-12 form-group">
-                           <label>BIC</label>
-                           <input type="text" placeholder="Votre BIC" name="bic" class="call-back-form-one" required>
-                       </div>
-                       <div class="col-lg-6 col-12 form-group">
-                           <label>IBAN</label>
-                           <input type="text" placeholder="Votre IBAN" id="iban" name="iban" class="call-back-form-one"
-                                  required>
-                       </div>
-                   </div>
---><br>
-
-                <div class="row formInscription ">
-                    <div class="col-lg-12 col-12 form-group">
-
-                        <p class="pj" style="color:#424242;">Veuillez joindre le <strong>RIB</strong> :
-                            <label><input type="hidden" name="MAX_FILE_SIZE" value="2000000000">
-                                <input id="input-validation" type="file" name="validerib" required></label></p>
-                        <p class="pj" style="color:#424242;">Veuillez joindre votre <strong>CNI</strong> :
-                            <label><input type="hidden" name="MAX_FILE_SIZE" value="2000000000">
-                                <input id="input-validation" type="file" name="valideiban" required></label></p>
-                        <p class="pj" style="color:#424242;">Veuillez joindre votre <strong>justificatif de
-                                domicile</strong> :
-                            <label><input type="hidden" name="MAX_FILE_SIZE" value="2000000000">
-                                <input id="input-validation" type="file" name="validekbis" required></label></p>
-
-                        <p><input id="field_terms" type="checkbox" name="terms" required="required">
-                            <label for="field_terms"><b>J'ai lu et j'accepte les <a href="dossier/Mepery_CGV.pdf"
-                                                                                    target="_blank"
-                                                                                    style="color:#424242;">conditions
-                                        générales de vente</b></a> :</label></p>
-                        <p><i>Tout les champs sont obligatoires</i></p>
+                    <div class="formProduit">
+                        <div class="form-check form-switch ">
+                            <input class="form-check-input" type="checkbox" id="pack1" checked disabled>
+                            <label class="form-check-label" for="flexSwitchCheckDefault2">Un gestionnaire d'Energie pour
+                                résidence principale.
+                                Inclus le suivi et le controle de consommation à
+                                distance (eau, gaz et éléctiricité)</label>
+                        </div>
+                        <div class="form-check form-switch">
+                            <div>
+                                <input class="form-check-input" type="checkbox" id="packautre" name="autre"
+                                       onclick="ChangePack()">
+                                <label class="form-check-label" for="packautre">Autre</label>
+                            </div>
+                            <div id="dynamicFormPack" style="display: none">
+                                <input id="autreInput" type="text" placeholder="Préciser" name="autre"
+                                       class="call-back-form-one">
+                            </div>
+                        </div>
                     </div>
-                </div>
 
-                <style type="text/css">
-                    input[type="checkbox"]:required:invalid + label {
-                        color: red;
-                    }
 
-                    input[type="checkbox"]:required:valid + label {
-                        color: green;
-                    }
-                </style>
-                <div class="row">
-                    <div class="col-lg-12">
-                        <br>
-                        <br>
-                        <center><input type="submit" name="valideinscription" id="valide" class="theme-button-one"
-                                       value="Continuer"></center>
+
+
+                    <!--   <center>
+                           <h2>Informations de paiement</h2>
+                       </center>
+                       <br>
+
+                       <div class="row">
+                           <div class="col-lg-6 col-12 form-group">
+                               <label>BIC</label>
+                               <input type="text" placeholder="Votre BIC" name="bic" class="call-back-form-one" required>
+                           </div>
+                           <div class="col-lg-6 col-12 form-group">
+                               <label>IBAN</label>
+                               <input type="text" placeholder="Votre IBAN" id="iban" name="iban" class="call-back-form-one"
+                                      required>
+                           </div>
+                       </div>
+    --><br>
+
+                    <div class="row formInscription ">
+                        <div class="col-lg-12 col-12 form-group">
+
+                            <p class="pj" style="color:#424242;">Veuillez joindre le <strong>RIB</strong> :
+                                <label><input type="hidden" name="MAX_FILE_SIZE" value="2000000000">
+                                    <input id="input-validation" type="file" name="validerib" required></label></p>
+                            <p class="pj" style="color:#424242;">Veuillez joindre votre <strong>CNI</strong> :
+                                <label><input type="hidden" name="MAX_FILE_SIZE" value="2000000000">
+                                    <input id="input-validation" type="file" name="valideiban" required></label></p>
+                            <p class="pj" style="color:#424242;">Veuillez joindre votre <strong>justificatif de
+                                    domicile</strong> :
+                                <label><input type="hidden" name="MAX_FILE_SIZE" value="2000000000">
+                                    <input id="input-validation" type="file" name="validekbis" required></label></p>
+
+                            <p><input id="field_terms" type="checkbox" name="terms" required="required">
+                                <label for="field_terms"><b>J'ai lu et j'accepte les <a href="dossier/Mepery_CGV.pdf"
+                                                                                        target="_blank"
+                                                                                        style="color:#424242;">conditions
+                                            générales de vente</b></a> :</label></p>
+                            <p><i>Tout les champs sont obligatoires</i></p>
+                        </div>
                     </div>
-                </div>
+
+                    <style type="text/css">
+                        input[type="checkbox"]:required:invalid + label {
+                            color: red;
+                        }
+
+                        input[type="checkbox"]:required:valid + label {
+                            color: green;
+                        }
+                    </style>
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <br>
+                            <br>
+                            <center><input type="submit" name="valideinscription" id="valide" class="theme-button-one"
+                                           value="Continuer"></center>
+                        </div>
+                    </div>
+            </div>
         </div>
-        </form>
-    </div>
-    <br>
-    <div class="row">
-        <div class="col-lg-4"></div>
-        <div class="col-lg-4">
-            <center><a href="index.php">
-                    <button type="button" class="btn btn-danger theme-button-two">Annuler</button>
-                </a></center>
+        <br>
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4">
+                <center><a href="index.php">
+                        <button type="button" class="btn btn-danger theme-button-two">Annuler</button>
+                    </a></center>
+            </div>
         </div>
     </div>
-</div>
-</div>
-</div>
 </body>
 
 <footer class="theme-footer-one">
@@ -338,7 +403,7 @@ padding: 10px;">
             <div class="col-sm-2">
                 <p class="footer-text" style="text-align:center;">© <a class="lienSezny"
                                                                        href="https://sezny.fr/">Sezny</a>
-                    2019</p>
+                    2021</p>
             </div>
             <div class="col-sm-7">
                 <a class="footer-text" target="blank" href="https://www.mepery.fr/mentions-legales.php">Mentions
@@ -409,6 +474,12 @@ padding: 10px;">
     <script src="js/css-filters-polyfill.js"></script>
     <div class="overlay"></div>
     <script src="js/func.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+            integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+            crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+            integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+            crossorigin="anonymous"></script>
 </footer>
 
 </html>
