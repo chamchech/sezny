@@ -14,27 +14,49 @@
     outline: none;
 
 }
+div.form-group{
+    display: block;
+    margin: auto;
+}
+
+label.btn.btn-outline-primary.btnlieu{
+    width: 250px;
+    margin: 20px;
+    padding: 10px;
+    border: solid 2px;
+}
+
+.btnvalid,.btnannul{
+    width: 250px;
+    padding: 20px;
+}
 
 .formInscription,.commandeInfo,.reunion{
     padding:20px;
     -webkit-border-radius:10px;
     -moz-border-radius: 10px;
-    background: #F8F8F8;
     border-radius: 6px;
     margin: 10px 0 40px 0;
+    background: #f7f7f9;
+    display: block;
 }
-
+.btn.check{
+    width: 250px;
+}
+#inputHote{
+    width: 250px;
+}
 .formProduit{
     padding:20px;
     -webkit-border-radius:10px;
     -moz-border-radius: 10px;
-    background: #F8F8F8;
     border-radius: 6px;
     margin: 10px;
 }
 .form-check-label{
     margin-bottom: 10px;
 }
+
 input.call-back-form-one{
     display: block;
     background-color: #FFFFFF;
@@ -44,7 +66,7 @@ input.call-back-form-one{
     width: 100%;
     padding: 8px;
     border-radius: 6px;
-    border: solid 2px #246874;
+    border: solid 2px #136efd;
     -webkit-border-radius:6px;
     -moz-border-radius:6px;
 }
@@ -89,7 +111,7 @@ label{
 .content-name{
     position: absolute;
     bottom: 5px;
-    left: 0px;
+    left: 0;
     transition: all 0.3s ease;
 }
 
@@ -135,4 +157,21 @@ button.theme-button-two{
 #case_reunion1,#case_reunion2 {
     margin-top: -27px;
     margin-left: -150px;
+}
+
+ul#myTab.nav.nav-tabs{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+a#fin-tab,a#fin2-tab,a#fin3-tab,a#fin4-tab,a#fin5-tab{
+    width: 200px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+label.btn.btn-outline-primary.finExpress{
+    display: block;
+    width: 200px;
+    margin: auto;
 }
