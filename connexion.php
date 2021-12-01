@@ -57,7 +57,7 @@ if(isset($_POST['valider'])){
 		<div class="login-content">
 			<form class="login100-form validate-form" method="post" action="">
 				<img src="images/avatar_sezny2.png">
-				<h2 class="title">Sezny</h2>
+				<h2 class="title"> S'identifier</h2>
            		<div class="input-div one">
            		   <div class="i">
            		   		<i class="fas fa-user"></i>
