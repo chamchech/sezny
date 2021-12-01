@@ -1,0 +1,15 @@
+{
+  "name": "vendor_name/cial.sezny",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "cham_",
+      "email": "email@example.com"
+    }
+  ],
+  "require-dev": {
+    "phpunit/phpunit": "9"
+  }
+}

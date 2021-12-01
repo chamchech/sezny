@@ -1,0 +1,380 @@
+t=2021-09-28T15:51:35+0200 lvl=warn msg="can't bind default web address, trying alternatives" obj=web addr=127.0.0.1:4040
+t=2021-09-28T15:51:35+0200 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4041
+t=2021-09-28T15:51:35+0200 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2021-09-28T15:51:35+0200 lvl=info msg="client session established" obj=csess id=fe27b34e715d
+t=2021-09-28T15:51:35+0200 lvl=info msg="started tunnel" obj=tunnels name="sezny (http)" addr=https://127.0.0.1:80 url=http://5c02-2001-861-5e50-7bd0-85df-4395-cf5d-5acb.eu.ngrok.io
+t=2021-09-28T15:51:35+0200 lvl=info msg="started tunnel" obj=tunnels name=sezny addr=https://127.0.0.1:80 url=https://5c02-2001-861-5e50-7bd0-85df-4395-cf5d-5acb.eu.ngrok.io
+t=2021-09-28T15:51:50+0200 lvl=info msg=start pg=/ id=b5077d430a9e135f
+t=2021-09-28T15:51:50+0200 lvl=info msg=end pg=/ id=b5077d430a9e135f status=302 dur=0s
+t=2021-09-28T15:51:50+0200 lvl=info msg=start pg=/inspect/http id=af5327605251686c
+t=2021-09-28T15:51:50+0200 lvl=info msg=end pg=/inspect/http id=af5327605251686c status=200 dur=0s
+t=2021-09-28T15:51:50+0200 lvl=info msg=start pg=/static/compiled-css/vendor.c962e5007001e427374a.css id=db43865abd29cdc6
+t=2021-09-28T15:51:50+0200 lvl=info msg=start pg=/static/js/rpx.bb9505282104c4cc0917.js id=9be7615072c98929
+t=2021-09-28T15:51:50+0200 lvl=info msg=start pg=/static/js/vendor.7efe51701003466ba71c.js id=a5dc6c26a04f25c2
+t=2021-09-28T15:51:50+0200 lvl=info msg=start pg=/static/js/app.57e17b1c647cd71763bd.js id=404642554153f6e6
+t=2021-09-28T15:51:50+0200 lvl=info msg=start pg=/static/compiled-css/app.abeefa2f1e7ed6a57390.css id=089a4570fca5196d
+t=2021-09-28T15:51:50+0200 lvl=info msg=end pg=/static/js/rpx.bb9505282104c4cc0917.js id=9be7615072c98929 status=200 dur=113.579ms
+t=2021-09-28T15:51:50+0200 lvl=info msg=end pg=/static/compiled-css/app.abeefa2f1e7ed6a57390.css id=089a4570fca5196d status=200 dur=39.5045ms
+t=2021-09-28T15:51:50+0200 lvl=info msg=end pg=/static/js/app.57e17b1c647cd71763bd.js id=404642554153f6e6 status=200 dur=116.0176ms
+t=2021-09-28T15:51:50+0200 lvl=info msg=end pg=/static/compiled-css/vendor.c962e5007001e427374a.css id=db43865abd29cdc6 status=200 dur=141.8002ms
+t=2021-09-28T15:51:50+0200 lvl=info msg=end pg=/static/js/vendor.7efe51701003466ba71c.js id=a5dc6c26a04f25c2 status=200 dur=122.0681ms
+t=2021-09-28T15:51:51+0200 lvl=info msg=start pg=/grpc/agent.Web/Preloaded id=56e237848b0bbd0a
+t=2021-09-28T15:51:51+0200 lvl=info msg=start pg=/grpc/agent.Web/State id=32c0b052bf4e0b76
+t=2021-09-28T15:51:51+0200 lvl=info msg=end pg=/grpc/agent.Web/Preloaded id=56e237848b0bbd0a status=200 dur=9.2235ms
+t=2021-09-28T15:51:51+0200 lvl=info msg=start pg=/static/favicon.ico id=43e1cdd680db2231
+t=2021-09-28T15:51:51+0200 lvl=info msg=end pg=/static/favicon.ico id=43e1cdd680db2231 status=200 dur=570.4µs
+t=2021-09-28T15:51:54+0200 lvl=info msg=start pg=/static/favicon.ico id=2e5240e2f685220c
+t=2021-09-28T15:51:54+0200 lvl=info msg=end pg=/static/favicon.ico id=2e5240e2f685220c status=304 dur=834.8µs
+t=2021-09-28T15:51:56+0200 lvl=info msg="join connections" obj=join id=a41385815916 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:64252
+t=2021-09-28T15:51:56+0200 lvl=info msg="join connections" obj=join id=c9e64c5e168f l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:65053
+t=2021-09-28T15:51:59+0200 lvl=info msg="join connections" obj=join id=380d4da57d4d l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:55445
+t=2021-09-28T15:52:03+0200 lvl=info msg="join connections" obj=join id=b5fbfe103785 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:61736
+t=2021-09-28T15:52:18+0200 lvl=info msg="join connections" obj=join id=6d9cd9395eea l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:49747
+t=2021-09-28T15:52:21+0200 lvl=info msg="join connections" obj=join id=42c9acd13e01 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:61821
+t=2021-09-28T15:52:48+0200 lvl=info msg="join connections" obj=join id=c5228e2c7544 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:63781
+t=2021-09-28T15:52:49+0200 lvl=info msg="join connections" obj=join id=5ba190392fee l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:50231
+t=2021-09-28T15:53:05+0200 lvl=info msg="join connections" obj=join id=3e84561621c3 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:65283
+t=2021-09-28T15:53:06+0200 lvl=info msg="join connections" obj=join id=0df450fe62be l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:54108
+t=2021-09-28T15:53:52+0200 lvl=info msg="join connections" obj=join id=f6710b108cf5 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:57538
+t=2021-09-28T15:54:01+0200 lvl=info msg="join connections" obj=join id=fcd0dcaa8a75 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:63503
+t=2021-09-28T15:54:08+0200 lvl=info msg="Got quit command" obj=consoleui
+t=2021-09-28T15:54:08+0200 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+t=2021-09-28T15:54:08+0200 lvl=info msg="session closing" obj=tunnels.session err=nil
+t=2021-09-28T15:54:08+0200 lvl=info msg="accept failed" obj=csess id=fe27b34e715d err="reconnecting session closed"
+t=2021-09-28T15:55:00+0200 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+t=2021-09-28T15:55:01+0200 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2021-09-28T15:55:01+0200 lvl=info msg="client session established" obj=csess id=b04cdc91b8b8
+t=2021-09-28T15:55:01+0200 lvl=info msg="started tunnel" obj=tunnels name="sezny (http)" addr=https://127.0.0.1:80 url=http://0153-2001-861-5e50-7bd0-85df-4395-cf5d-5acb.eu.ngrok.io
+t=2021-09-28T15:55:01+0200 lvl=info msg="started tunnel" obj=tunnels name=sezny addr=https://127.0.0.1:80 url=https://0153-2001-861-5e50-7bd0-85df-4395-cf5d-5acb.eu.ngrok.io
+t=2021-09-28T15:55:28+0200 lvl=info msg="join connections" obj=join id=4c0d60bbb24a l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:49242
+t=2021-09-28T15:55:30+0200 lvl=warn msg="failed to open private leg" id=921a3820e259 privaddr=127.0.0.1:80 err="dial tcp 127.0.0.1:80: connectex: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée."
+t=2021-09-28T15:55:30+0200 lvl=info msg="join connections" obj=join id=422b6aac291c l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:60972
+t=2021-09-28T15:55:31+0200 lvl=info msg="join connections" obj=join id=c0c72c546e49 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:58283
+t=2021-09-28T15:55:31+0200 lvl=info msg="join connections" obj=join id=a10a9606d454 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:62257
+t=2021-09-28T15:55:47+0200 lvl=info msg="join connections" obj=join id=698d10541958 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:49804
+t=2021-09-28T15:58:31+0200 lvl=warn msg="failed to open private leg" id=b429dbb3856f privaddr=127.0.0.1:80 err="dial tcp 127.0.0.1:80: connectex: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée."
+t=2021-09-28T15:58:36+0200 lvl=warn msg="failed to open private leg" id=2f6ca8ade463 privaddr=127.0.0.1:80 err="dial tcp 127.0.0.1:80: connectex: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée."
+t=2021-09-28T15:59:19+0200 lvl=info msg="join connections" obj=join id=6a1aa7e40ff0 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:54747
+t=2021-09-28T15:59:22+0200 lvl=info msg="join connections" obj=join id=b524105a9e2b l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:51419
+t=2021-09-28T16:02:00+0200 lvl=info msg="join connections" obj=join id=74762929e4d7 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:63004
+t=2021-09-28T16:02:03+0200 lvl=info msg="join connections" obj=join id=c8773bf0dd67 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:55669
+t=2021-09-28T16:02:20+0200 lvl=info msg="Got quit command" obj=consoleui
+t=2021-09-28T16:02:20+0200 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+t=2021-09-28T16:02:20+0200 lvl=info msg="session closing" obj=tunnels.session err=nil
+t=2021-09-28T16:02:20+0200 lvl=info msg="accept failed" obj=csess id=b04cdc91b8b8 err="reconnecting session closed"
+t=2021-09-28T16:02:25+0200 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+t=2021-09-28T16:02:25+0200 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2021-09-28T16:02:25+0200 lvl=info msg="client session established" obj=csess id=7bea0bb7624f
+t=2021-09-28T16:02:25+0200 lvl=info msg="started tunnel" obj=tunnels name="sezny (http)" addr=https://127.0.0.1:8080 url=http://ff51-2001-861-5e50-7bd0-85df-4395-cf5d-5acb.eu.ngrok.io
+t=2021-09-28T16:02:25+0200 lvl=info msg="started tunnel" obj=tunnels name=sezny addr=https://127.0.0.1:8080 url=https://ff51-2001-861-5e50-7bd0-85df-4395-cf5d-5acb.eu.ngrok.io
+t=2021-09-28T16:02:32+0200 lvl=warn msg="failed to open private leg" id=d9334dc1eda6 privaddr=127.0.0.1:8080 err="dial tcp 127.0.0.1:8080: connectex: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée."
+t=2021-09-28T16:02:34+0200 lvl=warn msg="failed to open private leg" id=8f532c752277 privaddr=127.0.0.1:8080 err="dial tcp 127.0.0.1:8080: connectex: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée."
+t=2021-09-28T16:02:37+0200 lvl=warn msg="failed to open private leg" id=7af6acb1f821 privaddr=127.0.0.1:8080 err="dial tcp 127.0.0.1:8080: connectex: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée."
+t=2021-09-28T16:02:37+0200 lvl=warn msg="failed to open private leg" id=2fbc9d16ef0e privaddr=127.0.0.1:8080 err="dial tcp 127.0.0.1:8080: connectex: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée."
+t=2021-09-28T16:02:39+0200 lvl=warn msg="failed to open private leg" id=24abe6c1e663 privaddr=127.0.0.1:8080 err="dial tcp 127.0.0.1:8080: connectex: Aucune connexion n’a pu être établie car l’ordinateur cible l’a expressément refusée."
+t=2021-09-28T16:02:56+0200 lvl=info msg="Got quit command" obj=consoleui
+t=2021-09-28T16:02:56+0200 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+t=2021-09-28T16:02:56+0200 lvl=info msg="session closing" obj=tunnels.session err=nil
+t=2021-09-28T16:02:56+0200 lvl=info msg="accept failed" obj=csess id=7bea0bb7624f err="reconnecting session closed"
+t=2021-09-28T16:06:28+0200 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+t=2021-09-28T16:06:28+0200 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2021-09-28T16:06:28+0200 lvl=info msg="client session established" obj=csess id=4c054853953d
+t=2021-09-28T16:06:28+0200 lvl=info msg="started tunnel" obj=tunnels name="sezny (http)" addr=https://127.0.0.1:80 url=http://a816-2001-861-5e50-7bd0-85df-4395-cf5d-5acb.eu.ngrok.io
+t=2021-09-28T16:06:28+0200 lvl=info msg="started tunnel" obj=tunnels name=sezny addr=https://127.0.0.1:80 url=https://a816-2001-861-5e50-7bd0-85df-4395-cf5d-5acb.eu.ngrok.io
+t=2021-09-28T16:06:36+0200 lvl=info msg="join connections" obj=join id=470942aa5304 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:60122
+t=2021-09-28T16:06:36+0200 lvl=info msg="join connections" obj=join id=e9583377de0f l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53419
+t=2021-09-28T16:06:36+0200 lvl=info msg="join connections" obj=join id=194d3b2b04c0 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53385
+t=2021-09-28T16:06:36+0200 lvl=info msg="join connections" obj=join id=78fae9fec539 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:55257
+t=2021-09-28T16:06:39+0200 lvl=info msg="join connections" obj=join id=07e44719e508 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:59814
+t=2021-09-28T16:13:26+0200 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+t=2021-09-28T16:13:27+0200 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2021-09-28T16:13:27+0200 lvl=info msg="client session established" obj=csess id=ad53b76171dc
+t=2021-09-28T16:13:27+0200 lvl=info msg="started tunnel" obj=tunnels name="sezny (http)" addr=https://127.0.0.1:80 url=http://f038-2001-861-5e50-7bd0-85df-4395-cf5d-5acb.eu.ngrok.io
+t=2021-09-28T16:13:27+0200 lvl=info msg="started tunnel" obj=tunnels name=sezny addr=https://127.0.0.1:80 url=https://f038-2001-861-5e50-7bd0-85df-4395-cf5d-5acb.eu.ngrok.io
+t=2021-09-28T16:13:30+0200 lvl=info msg="join connections" obj=join id=27c75019a864 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:55601
+t=2021-09-28T16:13:31+0200 lvl=info msg="join connections" obj=join id=bc62a0c414e4 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:61422
+t=2021-09-28T16:13:31+0200 lvl=info msg="join connections" obj=join id=5e55f95eea15 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:64855
+t=2021-09-28T16:13:31+0200 lvl=info msg="join connections" obj=join id=580b0b24b260 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:55327
+t=2021-09-28T16:13:31+0200 lvl=info msg="join connections" obj=join id=2949eeb489f4 l=127.0.0.1:80 r=157.161.155.132:33724
+t=2021-09-28T16:13:34+0200 lvl=info msg="join connections" obj=join id=5966b66f1e7a l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:52575
+t=2021-09-28T16:13:51+0200 lvl=info msg=start pg=/ id=1e1207091d9327c9
+t=2021-09-28T16:13:51+0200 lvl=info msg=end pg=/ id=1e1207091d9327c9 status=302 dur=0s
+t=2021-09-28T16:13:51+0200 lvl=info msg=start pg=/inspect/http id=9819a68d9f7ef0c7
+t=2021-09-28T16:13:51+0200 lvl=info msg=end pg=/inspect/http id=9819a68d9f7ef0c7 status=200 dur=594.8µs
+t=2021-09-28T16:13:51+0200 lvl=info msg=start pg=/static/compiled-css/vendor.c962e5007001e427374a.css id=53062b9cb44c04a5
+t=2021-09-28T16:13:51+0200 lvl=info msg=start pg=/static/compiled-css/app.abeefa2f1e7ed6a57390.css id=bb4df7e5fb5e3c2b
+t=2021-09-28T16:13:51+0200 lvl=info msg=start pg=/static/js/vendor.7efe51701003466ba71c.js id=4232c4c46c6e9351
+t=2021-09-28T16:13:51+0200 lvl=info msg=start pg=/static/js/app.57e17b1c647cd71763bd.js id=fa866c82c0502de5
+t=2021-09-28T16:13:51+0200 lvl=info msg=start pg=/static/js/rpx.bb9505282104c4cc0917.js id=6c336f43c4b64ffc
+t=2021-09-28T16:13:51+0200 lvl=info msg=end pg=/static/js/rpx.bb9505282104c4cc0917.js id=6c336f43c4b64ffc status=200 dur=61.699ms
+t=2021-09-28T16:13:51+0200 lvl=info msg=end pg=/static/compiled-css/app.abeefa2f1e7ed6a57390.css id=bb4df7e5fb5e3c2b status=200 dur=65.8758ms
+t=2021-09-28T16:13:51+0200 lvl=info msg=end pg=/static/js/app.57e17b1c647cd71763bd.js id=fa866c82c0502de5 status=200 dur=62.6975ms
+t=2021-09-28T16:13:51+0200 lvl=info msg=end pg=/static/compiled-css/vendor.c962e5007001e427374a.css id=53062b9cb44c04a5 status=200 dur=67.1634ms
+t=2021-09-28T16:13:51+0200 lvl=info msg=end pg=/static/js/vendor.7efe51701003466ba71c.js id=4232c4c46c6e9351 status=200 dur=64.9491ms
+t=2021-09-28T16:13:51+0200 lvl=info msg=start pg=/grpc/agent.Web/Preloaded id=4399d4004c37a22b
+t=2021-09-28T16:13:51+0200 lvl=info msg=start pg=/grpc/agent.Web/State id=3c4164de0184bfd4
+t=2021-09-28T16:13:51+0200 lvl=info msg=end pg=/grpc/agent.Web/Preloaded id=4399d4004c37a22b status=200 dur=5.8123ms
+t=2021-09-28T16:13:52+0200 lvl=info msg=start pg=/static/favicon.ico id=d7d57f373c8acfd4
+t=2021-09-28T16:13:52+0200 lvl=info msg=end pg=/static/favicon.ico id=d7d57f373c8acfd4 status=200 dur=835.9µs
+t=2021-09-28T16:13:54+0200 lvl=info msg=start pg=/static/favicon.ico id=b08a2aff663eeee4
+t=2021-09-28T16:13:54+0200 lvl=info msg=end pg=/static/favicon.ico id=b08a2aff663eeee4 status=304 dur=0s
+t=2021-09-28T16:14:24+0200 lvl=info msg="join connections" obj=join id=cabecdac667e l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53797
+t=2021-09-28T16:14:28+0200 lvl=info msg="join connections" obj=join id=75742a81814c l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:60984
+t=2021-09-28T16:16:07+0200 lvl=info msg=start pg=/ id=8b8b5d22b76d49fd
+t=2021-09-28T16:16:07+0200 lvl=info msg=end pg=/ id=8b8b5d22b76d49fd status=302 dur=0s
+t=2021-09-28T16:16:07+0200 lvl=info msg=start pg=/inspect/http id=2c4e2936766aad7b
+t=2021-09-28T16:16:07+0200 lvl=info msg=end pg=/inspect/http id=2c4e2936766aad7b status=200 dur=0s
+t=2021-09-28T16:16:07+0200 lvl=info msg=start pg=/static/compiled-css/vendor.c962e5007001e427374a.css id=2a7d48d5aa274a65
+t=2021-09-28T16:16:07+0200 lvl=info msg=end pg=/static/compiled-css/vendor.c962e5007001e427374a.css id=2a7d48d5aa274a65 status=304 dur=8.0519ms
+t=2021-09-28T16:16:07+0200 lvl=info msg=start pg=/static/compiled-css/app.abeefa2f1e7ed6a57390.css id=0725180ae0ca2d4e
+t=2021-09-28T16:16:07+0200 lvl=info msg=end pg=/static/compiled-css/app.abeefa2f1e7ed6a57390.css id=0725180ae0ca2d4e status=304 dur=997.3µs
+t=2021-09-28T16:16:07+0200 lvl=info msg=start pg=/static/js/vendor.7efe51701003466ba71c.js id=46f75d19bb923ca0
+t=2021-09-28T16:16:07+0200 lvl=info msg=start pg=/static/js/app.57e17b1c647cd71763bd.js id=ce11b5720fc7a0c6
+t=2021-09-28T16:16:07+0200 lvl=info msg=start pg=/static/js/rpx.bb9505282104c4cc0917.js id=9c7fd01314bd4d0d
+t=2021-09-28T16:16:07+0200 lvl=info msg=end pg=/static/js/rpx.bb9505282104c4cc0917.js id=9c7fd01314bd4d0d status=304 dur=2.1312ms
+t=2021-09-28T16:16:07+0200 lvl=info msg=end pg=/static/js/app.57e17b1c647cd71763bd.js id=ce11b5720fc7a0c6 status=304 dur=12.5556ms
+t=2021-09-28T16:16:08+0200 lvl=info msg=end pg=/static/js/vendor.7efe51701003466ba71c.js id=46f75d19bb923ca0 status=304 dur=31.7865ms
+t=2021-09-28T16:16:08+0200 lvl=info msg=start pg=/grpc/agent.Web/Preloaded id=e9a93e2e07e44528
+t=2021-09-28T16:16:08+0200 lvl=info msg=end pg=/grpc/agent.Web/Preloaded id=e9a93e2e07e44528 status=200 dur=1.001ms
+t=2021-09-28T16:16:08+0200 lvl=info msg=start pg=/grpc/agent.Web/State id=a4a7e33ef7a2f602
+t=2021-09-28T16:16:08+0200 lvl=info msg=start pg=/static/favicon.ico id=0f3a4568108a3c5a
+t=2021-09-28T16:16:08+0200 lvl=info msg=end pg=/static/favicon.ico id=0f3a4568108a3c5a status=304 dur=0s
+t=2021-09-28T16:16:20+0200 lvl=info msg="join connections" obj=join id=846e55fcdb8e l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53174
+t=2021-09-28T16:16:23+0200 lvl=info msg="join connections" obj=join id=2ecf74fa2a95 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:59539
+t=2021-09-28T16:16:26+0200 lvl=info msg=end pg=/grpc/agent.Web/State id=3c4164de0184bfd4 status=200 dur=2m34.9127366s
+t=2021-09-28T16:16:26+0200 lvl=info msg=end pg=/grpc/agent.Web/State id=a4a7e33ef7a2f602 status=200 dur=18.4111962s
+t=2021-09-28T16:16:29+0200 lvl=info msg="join connections" obj=join id=3fdabec5b47c l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:58173
+t=2021-09-28T16:16:34+0200 lvl=info msg="join connections" obj=join id=d3c2694048de l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:59722
+t=2021-09-28T16:16:35+0200 lvl=info msg="join connections" obj=join id=e2115de2a0be l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:58627
+t=2021-09-28T16:16:36+0200 lvl=info msg="join connections" obj=join id=f717ac714558 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:60432
+t=2021-09-28T16:16:45+0200 lvl=info msg="Got quit command" obj=consoleui
+t=2021-09-28T16:16:45+0200 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+t=2021-09-28T16:16:45+0200 lvl=info msg="session closing" obj=tunnels.session err=nil
+t=2021-09-28T16:16:45+0200 lvl=info msg="accept failed" obj=csess id=ad53b76171dc err="reconnecting session closed"
+t=2021-09-28T16:17:17+0200 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+t=2021-09-28T16:17:17+0200 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2021-09-28T16:17:17+0200 lvl=info msg="client session established" obj=csess id=497320476380
+t=2021-09-28T16:17:17+0200 lvl=info msg="started tunnel" obj=tunnels name="sezny (http)" addr=https://127.0.0.1:80 url=http://6eb7-2001-861-5e50-7bd0-85df-4395-cf5d-5acb.eu.ngrok.io
+t=2021-09-28T16:17:17+0200 lvl=info msg="started tunnel" obj=tunnels name=sezny addr=https://127.0.0.1:80 url=https://6eb7-2001-861-5e50-7bd0-85df-4395-cf5d-5acb.eu.ngrok.io
+t=2021-09-28T16:17:28+0200 lvl=info msg="join connections" obj=join id=e1352bb6c063 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:51276
+t=2021-09-28T16:17:28+0200 lvl=info msg="join connections" obj=join id=c5008829fc6e l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:60230
+t=2021-09-28T16:17:32+0200 lvl=info msg="join connections" obj=join id=cc4996a14925 l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:56585
+t=2021-09-28T16:18:50+0200 lvl=info msg="join connections" obj=join id=52cef15fb87a l=127.0.0.1:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:61416
+t=2021-09-28T16:18:54+0200 lvl=info msg="Got quit command" obj=consoleui
+t=2021-09-28T16:18:54+0200 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+t=2021-09-28T16:18:54+0200 lvl=info msg="session closing" obj=tunnels.session err=nil
+t=2021-09-28T16:18:54+0200 lvl=info msg="accept failed" obj=csess id=497320476380 err="reconnecting session closed"
+t=2021-09-28T16:19:10+0200 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+t=2021-09-28T16:19:10+0200 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2021-09-28T16:19:10+0200 lvl=info msg="client session established" obj=csess id=3d8d004c25a6
+t=2021-09-28T16:19:10+0200 lvl=info msg="started tunnel" obj=tunnels name="sezny (http)" addr=http://localhost:80 url=http://9d4f-2001-861-5e50-7bd0-85df-4395-cf5d-5acb.eu.ngrok.io
+t=2021-09-28T16:19:10+0200 lvl=info msg="started tunnel" obj=tunnels name=sezny addr=http://localhost:80 url=https://9d4f-2001-861-5e50-7bd0-85df-4395-cf5d-5acb.eu.ngrok.io
+t=2021-09-28T16:19:13+0200 lvl=info msg="join connections" obj=join id=951b14406fc3 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:65310
+t=2021-09-28T16:19:13+0200 lvl=info msg="join connections" obj=join id=f067569353ad l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:63664
+t=2021-09-28T16:19:14+0200 lvl=info msg="join connections" obj=join id=11cc5c4d0905 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:58097
+t=2021-09-28T16:19:14+0200 lvl=info msg="join connections" obj=join id=fef0db414650 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53180
+t=2021-09-28T16:19:14+0200 lvl=info msg="join connections" obj=join id=ba603294aa96 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:64212
+t=2021-09-28T16:19:14+0200 lvl=info msg="join connections" obj=join id=49ba10183daf l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:49455
+t=2021-09-28T16:19:51+0200 lvl=info msg="join connections" obj=join id=18925066eda0 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53551
+t=2021-09-28T16:19:51+0200 lvl=info msg="join connections" obj=join id=65c64c1f9a46 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:58097
+t=2021-09-28T16:19:51+0200 lvl=info msg="join connections" obj=join id=e57dca68831c l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:49455
+t=2021-09-28T16:19:51+0200 lvl=info msg="join connections" obj=join id=09789604d2d8 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:64212
+t=2021-09-28T16:19:51+0200 lvl=info msg="join connections" obj=join id=4d7ad13b65fb l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53180
+t=2021-09-28T16:19:59+0200 lvl=info msg="join connections" obj=join id=e650436aff35 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53180
+t=2021-09-28T16:19:59+0200 lvl=info msg="join connections" obj=join id=b7548a7cdcb4 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:58097
+t=2021-09-28T16:20:00+0200 lvl=info msg="join connections" obj=join id=9fd555e9845c l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:64212
+t=2021-09-28T16:20:00+0200 lvl=info msg="join connections" obj=join id=3e93759379bc l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:49455
+t=2021-09-28T16:20:09+0200 lvl=info msg="join connections" obj=join id=bce704778583 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:64212
+t=2021-09-28T16:20:09+0200 lvl=info msg="join connections" obj=join id=f0d0560a448a l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:58097
+t=2021-09-28T16:20:09+0200 lvl=info msg="join connections" obj=join id=626cff1a5320 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:49455
+t=2021-09-28T16:20:09+0200 lvl=info msg="join connections" obj=join id=564676b91c70 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53180
+t=2021-09-28T16:20:09+0200 lvl=info msg="join connections" obj=join id=26670e672e4d l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:54185
+t=2021-09-28T16:20:09+0200 lvl=info msg="join connections" obj=join id=8efaac3e0411 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53489
+t=2021-09-28T16:20:25+0200 lvl=info msg="join connections" obj=join id=78a86faf9372 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53489
+t=2021-09-28T16:20:27+0200 lvl=info msg="join connections" obj=join id=e7268cfbb200 l=[::1]:80 r=82.113.19.5:55332
+t=2021-09-28T16:20:28+0200 lvl=info msg="join connections" obj=join id=02ef334b802c l=[::1]:80 r=82.113.19.5:42152
+t=2021-09-28T16:20:55+0200 lvl=info msg=start pg=/ id=9360d7205b381a5a
+t=2021-09-28T16:20:55+0200 lvl=info msg=end pg=/ id=9360d7205b381a5a status=302 dur=0s
+t=2021-09-28T16:20:55+0200 lvl=info msg=start pg=/inspect/http id=e7ccf2e3e9f2fcc5
+t=2021-09-28T16:20:55+0200 lvl=info msg=end pg=/inspect/http id=e7ccf2e3e9f2fcc5 status=200 dur=0s
+t=2021-09-28T16:20:56+0200 lvl=info msg=start pg=/static/compiled-css/app.abeefa2f1e7ed6a57390.css id=4a9b625db3902e21
+t=2021-09-28T16:20:56+0200 lvl=info msg=start pg=/static/js/rpx.bb9505282104c4cc0917.js id=990bc1295fb87b6f
+t=2021-09-28T16:20:56+0200 lvl=info msg=start pg=/static/compiled-css/vendor.c962e5007001e427374a.css id=df00438d1acd8dfb
+t=2021-09-28T16:20:56+0200 lvl=info msg=start pg=/static/js/vendor.7efe51701003466ba71c.js id=63d5888ebce0a837
+t=2021-09-28T16:20:56+0200 lvl=info msg=start pg=/static/js/app.57e17b1c647cd71763bd.js id=124c4540da1b1944
+t=2021-09-28T16:20:56+0200 lvl=info msg=end pg=/static/compiled-css/app.abeefa2f1e7ed6a57390.css id=4a9b625db3902e21 status=200 dur=99.2624ms
+t=2021-09-28T16:20:56+0200 lvl=info msg=end pg=/static/js/app.57e17b1c647cd71763bd.js id=124c4540da1b1944 status=200 dur=41.4661ms
+t=2021-09-28T16:20:56+0200 lvl=info msg=end pg=/static/js/rpx.bb9505282104c4cc0917.js id=990bc1295fb87b6f status=200 dur=93.5116ms
+t=2021-09-28T16:20:56+0200 lvl=info msg=end pg=/static/compiled-css/vendor.c962e5007001e427374a.css id=df00438d1acd8dfb status=200 dur=86.0768ms
+t=2021-09-28T16:20:56+0200 lvl=info msg=end pg=/static/js/vendor.7efe51701003466ba71c.js id=63d5888ebce0a837 status=200 dur=96.1388ms
+t=2021-09-28T16:20:56+0200 lvl=info msg=start pg=/grpc/agent.Web/Preloaded id=93ede57fdf027d6d
+t=2021-09-28T16:20:56+0200 lvl=info msg=start pg=/grpc/agent.Web/State id=e657335141357ea5
+t=2021-09-28T16:20:56+0200 lvl=info msg=end pg=/grpc/agent.Web/Preloaded id=93ede57fdf027d6d status=200 dur=3.065ms
+t=2021-09-28T16:20:56+0200 lvl=info msg=start pg=/static/favicon.ico id=bffb5cad8806787b
+t=2021-09-28T16:20:56+0200 lvl=info msg=end pg=/static/favicon.ico id=bffb5cad8806787b status=200 dur=443.9µs
+t=2021-09-28T16:23:41+0200 lvl=info msg="join connections" obj=join id=79be57f50389 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53489
+t=2021-09-28T16:24:11+0200 lvl=info msg="join connections" obj=join id=c9bb421b1829 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53489
+t=2021-09-28T16:24:46+0200 lvl=info msg=start pg=/grpc/agent.Web/Clear id=c0d0bfccf5ddb446
+t=2021-09-28T16:24:46+0200 lvl=info msg=end pg=/grpc/agent.Web/Clear id=c0d0bfccf5ddb446 status=200 dur=1.3973ms
+t=2021-09-28T16:24:48+0200 lvl=info msg="join connections" obj=join id=ce17ca0a4d0d l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53551
+t=2021-09-28T16:24:48+0200 lvl=info msg="join connections" obj=join id=8640e58fbcd9 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:61458
+t=2021-09-28T16:24:48+0200 lvl=info msg="join connections" obj=join id=ac10d067f508 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:55882
+t=2021-09-28T16:24:57+0200 lvl=info msg=start pg=/grpc/agent.Web/Play id=e99d64a83fdb4a57
+t=2021-09-28T16:24:57+0200 lvl=info msg="replaying request" id=airt_1ylvf0Znhu6LHB2dSpaRvJgbUdJ tunnelName=sezny
+t=2021-09-28T16:24:57+0200 lvl=info msg="join connections" obj=join id=b9073f2ff8e8 l=[::1]:80 r=nil
+t=2021-09-28T16:24:57+0200 lvl=info msg=end pg=/grpc/agent.Web/Play id=e99d64a83fdb4a57 status=200 dur=10.6122ms
+t=2021-09-28T16:25:02+0200 lvl=info msg="join connections" obj=join id=29489fa670d0 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53489
+t=2021-09-28T16:25:34+0200 lvl=info msg="join connections" obj=join id=93ee18f299f6 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53489
+t=2021-09-28T16:25:50+0200 lvl=info msg="join connections" obj=join id=59b5f1f23731 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53489
+t=2021-09-28T16:30:19+0200 lvl=info msg="join connections" obj=join id=ac9e6be7ea3e l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53489
+t=2021-09-28T16:30:20+0200 lvl=info msg="join connections" obj=join id=0dfea204f9a3 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:51864
+t=2021-09-28T16:32:04+0200 lvl=info msg="join connections" obj=join id=e99991776179 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:51864
+t=2021-09-28T16:32:05+0200 lvl=info msg="join connections" obj=join id=ba373c8aa059 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53489
+t=2021-09-28T16:32:14+0200 lvl=info msg="join connections" obj=join id=034a157ba129 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53489
+t=2021-09-28T16:32:15+0200 lvl=info msg="join connections" obj=join id=fc55d0762191 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:51864
+t=2021-09-28T16:32:27+0200 lvl=info msg="join connections" obj=join id=30f2e1e38f9e l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:51864
+t=2021-09-28T16:32:28+0200 lvl=info msg="join connections" obj=join id=19fffcad3d99 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53489
+t=2021-09-28T16:32:34+0200 lvl=info msg="join connections" obj=join id=eee7132a2b87 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53489
+t=2021-09-28T16:32:35+0200 lvl=info msg="join connections" obj=join id=673b5c16c15b l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:51864
+t=2021-09-28T16:32:35+0200 lvl=info msg="join connections" obj=join id=521cd937cdeb l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:55453
+t=2021-09-28T16:32:35+0200 lvl=info msg="join connections" obj=join id=5f72c0e33e0a l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:63222
+t=2021-09-28T16:33:08+0200 lvl=info msg="join connections" obj=join id=daa4a52d2f9b l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:51864
+t=2021-09-28T16:33:08+0200 lvl=info msg="join connections" obj=join id=229fc2649269 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:63222
+t=2021-09-28T16:34:32+0200 lvl=info msg="join connections" obj=join id=ac38530b7e0e l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:51864
+t=2021-09-28T16:35:17+0200 lvl=info msg="join connections" obj=join id=b7150588dc83 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:51864
+t=2021-09-28T16:36:13+0200 lvl=info msg="join connections" obj=join id=8985b3047708 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:51864
+t=2021-09-28T16:36:14+0200 lvl=info msg="join connections" obj=join id=149a320ea9cb l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:63222
+t=2021-09-28T16:36:29+0200 lvl=info msg="join connections" obj=join id=0a7ee47086e1 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:63222
+t=2021-09-28T16:36:30+0200 lvl=info msg="join connections" obj=join id=8bee47dc1fb9 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:51864
+t=2021-09-28T16:36:30+0200 lvl=info msg="join connections" obj=join id=c9b0682998c3 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:55453
+t=2021-09-28T16:36:43+0200 lvl=info msg="join connections" obj=join id=f46c9b34ecda l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:55453
+t=2021-09-28T16:36:43+0200 lvl=info msg="join connections" obj=join id=bd86d7dadea7 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:51864
+t=2021-09-28T16:36:44+0200 lvl=info msg="join connections" obj=join id=c64b608ae44c l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53489
+t=2021-09-28T16:36:44+0200 lvl=info msg="join connections" obj=join id=b2ccef84ab47 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:63222
+t=2021-09-28T16:37:33+0200 lvl=info msg="join connections" obj=join id=3fe3474e6b47 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:63222
+t=2021-09-28T16:37:33+0200 lvl=info msg="join connections" obj=join id=809a77c496db l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:51864
+t=2021-09-28T16:37:33+0200 lvl=info msg="join connections" obj=join id=40cdd336d82e l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53489
+t=2021-09-28T16:37:33+0200 lvl=info msg="join connections" obj=join id=4aad629a5f40 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:55453
+t=2021-09-28T16:37:34+0200 lvl=info msg="join connections" obj=join id=0e23dbb311c0 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:60605
+t=2021-09-28T16:37:34+0200 lvl=info msg="join connections" obj=join id=60914347cdfa l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:56350
+t=2021-09-28T16:37:51+0200 lvl=info msg="join connections" obj=join id=02abe3e1a7a3 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:51864
+t=2021-09-28T16:42:02+0200 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+t=2021-09-28T16:42:02+0200 lvl=info msg=start pg=/grpc/agent.Web/State id=a4864f424aa9a4dd
+t=2021-09-28T16:42:02+0200 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2021-09-28T16:42:02+0200 lvl=info msg="client session established" obj=csess id=5705cc751846
+t=2021-09-28T16:42:02+0200 lvl=info msg="started tunnel" obj=tunnels name="sezny (http)" addr=http://localhost:80 url=http://01ec-2001-861-5e50-7bd0-85df-4395-cf5d-5acb.eu.ngrok.io
+t=2021-09-28T16:42:02+0200 lvl=info msg="started tunnel" obj=tunnels name=sezny addr=http://localhost:80 url=https://01ec-2001-861-5e50-7bd0-85df-4395-cf5d-5acb.eu.ngrok.io
+t=2021-09-28T16:42:12+0200 lvl=info msg="join connections" obj=join id=88eac6b9e537 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:50159
+t=2021-09-28T16:42:12+0200 lvl=info msg="join connections" obj=join id=582bd0ed66ac l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:59645
+t=2021-09-28T16:42:13+0200 lvl=info msg="join connections" obj=join id=7db962cb93f7 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:52674
+t=2021-09-28T16:42:13+0200 lvl=info msg="join connections" obj=join id=102dc0adac73 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:58096
+t=2021-09-28T16:42:13+0200 lvl=info msg="join connections" obj=join id=cc3a528d6f28 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53982
+t=2021-09-28T16:42:13+0200 lvl=info msg="join connections" obj=join id=4d9dea776ecd l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:61003
+t=2021-09-28T16:42:22+0200 lvl=info msg="join connections" obj=join id=998d75555473 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:52914
+t=2021-09-28T16:42:22+0200 lvl=info msg="join connections" obj=join id=b513820ad70d l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:61003
+t=2021-09-28T16:42:22+0200 lvl=info msg="join connections" obj=join id=c7666620d353 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53982
+t=2021-09-28T16:42:22+0200 lvl=info msg="join connections" obj=join id=0f6a1021bfb2 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:58096
+t=2021-09-28T16:42:22+0200 lvl=info msg="join connections" obj=join id=56fcf503b0e3 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:52674
+t=2021-09-28T16:42:32+0200 lvl=info msg="join connections" obj=join id=37ae216de1f2 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:52674
+t=2021-09-28T16:42:33+0200 lvl=info msg="join connections" obj=join id=87332af0a4be l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53982
+t=2021-09-28T16:42:33+0200 lvl=info msg="join connections" obj=join id=8aedf310d010 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:61003
+t=2021-09-28T16:42:33+0200 lvl=info msg="join connections" obj=join id=9f213466d4df l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:58096
+t=2021-09-28T16:42:37+0200 lvl=info msg="join connections" obj=join id=e8eebc94a207 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:62260
+t=2021-09-28T16:42:37+0200 lvl=info msg="join connections" obj=join id=0facce2e0852 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:60086
+t=2021-09-28T16:42:52+0200 lvl=info msg="join connections" obj=join id=6d9650bb8975 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:52674
+t=2021-09-28T16:42:53+0200 lvl=info msg="join connections" obj=join id=239f8e21325f l=[::1]:80 r=193.51.224.135:48680
+t=2021-09-28T16:42:56+0200 lvl=info msg="join connections" obj=join id=dc37fb95cd32 l=[::1]:80 r=193.51.224.135:65172
+t=2021-09-28T16:43:48+0200 lvl=info msg="join connections" obj=join id=02b5fa4c467d l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:52674
+t=2021-09-28T16:50:26+0200 lvl=info msg="join connections" obj=join id=c11ac9598bd8 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:50143
+t=2021-09-28T16:50:50+0200 lvl=info msg="Got quit command" obj=consoleui
+t=2021-09-28T16:50:50+0200 lvl=info msg="received stop request" obj=app stopReq="{err:<nil> restart:false}"
+t=2021-09-28T16:50:50+0200 lvl=info msg="session closing" obj=tunnels.session err=nil
+t=2021-09-28T16:50:50+0200 lvl=info msg="accept failed" obj=csess id=5705cc751846 err="reconnecting session closed"
+t=2021-09-28T16:51:16+0200 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+t=2021-09-28T16:51:16+0200 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2021-09-28T16:51:16+0200 lvl=info msg="client session established" obj=csess id=a13a2a64d420
+t=2021-09-28T16:51:16+0200 lvl=info msg="started tunnel" obj=tunnels name="sezny (http)" addr=http://localhost:80 url=http://1dde-2001-861-5e50-7bd0-85df-4395-cf5d-5acb.eu.ngrok.io
+t=2021-09-28T16:51:16+0200 lvl=info msg="started tunnel" obj=tunnels name=sezny addr=http://localhost:80 url=https://1dde-2001-861-5e50-7bd0-85df-4395-cf5d-5acb.eu.ngrok.io
+t=2021-09-28T16:51:18+0200 lvl=info msg=start pg=/grpc/agent.Web/State id=adc8a3f8abb14a4c
+t=2021-09-28T16:51:19+0200 lvl=info msg="join connections" obj=join id=6cf555f1d4ac l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:50778
+t=2021-09-28T16:51:19+0200 lvl=info msg="join connections" obj=join id=36f546cca341 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:61887
+t=2021-09-28T16:51:20+0200 lvl=info msg="join connections" obj=join id=0d2f7a74180b l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:63703
+t=2021-09-28T16:51:20+0200 lvl=info msg="join connections" obj=join id=4ca2089c3774 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:51540
+t=2021-09-28T16:51:20+0200 lvl=info msg="join connections" obj=join id=8db75db72602 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:56293
+t=2021-09-28T16:51:29+0200 lvl=info msg="join connections" obj=join id=505a4145e8ce l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:52934
+t=2021-09-28T16:51:36+0200 lvl=info msg="join connections" obj=join id=bdf9fb5fa2bd l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:56293
+t=2021-09-28T16:51:36+0200 lvl=info msg="join connections" obj=join id=a37b41c3e215 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:51540
+t=2021-09-28T16:51:36+0200 lvl=info msg="join connections" obj=join id=394d9ba55585 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:63703
+t=2021-09-28T16:51:46+0200 lvl=info msg="join connections" obj=join id=cb39a16c7373 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:63703
+t=2021-09-28T16:51:46+0200 lvl=info msg="join connections" obj=join id=f31050f26979 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:56293
+t=2021-09-28T16:51:48+0200 lvl=info msg="join connections" obj=join id=411843808156 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:53342
+t=2021-09-28T16:51:48+0200 lvl=info msg="join connections" obj=join id=669cc5115593 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:56341
+t=2021-09-28T16:51:48+0200 lvl=info msg="join connections" obj=join id=9f94b5060745 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:60250
+t=2021-09-28T16:52:06+0200 lvl=info msg="join connections" obj=join id=6149ed34ebe4 l=[::1]:80 r=[2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:49448
+t=2021-09-28T16:52:07+0200 lvl=info msg="join connections" obj=join id=fc4147f95256 l=[::1]:80 r=157.161.155.133:41428
+t=2021-09-28T16:52:10+0200 lvl=info msg="join connections" obj=join id=baa9f79ac6c1 l=[::1]:80 r=157.161.155.133:39456
+t=2021-09-28T16:57:21+0200 lvl=eror msg="session closed, starting reconnect loop" obj=csess id=a13a2a64d420 err="read tcp [2001:861:5e50:7bd0:85df:4395:cf5d:5acb]:62950->[2a05:d014:21b:8e02::6e74:2]:443: wsarecv: Une connexion établie a été abandonnée par un logiciel de votre ordinateur hôte."
+t=2021-09-28T16:57:21+0200 lvl=eror msg="failed to reconnect session" obj=csess id=a13a2a64d420 err="dial tcp: lookup tunnel.eu.ngrok.com: no such host"
+t=2021-09-28T16:57:22+0200 lvl=eror msg="failed to reconnect session" obj=csess id=a13a2a64d420 err="dial tcp: lookup tunnel.eu.ngrok.com: no such host"
+t=2021-09-28T16:57:23+0200 lvl=eror msg="failed to reconnect session" obj=csess id=a13a2a64d420 err="Get \"https://dns.google.com/resolve?cd=true&name=tunnel.eu.ngrok.com&type=AAAA\": dial tcp: lookup dns.google.com: no such host"
+t=2021-09-28T16:57:24+0200 lvl=eror msg="failed to reconnect session" obj=csess id=a13a2a64d420 err="Get \"https://s3.amazonaws.com/dns.ngrok.com/tunnel.json\": dial tcp: lookup s3.amazonaws.com: no such host"
+t=2021-09-28T16:57:25+0200 lvl=eror msg="failed to reconnect session" obj=csess id=a13a2a64d420 err="resolved tunnel.eu.ngrok.com has no records"
+t=2021-09-28T16:57:28+0200 lvl=eror msg="failed to reconnect session" obj=csess id=a13a2a64d420 err="dial tcp: lookup tunnel.eu.ngrok.com: no such host"
+t=2021-09-28T16:57:32+0200 lvl=eror msg="failed to reconnect session" obj=csess id=a13a2a64d420 err="x509: certificate is valid for tunnel.eu.ngrok.com, not korgn.ue.lennut.com"
+t=2021-09-28T16:57:39+0200 lvl=eror msg="failed to reconnect session" obj=csess id=a13a2a64d420 err="x509: certificate is valid for tunnel.eu.ngrok.com, not korgn.ue.lennut.com"
+t=2021-09-28T16:57:42+0200 lvl=eror msg="heartbeat timeout, terminating session" obj=csess id=911496ff7bc7 clientid=f991af0a5b80054ef8682b96ef2e2175
+t=2021-09-28T16:57:47+0200 lvl=eror msg="failed to reconnect session" obj=csess id=a13a2a64d420 err="resolved tunnel.eu.ngrok.com has no records"
+t=2021-09-28T16:58:01+0200 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2021-09-28T16:58:01+0200 lvl=info msg="client session established" obj=csess id=a13a2a64d420
+t=2021-09-28T17:05:24+0200 lvl=info msg=end pg=/grpc/agent.Web/State id=adc8a3f8abb14a4c status=200 dur=14m6.3835873s
+t=2021-09-28T17:52:44+0200 lvl=eror msg="heartbeat timeout, terminating session" obj=csess id=852c0341414a clientid=f991af0a5b80054ef8682b96ef2e2175
+t=2021-09-28T17:52:44+0200 lvl=eror msg="session closed, starting reconnect loop" obj=csess id=a13a2a64d420 err="session closed"
+t=2021-09-28T17:52:46+0200 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2021-09-28T17:52:46+0200 lvl=info msg="client session established" obj=csess id=a13a2a64d420
+t=2021-09-28T17:52:48+0200 lvl=info msg=start pg=/grpc/agent.Web/State id=ffd1f90767bb2a7d
+t=2021-09-28T17:52:54+0200 lvl=info msg=end pg=/grpc/agent.Web/State id=ffd1f90767bb2a7d status=200 dur=6.1167735s
+t=2021-09-30T11:05:08+0200 lvl=info msg="starting web service" obj=web addr=127.0.0.1:4040
+t=2021-09-30T11:05:08+0200 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2021-09-30T11:05:08+0200 lvl=info msg="client session established" obj=csess id=697e1d8ed349
+t=2021-09-30T11:05:08+0200 lvl=info msg="started tunnel" obj=tunnels name="sezny (http)" addr=http://localhost:80 url=http://4b6e-2001-861-5e50-7bd0-59cc-29aa-d50e-cd72.eu.ngrok.io
+t=2021-09-30T11:05:08+0200 lvl=info msg="started tunnel" obj=tunnels name=sezny addr=http://localhost:80 url=https://4b6e-2001-861-5e50-7bd0-59cc-29aa-d50e-cd72.eu.ngrok.io
+t=2021-09-30T11:05:27+0200 lvl=info msg="join connections" obj=join id=3118365c9f90 l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:63520
+t=2021-09-30T11:05:27+0200 lvl=info msg="join connections" obj=join id=e62052bc4754 l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:54181
+t=2021-09-30T11:05:28+0200 lvl=info msg="join connections" obj=join id=831a7c7bb0d8 l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:64511
+t=2021-09-30T11:05:28+0200 lvl=info msg="join connections" obj=join id=bcde80244fb1 l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:55407
+t=2021-09-30T11:05:28+0200 lvl=info msg="join connections" obj=join id=388d7c85dfbd l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:62644
+t=2021-09-30T11:05:47+0200 lvl=info msg="join connections" obj=join id=b494ed40047d l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:59670
+t=2021-09-30T11:05:48+0200 lvl=info msg="join connections" obj=join id=c6d1d213f73b l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:60716
+t=2021-09-30T11:05:48+0200 lvl=info msg="join connections" obj=join id=dafe19538f96 l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:60459
+t=2021-09-30T11:06:01+0200 lvl=info msg="join connections" obj=join id=41998ca93137 l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:60459
+t=2021-09-30T11:06:10+0200 lvl=info msg="join connections" obj=join id=22bfcc5f0aa3 l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:60459
+t=2021-09-30T11:06:10+0200 lvl=info msg="join connections" obj=join id=01a395cf5951 l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:63520
+t=2021-09-30T11:06:10+0200 lvl=info msg="join connections" obj=join id=ca94d6da61dd l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:62644
+t=2021-09-30T11:06:10+0200 lvl=info msg="join connections" obj=join id=506dc8db78ca l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:55407
+t=2021-09-30T11:06:20+0200 lvl=info msg="join connections" obj=join id=f45c7fe6f748 l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:62644
+t=2021-09-30T11:06:21+0200 lvl=info msg="join connections" obj=join id=6f9b7575e8b9 l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:55407
+t=2021-09-30T11:06:21+0200 lvl=info msg="join connections" obj=join id=210bf93ceb58 l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:64511
+t=2021-09-30T11:06:21+0200 lvl=info msg="join connections" obj=join id=34f46c3ab812 l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:63520
+t=2021-09-30T11:06:26+0200 lvl=info msg="join connections" obj=join id=912eba21475d l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:55407
+t=2021-09-30T11:06:26+0200 lvl=info msg="join connections" obj=join id=6679712caa20 l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:64511
+t=2021-09-30T11:06:26+0200 lvl=info msg="join connections" obj=join id=deaa928ce1fe l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:62644
+t=2021-09-30T11:06:26+0200 lvl=info msg="join connections" obj=join id=c6cbb6f3b32d l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:63520
+t=2021-09-30T11:06:26+0200 lvl=info msg="join connections" obj=join id=9366a0b59e9b l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:55168
+t=2021-09-30T11:06:26+0200 lvl=info msg="join connections" obj=join id=8ec3e938a3a0 l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:59107
+t=2021-09-30T11:06:44+0200 lvl=info msg="join connections" obj=join id=28328afba85e l=[::1]:80 r=[2001:861:5e50:7bd0:59cc:29aa:d50e:cd72]:55168
+t=2021-09-30T14:17:52+0200 lvl=eror msg="heartbeat timeout, terminating session" obj=csess id=cf3d953688f0 clientid=bdb6fb895f5d8b25410224b0deaa89f6
+t=2021-09-30T14:17:55+0200 lvl=eror msg="session closed, starting reconnect loop" obj=csess id=697e1d8ed349 err="session closed"
+t=2021-09-30T14:17:55+0200 lvl=eror msg="failed to reconnect session" obj=csess id=697e1d8ed349 err="dial tcp: lookup tunnel.eu.ngrok.com: no such host"
+t=2021-09-30T14:17:56+0200 lvl=eror msg="failed to reconnect session" obj=csess id=697e1d8ed349 err="dial tcp: lookup tunnel.eu.ngrok.com: no such host"
+t=2021-09-30T14:17:57+0200 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2021-09-30T14:17:57+0200 lvl=info msg="client session established" obj=csess id=697e1d8ed349
+t=2021-09-30T16:36:42+0200 lvl=eror msg="heartbeat timeout, terminating session" obj=csess id=98fd9ba62581 clientid=bdb6fb895f5d8b25410224b0deaa89f6
+t=2021-09-30T16:36:45+0200 lvl=eror msg="session closed, starting reconnect loop" obj=csess id=697e1d8ed349 err="session closed"
+t=2021-09-30T16:36:45+0200 lvl=eror msg="failed to reconnect session" obj=csess id=697e1d8ed349 err="dial tcp: lookup tunnel.eu.ngrok.com: no such host"
+t=2021-09-30T16:36:45+0200 lvl=eror msg="failed to reconnect session" obj=csess id=697e1d8ed349 err="dial tcp: lookup tunnel.eu.ngrok.com: no such host"
+t=2021-09-30T16:36:47+0200 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2021-09-30T16:36:47+0200 lvl=info msg="client session established" obj=csess id=697e1d8ed349
+t=2021-09-30T18:15:23+0200 lvl=eror msg="heartbeat timeout, terminating session" obj=csess id=8b6aa513c805 clientid=bdb6fb895f5d8b25410224b0deaa89f6
+t=2021-09-30T18:15:23+0200 lvl=eror msg="session closed, starting reconnect loop" obj=csess id=697e1d8ed349 err="session closed"
+t=2021-09-30T18:15:27+0200 lvl=info msg="tunnel session started" obj=tunnels.session
+t=2021-09-30T18:15:27+0200 lvl=info msg="client session established" obj=csess id=697e1d8ed349

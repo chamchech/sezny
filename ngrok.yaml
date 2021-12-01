@@ -1,0 +1,10 @@
+log: var/log/ngrok/ngrok.log
+log_format: logfmt
+log_level: info
+region: eu
+tunnels:
+    sezny:
+        proto: http
+        addr: localhost:80
+bind_tls: true
+auth: "cham:chams31"
