@@ -16,7 +16,7 @@ if (!isset($_SESSION['admin'])) {
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="56x56" href="assets/img/favicon-96x96.png">
 
-    <title>Admin - Abonnement Juridique MEPERY</title>
+    <title>Admin - Sezny</title>
 
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
 
@@ -32,35 +32,39 @@ if (!isset($_SESSION['admin'])) {
     <div id="bloc-principal">
         <?php include 'nav.php'; ?>
         <main role="main">
-            <section class="jumbotron text-center" style="padding:20px">
+            <section class="jumbotron text-center" style="padding:50px;">
                 <div class="container">
-                    <h1 class="jumbotron-heading">Tableau d'administration Abonnement MEPERY</h1>
+                    <h1 class="jumbotron-heading">Tableau d'administration SEZNY</h1>
                 </div>
             </section>
             <div class="album py-5 bg-light">
                 <div class="container">
-
                     <div class="row justify-content-center">
-                        <div class="col-md-6">
+                        <div class="col-md-6 contBtn">
                             <div class="form-group">
-                                <a href="ajout-commercial.php" class="btn btn-warning btn-block bouton-accueil">
+                                <a href="ajout-commercial.php" class="btn btn-dark btn-block bouton-accueil addCom">
                                     Ajouter un nouveau commercial
                                 </a>
                             </div>
                             <div class="form-group">
-                                <a href="commerciaux.php" class="btn btn-primary btn-block bouton-accueil">
+                                <a href="commerciaux.php" class="btn btn-dark btn-block bouton-accueil com">
                                     Nos commerciaux
                                 </a>
                             </div>
                             <div class="form-group">
-                                <a href="clients.php" class="btn btn-success btn-block bouton-accueil">
+                                <a href="clients-pro.php" class="btn btn-dark btn-block bouton-accueil clientspro">
+                                    Nos clients pro
+                                </a>
+                            </div>
+                            <div class="form-group">
+                                <a href="clients.php" class="btn btn-dark btn-block bouton-accueil clients">
                                     Nos clients
                                 </a>
                             </div>
 
                             <div class="form-group">
-                                <a href="profil.php" class="btn btn-danger btn-block bouton-accueil">
-                                    Profil
+                                <a href="profil.php" class="btn btn-dark btn-block bouton-accueil profil">
+                                   Mon profil
                                 </a>
                             </div>
 

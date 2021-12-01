@@ -22,7 +22,7 @@ $x=$result[$_GET['sign']];
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="56x56" href="assets/img/favicon-96x96.png">
-    <title>Signer une vente - Abonnement Juridique MEPERY</title>
+    <title>Signer une vente - Sezny</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/album.css" rel="stylesheet">
@@ -32,7 +32,7 @@ $x=$result[$_GET['sign']];
     
       <?php
       echo "<html>
-      <iframe height='100%' width = '100%' src='{$app_url}/procedure/sign?members={$members}'></iframe>
+      <iframe  height='100%' width = '100%' src='{$app_url}/procedure/sign?members={$members}'></iframe>
       </html>";
       ?>
       <div class="album py-5">
@@ -45,15 +45,7 @@ $x=$result[$_GET['sign']];
                                 Retour accueil
                             </a>
                         </div>
-
-
-
                     </div>
-
-
-
-
-
                 </div>
             </div>
         </div><br><br>

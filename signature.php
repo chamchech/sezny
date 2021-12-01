@@ -4,11 +4,11 @@
     ini_set('display_startup_errors', 1);
     error_reporting(E_ALL);
     require_once './db.php';
-    $smt=$sql->prepare("SELECT nomcontact,prenomcontact,email,raisonsocial,signed FROM ventes WHERE vendeur_id = ? AND signed = 'non'");
+    $smt=$sql->prepare("SELECT nomcontact,prenomcontact,email,signed FROM ventes WHERE vendeur_id = ? AND signed = 'non'");
     $smt->bindParam(1, $_SESSION['vendeur_id'], PDO::PARAM_INT);
     $smt->execute();
 
-    $smt1=$sql->prepare("SELECT nomcontact,prenomcontact,email,raisonsocial,signed FROM ventes WHERE vendeur_id = ? AND signed = 'oui'");
+    $smt1=$sql->prepare("SELECT nomcontact,prenomcontact,email,signed FROM ventes WHERE vendeur_id = ? AND signed = 'oui'");
     $smt1->bindParam(1, $_SESSION['vendeur_id'], PDO::PARAM_INT);
     $smt1->execute();
 
@@ -39,10 +39,6 @@
         <section class="jumbotron text-center" style="padding:20px">
             <div class="container">
                 <h1 class="jumbotron-heading">Signer une vente</h1>
-                <a href="accueil.php"><svg class="bi bi-arrow-bar-left" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 00-.708 0l-3 3a.5.5 0 000 .708l3 3a.5.5 0 00.708-.708L3.207 8l2.647-2.646a.5.5 0 000-.708z" clip-rule="evenodd"/>
-  <path fill-rule="evenodd" d="M10 8a.5.5 0 00-.5-.5H3a.5.5 0 000 1h6.5A.5.5 0 0010 8zm2.5 6a.5.5 0 01-.5-.5v-11a.5.5 0 011 0v11a.5.5 0 01-.5.5z" clip-rule="evenodd"/>
-</svg> Retour</a>
             </div>
         </section>
         <div style="text-align:center">
@@ -57,7 +53,6 @@
                         <table class='table table-striped'>
                             <thead>
                                 <tr>
-                                <th>Raison Social</th>
                                     <th>Nom</th>
                                     <th>Email</th>
                                     <th>Signé</th>
@@ -70,8 +65,7 @@
                                 
                                 if(isset($_GET['signed'])){
                                     foreach($result1 as $key=>$row){
-                                        echo "<tr>
-                                        <td>{$row['raisonsocial']}</td>
+                                        echo "<tr>                            
                                         <td>{$row['nomcontact']} {$row['prenomcontact']}</td>
                                             <td>{$row['email']}</td>
                                             <td>{$row['signed']}</td>
@@ -82,7 +76,6 @@
                                 else if(isset($_GET['unsigned']) || isset($_GET)){
                                     foreach($result as $key=>$row){
                                         echo "<tr>
-                                        <td>{$row['raisonsocial']}</td>
                                         <td>{$row['nomcontact']} {$row['prenomcontact']}</td>
                                             <td>{$row['email']}</td>
                                             <td>{$row['signed']}</td>
@@ -97,13 +90,18 @@
                                          }
                                 }
                                 echo "
+
                             </tbody>
                         </table>
-                        
+                        <div class='row justify-content-center'>
+                            <a class='btn btn-primary' href='accueil.php' role='button'>Retour </a>
+                            </div>
                     </div>
                 </div>
+ 
             </div>
-        </div>";} ?>
+        </div>";}
+        ?>
     </main>
     <?php include 'footer.php'; ?>
 

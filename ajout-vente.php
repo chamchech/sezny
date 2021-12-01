@@ -59,7 +59,7 @@ $result = $stmt1->fetchAll();
     <!-- -------------------------------------------------------------------------- Formulaire d'inscription -->
     <div class="inscription-us-page section-spacing-inscription">
         <div class="container">
-            <form enctype="multipart/form-data" method="post" action="pdf/abonnement-mepery.php"
+            <form enctype="multipart/form-data" method="post" action="pdf/bc-pro.php"
                   class="theme-form-one form-validation">
                 <input type="hidden" name="date" value="<?php echo date("d / m / Y"); ?>">
                 <div class='row'>
@@ -75,192 +75,193 @@ $result = $stmt1->fetchAll();
                 <br/>
                 <div class="col-sm-12 col-12">
                     <div class="form-group">
-                        <div class="row">
-                            <div class="col-lg-6 col-12 form-group">
-                                <!--<label>Raison social</label>
-                                <input type="text" placeholder="Mepery" id="raisonsocialverif" name="raisonsocial" class="call-back-form-one " required>-->
+                        <!--
+                      <div class="row">
+                          <div class="col-lg-6 col-12 form-group">-->
+                              <!--<label>Raison social</label>
+                             <input type="text" placeholder="Mepery" id="raisonsocialverif" name="raisonsocial" class="call-back-form-one " required>-->
 
-                                <select name="drop1" required="" style="width: 100%;     background: #f7f7f7;
-                                                                                             border: 1px solid #e4e4e4;
-                                                                                             margin-bottom: 20px;
-                                                                                             font-size: 14px;
-                                                                                             font-style: italic;
-                                                                                             padding: 10px;">
+                        <!-- <select name="drop1" required="" style="width: 100%;     background: #f7f7f7;
+                                                                                      border: 1px solid #e4e4e4;
+                                                                                      margin-bottom: 20px;
+                                                                                      font-size: 14px;
+                                                                                      font-style: italic;
+                                                                                      padding: 10px;">
 
 
-                                    <option> 12 mois</option>
+                             <option> 12 mois</option>
 
-                                    <option> 24 mois</option>
-                                </select>
+                             <option> 24 mois</option>
+                         </select>
 
-                            </div>
-                            <div class="col-lg-6 col-12 form-group">
+                     </div>
+                     <div class="col-lg-6 col-12 form-group">
 
-                                <!--<label>RCS</label>
-                                <input type="text" placeholder="123456789" id="rcsverif" name="rcs" class="call-back-form-one" pattern="[0-9]{3}[ \.\-]?[0-9]{3}[ \.\-]?[0-9]{3}" required>-->
-                                <select name="drop2" required="" style="width: 100%;
-    background: #f7f7f7;
-    border: 1px solid #e4e4e4;
-    margin-bottom: 20px;
-    font-size: 14px;
-    font-style: italic;
-    padding: 10px;">
+                         <label>RCS</label>
+                         <input type="text" placeholder="123456789" id="rcsverif" name="rcs" class="call-back-form-one" pattern="[0-9]{3}[ \.\-]?[0-9]{3}[ \.\-]?[0-9]{3}" required>-->
+                        <!--   <select name="drop2" required="" style="width: 100%;
+background: #f7f7f7;
+border: 1px solid #e4e4e4;
+margin-bottom: 20px;
+font-size: 14px;
+font-style: italic;
+padding: 10px;">
 
-                                    <option> 90€/mois</option>
+                               <option> 90€/mois</option>
 
-                                    <option> 170€/mois</option>
-                                    <option> 250€/mois</option>
-                                </select>
-                            </div>
-                        </div>
-                        <center>
-                            <h2> Informations Entreprise</h2>
-                        </center>
-                        <br>
-                        <div class="row formInscription">
-                            <div class="col-lg-6 col-12 form-group">
-                                <label>Raison social</label>
-                                <input type="text" placeholder="Mepery" id="raisonsocialverif" name="raisonsocial"
-                                       class="call-back-form-one " required>
-                            </div>
-                            <div class="col-lg-6 col-12 form-group">
-                                <label>RCS</label>
-                                <input type="text" placeholder="123456789" id="rcsverif" name="rcs"
-                                       class="call-back-form-one" pattern="[0-9]{3}[ \.\-]?[0-9]{3}[ \.\-]?[0-9]{3}"
-                                       required>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="row formInscription">
-                        <label>Adresse</label>
-                        <input type="text" placeholder="90 bis Chemin St Jean" class="call-back-form-one" name="adresse"
-                               required>
-                        <div class="col-lg-4 col-12 form-group">
-                            <label>Code Postal</label>
-                            <input type="text" placeholder="31770" name="cp" class="call-back-form-one"
-                                   pattern="[0-9]{2,3}[ \.\-]?[0-9]{3}" required>
-                        </div>
-                        <div class="col-lg-8 col-12 form-group">
-                            <label>Ville</label>
-                            <input type="text" placeholder="Colomiers" class="call-back-form-one" name="ville" required>
-                        </div>
+                               <option> 170€/mois</option>
+                               <option> 250€/mois</option>
+                           </select>
+                       </div>
+                   </div> -->
+                   <center>
+                       <h2> Informations Entreprise</h2>
+                   </center>
+                   <br>
+                   <div class="row formInscription">
+                       <div class="col-lg-6 col-12 form-group">
+                           <label>Raison social</label>
+                           <input type="text" placeholder="Sezny" id="raisonsocialverif" name="raisonsocial"
+                                  class="call-back-form-one " required>
+                       </div>
+                       <div class="col-lg-6 col-12 form-group">
+                           <label>RCS</label>
+                           <input type="text" placeholder="123456789" id="rcsverif" name="rcs"
+                                  class="call-back-form-one" pattern="[0-9]{3}[ \.\-]?[0-9]{3}[ \.\-]?[0-9]{3}"
+                                  required>
+                       </div>
+                   </div>
+               </div>
+               <div class="row formInscription">
+                   <label>Adresse</label>
+                   <input type="text" placeholder="90 bis Chemin St Jean" class="call-back-form-one" name="adresse"
+                          required>
+                   <div class="col-lg-4 col-12 form-group">
+                       <label>Code Postal</label>
+                       <input type="text" placeholder="31770" name="cp" class="call-back-form-one"
+                              pattern="[0-9]{2,3}[ \.\-]?[0-9]{3}" required>
+                   </div>
+                   <div class="col-lg-8 col-12 form-group">
+                       <label>Ville</label>
+                       <input type="text" placeholder="Colomiers" class="call-back-form-one" name="ville" required>
+                   </div>
 
-                    </div>
-                    <center>
-                        <h2>Informations Contact</h2>
-                    </center>
-                    <br>
+               </div>
+               <center>
+                   <h2>Informations Contact</h2>
+               </center>
+               <br>
 
-                    <div class="row formInscription">
-                        <div class="col-lg-6 col-12 form-group">
-                            <label>Prénom Contact</label>
-                            <input type="text" placeholder="Votre Prénom" name="prenomcontact"
-                                   class="call-back-form-one" required>
-                        </div>
-                        <div class="col-lg-6 col-12 form-group">
-                            <label>Nom Contact</label>
-                            <input type="text" placeholder="Votre Nom" name="nomcontact" class="call-back-form-one"
-                                   required>
-                        </div>
-                    </div>
-                    <div class="row formInscription">
-                        <div class="col-lg-6 col-12 form-group">
-                            <label>Numéro de téléphone</label>
-                            <input type="text" placeholder="0601020304" name="tel" class="call-back-form-one"
-                                   pattern="[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?"
-                                   required>
-                        </div>
-                        <div class="col-lg-6 col-12 form-group">
-                            <label>Adresse Email</label>
-                            <input type="text" placeholder="votreadresse@email.com" id="mailverif" name="email"
-                                   class="call-back-form-one"
-                                   pattern="[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([_\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})"
-                                   required>
-                        </div>
-                    </div>
+               <div class="row formInscription">
+                   <div class="col-lg-6 col-12 form-group">
+                       <label>Prénom Contact</label>
+                       <input type="text" placeholder="Votre Prénom" name="prenomcontact"
+                              class="call-back-form-one" required>
+                   </div>
+                   <div class="col-lg-6 col-12 form-group">
+                       <label>Nom Contact</label>
+                       <input type="text" placeholder="Votre Nom" name="nomcontact" class="call-back-form-one"
+                              required>
+                   </div>
+               </div>
+               <div class="row formInscription">
+                   <div class="col-lg-6 col-12 form-group">
+                       <label>Numéro de téléphone (portable)</label>
+                       <input type="text" placeholder="0601020304" name="tel" class="call-back-form-one"
+                              pattern="[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?[0-9]{2}[ \.\-]?"
+                              required>
+                   </div>
+                   <div class="col-lg-6 col-12 form-group">
+                       <label>Adresse Email</label>
+                       <input type="text" placeholder="votreadresse@email.com" id="mailverif" name="email"
+                              class="call-back-form-one"
+                              pattern="[A-Za-z0-9](([_\.\-]?[a-zA-Z0-9]+)*)@([A-Za-z0-9]+)(([_\.\-]?[a-zA-Z0-9]+)*)\.([A-Za-z]{2,})"
+                              required>
+                   </div>
+               </div>
+<!--
+               <center>
+                   <h2>Informations de paiement</h2>
+               </center>
+               <br>
 
-                    <center>
-                        <h2>Informations de paiement</h2>
-                    </center>
-                    <br>
+               <div class="row formInscription">
+                   <div class="col-lg-6 col-12 form-group">
+                       <label>BIC</label>
+                       <input type="text" placeholder="Votre BIC" name="bic" class="call-back-form-one" required>
+                   </div>
+                   <div class="col-lg-6 col-12 form-group">
+                       <label>IBAN</label>
+                       <input type="text" placeholder="Votre IBAN" id="iban" name="iban" class="call-back-form-one"
+                              required>
+                   </div>
+               </div>
+-->
+               <div class="row formInscription">
+                   <div class="col-lg-12 col-12 form-group">
 
-                    <div class="row formInscription">
-                        <div class="col-lg-6 col-12 form-group">
-                            <label>BIC</label>
-                            <input type="text" placeholder="Votre BIC" name="bic" class="call-back-form-one" required>
-                        </div>
-                        <div class="col-lg-6 col-12 form-group">
-                            <label>IBAN</label>
-                            <input type="text" placeholder="Votre IBAN" id="iban" name="iban" class="call-back-form-one"
-                                   required>
-                        </div>
-                    </div>
+                       <p class="pj" style="color:#424242;">Veuillez joindre le <strong>RIB</strong> de votre societé :
+                           <label><input type="hidden" name="MAX_FILE_SIZE" value="2000000000">
+                               <input id="input-validation" type="file" name="validerib" required></label></p>
+                       <p class="pj" style="color:#424242;">Veuillez joindre votre <strong>CNI </strong> :
+                           <label><input type="hidden" name="MAX_FILE_SIZE" value="2000000000">
+                               <input id="input-validation" type="file" name="valideiban" required></label></p>
+                       <p class="pj" style="color:#424242;">Veuillez joindre le <strong>KBIS</strong> de votre societé :
+                           <label><input type="hidden" name="MAX_FILE_SIZE" value="2000000000">
+                               <input id="input-validation" type="file" name="validekbis" required></label></p>
 
-                    <div class="row formInscription">
-                        <div class="col-lg-12 col-12 form-group">
+                       <p><input id="field_terms" type="checkbox" name="terms" required="required">
+                           <label for="field_terms"><b>J'ai lu et j'accepte les <a href="dossier/Mepery_CGV.pdf"
+                                                                                   target="_blank"
+                                                                                   style="color:#424242;">conditions
+                                       générales de vente</b></a> :</label></p>
+                       <p><i>Tout les champs sont obligatoires</i></p>
+                   </div>
+               </div>
 
-                            <p class="pj" style="color:#424242;">Veuillez joindre le <strong>RIB</strong> de votre societé :
-                                <label><input type="hidden" name="MAX_FILE_SIZE" value="2000000000">
-                                    <input id="input-validation" type="file" name="validerib" required></label></p>
-                            <p class="pj" style="color:#424242;">Veuillez joindre votre <strong>CNI </strong> :
-                                <label><input type="hidden" name="MAX_FILE_SIZE" value="2000000000">
-                                    <input id="input-validation" type="file" name="valideiban" required></label></p>
-                            <p class="pj" style="color:#424242;">Veuillez joindre le <strong>KBIS</strong> de votre societé :
-                                <label><input type="hidden" name="MAX_FILE_SIZE" value="2000000000">
-                                    <input id="input-validation" type="file" name="validekbis" required></label></p>
+               <style type="text/css">
+                   input[type="checkbox"]:required:invalid + label {
+                       color: red;
+                   }
 
-                            <p><input id="field_terms" type="checkbox" name="terms" required="required">
-                                <label for="field_terms"><b>J'ai lu et j'accepte les <a href="dossier/Mepery_CGV.pdf"
-                                                                                        target="_blank"
-                                                                                        style="color:#424242;">conditions
-                                            générales de vente</b></a> :</label></p>
-                            <p><i>Tout les champs sont obligatoires</i></p>
-                        </div>
-                    </div>
+                   input[type="checkbox"]:required:valid + label {
+                       color: green;
+                   }
+               </style>
+               <div class="row">
+                   <div class="col-lg-12">
 
-                    <style type="text/css">
-                        input[type="checkbox"]:required:invalid + label {
-                            color: red;
-                        }
-
-                        input[type="checkbox"]:required:valid + label {
-                            color: green;
-                        }
-                    </style>
-                    <div class="row">
-                        <div class="col-lg-12">
-
-                            <br>
-                            <br>
-                            <center><input type="submit" name="valideinscription" id="valide" class="theme-button-one"
-                                           value="Continuer"></center>
-                        </div>
-                    </div>
-                </div>
-            </form>
-        </div>
-        <br>
-        <div class="row">
-            <div class="col-lg-4"></div>
-            <div class="col-lg-4">
-                <center><a href="index.php">
-                        <button class="btn btn-danger theme-button-two">Annuler</button>
-                    </a></center>
-            </div>
-        </div>
-    </div>
+                       <br>
+                       <br>
+                       <center><input type="submit" name="valideinscription" id="valide" class="theme-button-one"
+                                      value="Continuer"></center>
+                   </div>
+               </div>
+           </div>
+       </form>
+   </div>
+   <br>
+   <div class="row">
+       <div class="col-lg-4"></div>
+       <div class="col-lg-4">
+           <center><a href="index.php">
+                   <button class="btn btn-danger theme-button-two">Annuler</button>
+               </a></center>
+       </div>
+   </div>
+</div>
 </div>
 </div>
 </body>
 
 <footer class="theme-footer-one">
-    <div class="container">
-        <div class="top-footer">
-            <div class="logo">
-                <a href="https://sezny.fr/"><img src="images/seznyTrvector.png" alt="logo"
-                                                      class="logofooter"></a>
-            </div>
-        </div> <!-- /.top-footer -->
+<div class="container">
+   <div class="top-footer">
+       <div class="logo">
+           <a href="https://sezny.fr/"><img src="images/seznyTrvector.png" alt="logo"
+                                                 class="logofooter"></a>
+       </div>
+   </div> <!-- /.top-footer -->
     </div> <!-- /.container -->
 
     <div class="bottom-footer">

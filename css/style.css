@@ -133,21 +133,28 @@ h1 {
 }
 
 h2 {
-    font-size: 35px;
+    font-size: 30px;
     font-weight: normal;
     font-family: "Roboto", sans-serif;
     margin: 20px;
 }
 
 h3 {
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight: 600;
     font-family: "Roboto", sans-serif;
+}
+
+.liltitle{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    width: 550px;
+    text-align: center;
 }
 
 h4 {
     font-size: 24px;
-    font-weight: 700;
+    font-weight: normal;
     font-family: "Roboto", sans-serif;
 }
 
@@ -350,7 +357,7 @@ input, textarea {
 
 /*---------------------- Footer One ------------------------*/
 .theme-footer-one {
-    padding-top: 80px;
+    padding-top: 125px;
     color: #FFFFFF;
 }
 
@@ -831,28 +838,30 @@ input, textarea {
 
 /*----------------- Theme button ------------------*/
 .theme-form-one input {
-    height: 52px;
-    padding: 0 15px;
+    /*height: 52px;*/
+    padding: 0;
 }
 
 .theme-form-one input, .theme-form-one textarea {
-    width: 100%;
-    background: #f7f7f7;
-    border: 1px solid #e4e4e4;
-    margin-bottom: 20px;
-    font-size: 14px;
-    font-style: italic;
+    /*width: 100%;*/
+/*background: #f7f7f7;*/
+border: 1px solid #e4e4e4;
+margin-bottom: 20px;
+font-size: 14px;
+font-style: italic;
 }
 
 body .theme-button-one {
-    line-height: 52px;
-    font-size: 14px;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: #fff;
-    width: 180px;
-    text-align: center;
+line-height: 52px;
+font-size: 14px;
+font-weight: 700;
+text-transform: uppercase;
+color: #fff;
+width: 180px;
+text-align: center;
 }
+
+
 
 /*---------------------- Service Style Two ------------------*/
 .service-style-two .theme-title-one {
@@ -1301,4 +1310,24 @@ input[type="checkbox"]:required:valid + label::before {
 
 .lienSezny{
     color: #FFFFFF;
+}
+
+#dynamicForm{
+    display: none ;
+}
+
+.persoNav{
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: nowrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    padding: 0;
 }

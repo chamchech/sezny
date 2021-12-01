@@ -16,7 +16,7 @@ if(isset($_POST["data"])){
     <meta name="description" content="">
     <meta name="author" content="">
     <link rel="icon" type="image/png" sizes="56x56" href="assets/img/favicon-96x96.png">
-    <title>Mes ventes - Abonnement Juridique MEPERY</title>
+    <title>Mes ventes - SEZNY</title>
     <link rel="canonical" href="https://getbootstrap.com/docs/4.0/examples/album/">
     <link href="assets/css/bootstrap.min.css" rel="stylesheet">
     <link href="assets/css/album.css" rel="stylesheet">
@@ -123,10 +123,6 @@ tbody tr:nth-child(even) {
         <section class="jumbotron text-center headerContainer" style="padding:20px">
             <div class="container">
                 <h1 class="jumbotron-heading">Mes ventes</h1>
-                <a href="accueil.php"><svg class="bi bi-arrow-bar-left" width="1em" height="1em" viewBox="0 0 16 16" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M5.854 4.646a.5.5 0 00-.708 0l-3 3a.5.5 0 000 .708l3 3a.5.5 0 00.708-.708L3.207 8l2.647-2.646a.5.5 0 000-.708z" clip-rule="evenodd"/>
-  <path fill-rule="evenodd" d="M10 8a.5.5 0 00-.5-.5H3a.5.5 0 000 1h6.5A.5.5 0 0010 8zm2.5 6a.5.5 0 01-.5-.5v-11a.5.5 0 011 0v11a.5.5 0 01-.5.5z" clip-rule="evenodd"/>
-</svg> Retour</a>
             </div>
         </section>
         <div class="album py-5 bg-light">
@@ -166,9 +162,9 @@ tbody tr:nth-child(even) {
                             <thead>
                                 <tr>
                                 <th>Date</th>
-                                <th>Raison Sociale</th>
+                               <!-- <th>Raison Sociale</th>-->
                                     <th>Nom Contact</th>
-                                    <th>Durée/Prix</th>
+                                   <!-- <th>Durée/Prix</th>-->
                                     <th>CP/Ville</th>
                                     <th>Signé</th>
                                     <th></th>
@@ -200,9 +196,9 @@ tbody tr:nth-child(even) {
                                 ?>
                                 <tr>
                                 <td><?php echo $row['Date_vente']; ?></td>
-                                <td><?php echo $row['raisonsocial']; ?></td>
+                               <!-- <td><?php //echo $row['raisonsocial']; ?></td>-->
                                     <td><?php echo $row['nomcontact']; ?></td>
-                                    <td><?php echo $row['drop1'].' - '.$row['drop2']; ?></td>
+                                  <!--  <td><?php //echo $row['drop1'].' - '.$row['drop2']; ?></td>-->
                                     <td><?php echo $row['cp'].' '.$row['ville']; ?></td>
                                     <td><?php echo $row['signed']; ?></td>
                                     
@@ -213,6 +209,9 @@ tbody tr:nth-child(even) {
                                 <?php } ?>
                             </tbody>
                         </table>
+                        <div class='row justify-content-center'>
+                            <a class='btn btn-primary' href='accueil.php' role='button'>Retour </a>
+                        </div>
                     </div>
                 </div>
             </div>

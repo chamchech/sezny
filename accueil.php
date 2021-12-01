@@ -54,27 +54,28 @@ $result = $stmt1->fetchAll();
                      </div>
                      -->
                     <div class="row justify-content-center">
-                        <div class="col-md-6" style="text-align: center">
+
+                        <div class="col" style="text-align: center">
                             <div class="form-group">
-                                <a href="ajout-vente.php" class="btn btn-light bouton-accueil">
-                                    Ajouter une vente pro
+                                <a href="ajout-vente-part.php" class="btn btn-light bouton-accueil">
+                                    Ajouter une vente part
                                 </a>
                             </div>
                             <div class="form-group">
                                 <a href="signature.php" class="btn btn-light bouton-accueil">
-                                    Signer une vente pro
+                                    Signer une vente part
                                 </a>
                             </div>
                         </div>
                         <div class="col" style="text-align: center">
                             <div class="form-group">
-                                <a href="ajout-vente-part.php" class="btn btn-light bouton-accueil">
-                                    Ajouter une vente particulier
+                                <a href="ajout-vente-pro.php" class="btn btn-light bouton-accueil">
+                                    Ajouter une vente pro
                                 </a>
                             </div>
                             <div class="form-group">
-                                <a href="signature.php" class="btn btn-light bouton-accueil">
-                                    Signer une vente particulier
+                                <a href="signature-pro.php" class="btn btn-light bouton-accueil">
+                                    Signer une vente pro
                                 </a>
                             </div>
                         </div>
@@ -85,8 +86,13 @@ $result = $stmt1->fetchAll();
                         </div>
                         <div class="col profil">
                             <div class="form-group">
+                                <a href="ventespro.php" class="btn btn-dark bouton-profil">
+                                    Mes ventes pro
+                                </a>
+                            </div>
+                            <div class="form-group">
                                 <a href="ventes.php" class="btn btn-dark bouton-profil">
-                                    Mes ventes
+                                    Mes ventes part
                                 </a>
                             </div>
                             <div class="form-group">
@@ -94,6 +100,7 @@ $result = $stmt1->fetchAll();
                                     Mon profil
                                 </a>
                             </div>
+
                         </div>
                         <div class="col">
 
@@ -113,9 +120,9 @@ $result = $stmt1->fetchAll();
 <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
-<script src="../assets/js/popper.min.js"></script>
-<script src="../assets/js/bootstrap.min.js"></script>
-<script src="../assets/js/vendor/holder.min.js"></script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/holder.min.js"></script>
 </body>
 
 </html>

@@ -63,7 +63,7 @@ if(isset($_POST['submit'])){
 		<div class="login-content">
 			<form class="login100-form validate-form" method="post" action="">
 				<img src="../images/avatar-admin.png">
-				<h2 class="title">Espace admin</h2>
+				<h2 class="title"> S'identifier</h2>
            		<div class="input-div one">
            		   <div class="i">
            		   		<i class="fas fa-user"></i>

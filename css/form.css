@@ -14,6 +14,59 @@
     outline: none;
 }
 
+div.form-group{
+    display: block;
+    margin: auto;
+}
+
+label.btn.btn-outline-primary.btnlieu{
+    width: 200px;
+    margin: 20px;
+    padding: 10px;
+    border: solid 2px;
+}
+
+.btnvalid,.btnannul{
+    width: 250px;
+    padding: 20px;
+}
+
+.formInscription,.commandeInfo,.reunion{
+    -webkit-border-radius:10px;
+    -moz-border-radius: 10px;
+    margin: 10px 0 40px 0;
+    background: #f7f7f7;
+    border: 1px solid rgba(0, 0, 0, 0.125);
+    padding: 5px;
+}
+div.row.formInscription,div.row.commandeInfo{
+    margin: auto;
+}
+
+.acceptationClient{
+    margin: 20px;
+    -webkit-border-radius:10px;
+    -moz-border-radius: 10px;
+    border-radius: 6px;
+    background: #f7f7f7;
+}
+
+.btn.check{
+    width: 250px;
+}
+#inputHote{
+    width: 250px;
+}
+.formProduit{
+    padding:10px;
+    -webkit-border-radius:10px;
+    -moz-border-radius: 10px;
+    border-radius: 6px;
+}
+.form-check-label{
+    margin-bottom: 10px;
+}
+
 input.call-back-form-one{
     display: block;
     background-color: #FFFFFF;
@@ -22,14 +75,9 @@ input.call-back-form-one{
     -moz-box-sizing: border-box;
     width: 100%;
     padding: 8px;
-    border-radius: 6px;
-    border: solid 2px #246874 ;
+    border-radius: 5px;
     -webkit-border-radius:6px;
     -moz-border-radius:6px;
-    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.33);
-    -moz-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.33);
-    -webkit-box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.33);
-
 }
 
 label{
@@ -53,6 +101,9 @@ label{
     font-size: 17px;
     color: black;
 }
+.autreInput{
+    width: 200px;
+}
 
 .form label:after{
     content: "";
@@ -66,19 +117,10 @@ label{
     transition: transform 0.3s ease;
 }
 
-.formInscription{
-    padding:20px;
-    -webkit-border-radius:10px;
-    -moz-border-radius: 10px;
-    background: #F8F8F8;
-    border-radius: 6px;
-    margin: 10px;
-}
-
 .content-name{
     position: absolute;
     bottom: 5px;
-    left: 0px;
+    left: 0;
     transition: all 0.3s ease;
 }
 
@@ -113,4 +155,32 @@ button.theme-button-two{
     font-weight: 700;
     font-size: 14px;
     line-height: 52px;
+}
+#case_1, #case_2, #case_3, #case_4{
+    margin-top: -18px;
+}
+
+#case_info1, #case_info2, #case_info3, #case_info4{
+    margin-top: -27px;
+}
+#case_reunion1,#case_reunion2 {
+    margin-top: -27px;
+    margin-left: -150px;
+}
+
+ul#myTab.nav.nav-tabs{
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+a#fin-tab,a#fin2-tab,a#fin3-tab,a#fin4-tab,a#fin5-tab{
+    width: 200px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+label.btn.btn-outline-primary.finExpress{
+    display: block;
+    width: 200px;
+    margin: auto;
 }
